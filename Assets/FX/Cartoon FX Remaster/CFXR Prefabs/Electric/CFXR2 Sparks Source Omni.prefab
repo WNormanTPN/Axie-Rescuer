@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5675931985730969778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6963663293128093982, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR2 Sparks Source Omni
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093983, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093985, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093985, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093985, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963663293128093985, guid: 16f0c09ea482a0d4ab2c5ca9813789cb,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 120
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16f0c09ea482a0d4ab2c5ca9813789cb, type: 3}

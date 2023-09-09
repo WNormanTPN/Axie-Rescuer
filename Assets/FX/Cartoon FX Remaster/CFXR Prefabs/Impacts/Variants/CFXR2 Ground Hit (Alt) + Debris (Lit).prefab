@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1289464621277721342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3855340659111230357}
+    m_Modifications:
+    - target: {fileID: 2150967500386247403, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR2 Debris Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247403, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114687514215894760, guid: 12942baf24d16dd4281ffa4f2c8f5376, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12942baf24d16dd4281ffa4f2c8f5376, type: 3}
+--- !u!1001 &5159910128678416102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2449807036778766759, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR2 Ground Hit (Alt) + Debris (Lit)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827742016007866551, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 326851821430081391, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.025
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6b8fc14049f58f4782bc4448d8f53e1, type: 3}
+--- !u!4 &3855340659111230357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8222241459829527923, guid: b6b8fc14049f58f4782bc4448d8f53e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5159910128678416102}
+  m_PrefabAsset: {fileID: 0}

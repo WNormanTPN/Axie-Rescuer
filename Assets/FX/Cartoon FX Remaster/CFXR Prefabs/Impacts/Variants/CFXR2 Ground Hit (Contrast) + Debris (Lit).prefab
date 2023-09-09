@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &338225333503733638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3210933900396146365}
+    m_Modifications:
+    - target: {fileID: 2150967500386247403, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR2 Debris Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150967500386247400, guid: 12942baf24d16dd4281ffa4f2c8f5376,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114687514215894760, guid: 12942baf24d16dd4281ffa4f2c8f5376, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12942baf24d16dd4281ffa4f2c8f5376, type: 3}
+--- !u!1001 &4118091782852137809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5065936571968506168, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR2 Ground Hit (Contrast) + Debris (Lit)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957272646190637096, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150468271276503024, guid: 47bd8c1439339424690d425f7149144e,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.025
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47bd8c1439339424690d425f7149144e, type: 3}
+--- !u!4 &3210933900396146365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1561027195475099116, guid: 47bd8c1439339424690d425f7149144e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4118091782852137809}
+  m_PrefabAsset: {fileID: 0}
