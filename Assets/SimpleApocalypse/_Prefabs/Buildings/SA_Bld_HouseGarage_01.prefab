@@ -87,6 +87,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &4561442625401221679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +299,10 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.000041008, y: 5.683473, z: -0.000001907349}
   m_TimeToStationary: 0.5
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!1 &185842
 GameObject:
   m_ObjectHideFlags: 0
