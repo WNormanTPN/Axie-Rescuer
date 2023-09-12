@@ -169,8 +169,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!114 &3437823193423846761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +363,3 @@ MonoBehaviour:
         Tag07: 0
     m_SerializedVersion: 1
   m_SerializedVersion: 1
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes

@@ -14,7 +14,7 @@ namespace AxieRescuer
             {
                 i++;
             }
-            Debug.Log(i);
+            //Debug.Log(i);
         }
     }
 }

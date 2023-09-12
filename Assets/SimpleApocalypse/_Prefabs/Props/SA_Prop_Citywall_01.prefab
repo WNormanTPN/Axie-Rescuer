@@ -11,19 +11,9 @@ GameObject:
   - component: {fileID: 456872}
   - component: {fileID: 3346200}
   - component: {fileID: 2338476}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - component: {fileID: 7693910311935040950}
   - component: {fileID: 6353207802356328121}
   - component: {fileID: -3847350375359309007}
-=======
-  - component: {fileID: -9098133008998236697}
-  - component: {fileID: -4368711728651597798}
->>>>>>> Stashed changes
-=======
-  - component: {fileID: -9098133008998236697}
-  - component: {fileID: -4368711728651597798}
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: SA_Prop_Citywall_01
   m_TagString: Untagged
@@ -96,8 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!114 &7693910311935040950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,12 +138,6 @@ MonoBehaviour:
     Tag06: 0
     Tag07: 0
 --- !u!114 &6353207802356328121
-=======
---- !u!114 &-9098133008998236697
->>>>>>> Stashed changes
-=======
---- !u!114 &-9098133008998236697
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,26 +280,14 @@ MonoBehaviour:
         Tag07: 0
     m_SerializedVersion: 1
   m_SerializedVersion: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!208 &-3847350375359309007
 NavMeshObstacle:
-=======
---- !u!114 &-4368711728651597798
-MonoBehaviour:
->>>>>>> Stashed changes
-=======
---- !u!114 &-4368711728651597798
-MonoBehaviour:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103528}
   m_Enabled: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 7.4940004, y: 9.702001, z: 1.126}
@@ -326,53 +296,3 @@ MonoBehaviour:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.4940004, y: 9.702001, z: -1.126}
   m_TimeToStationary: 0.5
-=======
-=======
->>>>>>> Stashed changes
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MotionType: 2
-  m_Smoothing: 0
-  m_Mass: 1
-  m_LinearDamping: 0.01
-  m_AngularDamping: 0.05
-  m_InitialLinearVelocity:
-    x: 0
-    y: 0
-    z: 0
-  m_InitialAngularVelocity:
-    x: 0
-    y: 0
-    z: 0
-  m_GravityFactor: 1
-  m_OverrideDefaultMassDistribution: 0
-  m_CenterOfMass:
-    x: 0
-    y: 0
-    z: 0
-  m_Orientation:
-    Value:
-      x: 0
-      y: 0
-      z: 0
-    RotationOrder: 4
-  m_InertiaTensor:
-    x: 0.4
-    y: 0.4
-    z: 0.4
-  m_WorldIndex: 0
-  m_CustomTags:
-    Tag00: 0
-    Tag01: 0
-    Tag02: 0
-    Tag03: 0
-    Tag04: 0
-    Tag05: 0
-    Tag06: 0
-    Tag07: 0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
