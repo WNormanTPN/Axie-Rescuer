@@ -25,13 +25,18 @@ namespace AxieRescuer
 
         protected override void OnUpdate()
         {
+            var readInputEntity = SystemAPI.GetSingletonEntity<MoveInput>();
             var moveInput = _input.Player.Move.ReadValue<Vector2>();
             var lookInput = _input.Player.Look.ReadValue<Vector2>();
-            SystemAPI.SetSingleton(new MoveInput
+            _input.Player.Fire.started += (InputAction.CallbackContext context) =>
+            {
+                EntityManager.SetComponentEnabled<FireInput>(readInputEntity, true);
+            };
+            EntityManager.SetComponentData(readInputEntity, new MoveInput
             {
                 Value = moveInput,
             });
-            SystemAPI.SetSingleton(new LookInput
+            EntityManager.SetComponentData(readInputEntity, new LookInput
             {
                 Value = lookInput,
             });

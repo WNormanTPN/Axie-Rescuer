@@ -7,10 +7,4 @@ namespace AxieRescuer
         public float Max;
         public float Current;
     }
-
-    public struct Oxygen : IComponentData
-    {
-        public float Max;
-        public float Current;
-    }
 }
