@@ -802,6 +802,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
+    Android: UNITY_PHYSICS_CUSTOM
     Standalone: UNITY_PHYSICS_CUSTOM;AMPLIFY_SHADER_EDITOR
   additionalCompilerArguments: {}
   platformArchitecture: {}
