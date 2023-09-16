@@ -14,6 +14,4 @@ namespace AxieRescuer
     }
 
     public struct FireInput : IComponentData, IEnableableComponent { }
-
-    public struct UseInput : IComponentData, IEnableableComponent { }
 }

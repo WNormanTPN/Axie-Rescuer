@@ -12,7 +12,9 @@ namespace AxieRescuer
 
         [Header("Stats")]
         public float MaxHealth;
-        public float MaxOxygen;
+
+        [Header("Weapon")]
+        public GameObject Weapon;
 
         public class PlayerBaker : Baker<PlayerAuthoring>
         {
@@ -53,6 +55,16 @@ namespace AxieRescuer
                 });
 
                 #endregion
+
+                #region Weapon Components
+                AddComponent(entity, new InitialWeapon
+                {
+                    WeaponEntity = GetEntity(authoring.Weapon, TransformUsageFlags.Dynamic),
+                });
+                SetComponentEnabled<InitialWeapon>(entity, false);
+
+                #endregion
+
             }
         }
     }

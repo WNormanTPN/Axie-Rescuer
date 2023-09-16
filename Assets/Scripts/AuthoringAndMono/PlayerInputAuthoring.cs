@@ -20,9 +20,7 @@ namespace AxieRescuer
                     Value = new float2(0, 0),
                 });
                 AddComponent<FireInput>(entity);
-                AddComponent<UseInput>(entity);
                 SetComponentEnabled<FireInput>(entity, false);
-                SetComponentEnabled<UseInput>(entity, false);
             }
         }
     }

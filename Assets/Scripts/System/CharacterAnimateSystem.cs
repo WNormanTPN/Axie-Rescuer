@@ -13,11 +13,12 @@ namespace AxieRescuer
         {
             var ecb = new EntityCommandBuffer(Allocator.Temp);
 
-            // Initial Animator
+            #region Initial Animator
             foreach (var (CharacterGameObjectPrefab, entity) in
                      SystemAPI.Query<CharacterGameObjectPrefab>().WithNone<CharacterAnimatorReference>().WithEntityAccess())
             {
                 var newCompanionGameObject = Object.Instantiate(CharacterGameObjectPrefab.Value);
+                StaticGameObjectReference.Player = newCompanionGameObject;
                 var newAnimatorReference = new CharacterAnimatorReference
                 {
                     Value = newCompanionGameObject.GetComponent<Animator>()
@@ -25,7 +26,9 @@ namespace AxieRescuer
                 ecb.AddComponent(entity, newAnimatorReference);
             }
 
-            // Character Movement
+            #endregion
+
+            #region Character Movement
             foreach (var (transform, animatorReference, moveDirection) in
                      SystemAPI.Query<LocalTransform, CharacterAnimatorReference, MoveDirection>().WithNone<ZombieTag>())
             {
@@ -41,13 +44,14 @@ namespace AxieRescuer
                     var headingAngle = math.atan2(heading.z, heading.x);
                     var moveAngle = math.atan2(moveDirection.Value.z, moveDirection.Value.x);
                     var offsetAngle = math.abs(headingAngle - moveAngle);
-                    var animationValue = (offsetAngle < 1) ? 1 : -1;
+                    var animationValue = (offsetAngle < math.PI * 2 / 3.0) ? 1 : -1;
                     animatorReference.Value.SetFloat("Speed_f", animationValue);
                 }
             }
 
+            #endregion
 
-            // Zombie Movement
+            #region Zombie Movement
             foreach (var (transform, animatorReference, moveDirection) in
                      SystemAPI.Query<LocalTransform, CharacterAnimatorReference, MoveDirection>().WithAll<ZombieTag>())
             {
@@ -56,7 +60,9 @@ namespace AxieRescuer
                 animatorReference.Value.transform.rotation = transform.Rotation;
             }
 
-            // Cleanup
+            #endregion
+
+            #region Cleanup
             foreach (var (animatorReference, entity) in
                      SystemAPI.Query<CharacterAnimatorReference>().WithNone<CharacterGameObjectPrefab, LocalTransform>()
                          .WithEntityAccess())
@@ -64,6 +70,8 @@ namespace AxieRescuer
                 Object.Destroy(animatorReference.Value.gameObject);
                 ecb.RemoveComponent<CharacterAnimatorReference>(entity);
             }
+
+            #endregion
 
             ecb.Playback(state.EntityManager);
             ecb.Dispose();
