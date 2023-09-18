@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3197780182706562262}
   - component: {fileID: 5673717399391971505}
   - component: {fileID: 2926764820812021832}
+  - component: {fileID: -7727360871609934565}
   m_Layer: 0
   m_Name: fence_short_mesh
   m_TagString: Untagged
@@ -296,3 +297,15 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.2370001, y: 1.5810001, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &-7727360871609934565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

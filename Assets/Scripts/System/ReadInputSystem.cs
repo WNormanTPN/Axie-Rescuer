@@ -10,6 +10,7 @@ namespace AxieRescuer
     public partial class ReadInputSystem : SystemBase
     {
         private PlayerInput _input;
+        private Entity _readInputEntity;
 
         protected override void OnCreate()
         {
@@ -20,23 +21,27 @@ namespace AxieRescuer
 
         protected override void OnStartRunning()
         {
+            _readInputEntity = SystemAPI.GetSingletonEntity<MoveInput>();
             _input.Enable();
+            _input.Player.Fire.started += (InputAction.CallbackContext context) =>
+            {
+                EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, true);
+            };
+            _input.Player.Fire.canceled += (InputAction.CallbackContext context) =>
+            {
+                EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, false);
+            };
         }
 
         protected override void OnUpdate()
         {
-            var readInputEntity = SystemAPI.GetSingletonEntity<MoveInput>();
             var moveInput = _input.Player.Move.ReadValue<Vector2>();
             var lookInput = _input.Player.Look.ReadValue<Vector2>();
-            _input.Player.Fire.started += (InputAction.CallbackContext context) =>
-            {
-                EntityManager.SetComponentEnabled<FireInput>(readInputEntity, true);
-            };
-            EntityManager.SetComponentData(readInputEntity, new MoveInput
+            EntityManager.SetComponentData(_readInputEntity, new MoveInput
             {
                 Value = moveInput,
             });
-            EntityManager.SetComponentData(readInputEntity, new LookInput
+            EntityManager.SetComponentData(_readInputEntity, new LookInput
             {
                 Value = lookInput,
             });

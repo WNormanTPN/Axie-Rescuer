@@ -27,10 +27,12 @@ namespace AxieRescuer
     public struct FireRate : IComponentData
     {
         public float Value;
+        public float Timer;
     }
     public struct ReloadTime : IComponentData
     {
         public float Value;
+        public float Timer;
     }
     public struct MagazineData : IComponentData
     {

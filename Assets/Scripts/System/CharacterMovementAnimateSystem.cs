@@ -7,7 +7,7 @@ using UnityEngine;
 namespace AxieRescuer
 {
     [UpdateInGroup(typeof(PresentationSystemGroup), OrderFirst = true)]
-    public partial struct CharacterAnimateSystem : ISystem
+    public partial struct CharacterMovementAnimateSystem : ISystem
     {
         public void OnUpdate(ref SystemState state)
         {

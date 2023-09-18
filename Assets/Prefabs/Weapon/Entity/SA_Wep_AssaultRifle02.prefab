@@ -47,11 +47,11 @@ MonoBehaviour:
   Prefab: {fileID: 4114575173102428955, guid: 089c9337b529439448e6bb21824ad9ac, type: 3}
   WeaponType: 5
   DamageRange:
-    x: 80
-    y: 100
+    x: 150
+    y: 200
   Range: 15
   Accuracy: 90
-  FireRate: 3
-  ReloadTime: 2
+  FireRate: 1
+  ReloadTime: 0
   TotalMagazineValue: 250
-  MaxValuePerReload: 50
+  MaxValuePerReload: 1
