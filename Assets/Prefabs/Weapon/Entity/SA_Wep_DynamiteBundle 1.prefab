@@ -44,7 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7eb511703198b4da034ce2176c0b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 1462744390851710552, guid: 8c48b907f37f7d444808729785e73df1, type: 3}
+  WeaponPrefab: {fileID: 1462744390851710552, guid: 8c48b907f37f7d444808729785e73df1,
+    type: 3}
+  GunFlashPrefab: {fileID: 160510, guid: 6e1113468f14f5d47908179a77a9654c, type: 3}
+  GunFlashOffset:
+    x: 0
+    y: 0
+    z: 0
   WeaponType: 13
   DamageRange:
     x: 100

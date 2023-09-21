@@ -1,14 +1,18 @@
+using System.Collections;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Entities.UniversalDelegates;
 using Unity.Jobs;
 using Unity.Logging;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 using UnityEngine;
+using Collider = Unity.Physics.Collider;
 using Random = Unity.Mathematics.Random;
 using RaycastHit = Unity.Physics.RaycastHit;
+using SphereCollider = Unity.Physics.SphereCollider;
 
 namespace AxieRescuer
 {
@@ -27,11 +31,11 @@ namespace AxieRescuer
                 .Build();
             state.RequireForUpdate<FireInput>();
             state.RequireForUpdate<EquippingWeapon>();
+            state.RequireForUpdate<RandomSingleton>();
         }
 
         public void OnUpdate(ref SystemState state)
         {
-            var inputSingleton = SystemAPI.GetSingletonEntity<MoveDirection>();
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();
             var equippingWeapon = state.EntityManager.GetComponentObject<EquippingWeapon>(player);
 
@@ -65,25 +69,30 @@ namespace AxieRescuer
                                 else
                                 {
                                     var playerTransform = SystemAPI.GetComponent<LocalTransform>(player);
+                                    var gunFlash = SystemAPI.GetComponent<GunFlash>(equippingWeapon.Entity);
                                     var range = SystemAPI.GetComponent<Range>(equippingWeapon.Entity);
                                     var damage = SystemAPI.GetComponent<Damage>(equippingWeapon.Entity);
                                     var accuracy = SystemAPI.GetComponent<Accuracy>(equippingWeapon.Entity);
                                     var world = SystemAPI.GetSingleton<PhysicsWorldSingleton>();
                                     var drawtrajectorySingleton = SystemAPI.GetSingletonEntity<Trajectory>();
-                                    new FireJob
+                                    var random = SystemAPI.GetSingleton<RandomSingleton>();
+                                    animatorReference.Value.SetBool("Shoot_b", true);
+                                    state.Dependency = new FireJob
                                     {
-                                        StartPos = playerTransform.Position + math.up() + playerTransform.Forward()*4,
+                                        StartPos = playerTransform.Position + math.up() + playerTransform.Forward()*1,
                                         Direction = playerTransform.Forward(),
+                                        GunFlash = gunFlash,
                                         WeaponType = weaponType,
                                         Range = range,
                                         Damage = damage,
                                         Accuracy = accuracy,
+                                        Random = Random.CreateFromIndex(random.Random.NextUInt()),
                                         DrawTrajectorySingleton = drawtrajectorySingleton,
                                         World = world,
                                         EntityManager = state.EntityManager,
                                         ECB = ecb,
-                                    }.Schedule().Complete();
-                                    animatorReference.Value.SetBool("Shoot_b", true);
+                                    }.Schedule(state.Dependency);
+                                    state.Dependency.Complete();
                                 }
                             }
                             else
@@ -123,16 +132,18 @@ namespace AxieRescuer
             }
         }
     }
-
+    
     [BurstCompile]
     public struct FireJob : IJob
     {
         public float3 StartPos;
         public float3 Direction;
+        public GunFlash GunFlash;
         public WeaponType WeaponType;
         public Range Range;
         public Damage Damage;
         public Accuracy Accuracy;
+        public Random Random;
         public Entity DrawTrajectorySingleton;
         public PhysicsWorldSingleton World;
         public EntityManager EntityManager;
@@ -140,6 +151,7 @@ namespace AxieRescuer
 
         public void Execute()
         {
+            Entity gunFlash;
             switch(WeaponType.Value)
             {
                 case WeaponTypeEnum.Bomb:
@@ -147,45 +159,74 @@ namespace AxieRescuer
 
                     break;
                 case WeaponTypeEnum.Shotgun:
-                    var projectileCount = new Random(123).NextInt(3, 7);
+                    gunFlash = EntityManager.Instantiate(GunFlash.Entity);
+                    EntityManager.SetComponentData(gunFlash, new LocalTransform
+                    {
+                        Position = GunFlash.Offset + StartPos,
+                        Rotation = quaternion.LookRotationSafe(Direction, math.up()),
+                        Scale = 1f,
+                    });
+                    EntityManager.SetComponentData(gunFlash, new NeedDestroy
+                    {
+                        CountdownTime = 0.1f,
+                    });
+                    EntityManager.SetComponentEnabled<NeedDestroy>(gunFlash, true);
+
+
+                    var projectileCount = Random.NextInt(5, 10);
                     for(int i = 0; i < projectileCount; i++)
                     {
-                        Fire();
+                        ShootWithoutPenetration();
                     }
 
                     break;
                 default:
-                    Fire();
+                    gunFlash = ECB.Instantiate(GunFlash.Entity);
+                    ECB.SetComponent(gunFlash, new LocalTransform
+                    {
+                        Position = GunFlash.Offset + StartPos,
+                        Rotation = quaternion.LookRotationSafe(Direction, math.up()),
+                        Scale = 1f,
+                    });
+                    ECB.SetComponent(gunFlash, new NeedDestroy
+                    {
+                        CountdownTime = 0.1f,
+                    });
+                    ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
+                    ShootWithoutPenetration();
                     
                     break;
             }
         }
 
-        public void Fire()
+        [BurstCompile]
+        public unsafe void ShootThrough()
         {
-            var rand = new Random(123);
-            //var deviationAngle = 90 * (100 - Accuracy.Value)/100;
-            //deviationAngle = math.radians(rand.NextFloat(-deviationAngle, deviationAngle));
+            var deviationAngle = 90 * (100 - Accuracy.Value) / 100;
+            deviationAngle = math.radians(Random.NextFloat(-deviationAngle, deviationAngle));
             var endPos = Direction;
             endPos.xz *= Range.Value;
+            endPos.x = endPos.x * math.cos(deviationAngle) + endPos.z * math.sin(deviationAngle);
+            endPos.z = -endPos.x * math.sin(deviationAngle) + endPos.z * math.cos(deviationAngle);
             endPos += StartPos;
-            //endPos.x = endPos.x * math.cos(deviationAngle) + endPos.z * math.sin(deviationAngle);
-            //endPos.z = -endPos.x * math.sin(deviationAngle) + endPos.z * math.cos(deviationAngle);
-            var rayCastInput = new RaycastInput
+            var filter = new CollisionFilter()
             {
+                BelongsTo = ~0u,
+                CollidesWith = ~0u,
+                GroupIndex = 0
+            };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 0.5f };
+            BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
+            var rayCastInput = new ColliderCastInput
+            {
+                Collider = (Collider*)sphereCollider.GetUnsafePtr(),
                 Start = StartPos,
                 End = endPos,
-                Filter = new CollisionFilter
-                {
-                    BelongsTo = ~0u,
-                    CollidesWith = ~0u,
-                    GroupIndex = 0,
-                }
             };
-            var hits = new NativeList<RaycastHit>(Allocator.Temp);
+            var hits = new NativeList<ColliderCastHit>(Allocator.Temp);
+            World.CastCollider(rayCastInput, ref hits);
             var tempHits = hits;
             hits.Clear();
-            World.CastRay(rayCastInput, ref hits);
             ECB.AppendToBuffer(DrawTrajectorySingleton, new Trajectory
             {
                 Start = StartPos,
@@ -209,11 +250,60 @@ namespace AxieRescuer
                 {
                     ECB.AppendToBuffer(hits[i].Entity, new DamageReceived
                     {
-                        Value = rand.NextFloat(Damage.MinValue, Damage.MaxValue),
+                        Value = Random.NextFloat(Damage.MinValue, Damage.MaxValue),
                     });
                 }
             }
-            hits.Dispose();
+        }
+
+        [BurstCompile]
+        public unsafe void ShootWithoutPenetration()
+        {
+            var deviationAngle = 90 * (100 - Accuracy.Value) / 100;
+            deviationAngle = math.radians(Random.NextFloat(-deviationAngle, deviationAngle));
+            var endPos = Direction;
+            endPos.xz *= Range.Value;
+            endPos.x = endPos.x * math.cos(deviationAngle) + endPos.z * math.sin(deviationAngle);
+            endPos.z = -endPos.x * math.sin(deviationAngle) + endPos.z * math.cos(deviationAngle);
+            endPos += StartPos;
+            var filter = new CollisionFilter()
+            {
+                BelongsTo = ~0u,
+                CollidesWith = ~0u,
+                GroupIndex = 0
+            };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 0.5f };
+            BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
+            var rayCastInput = new ColliderCastInput
+            {
+                Collider = (Collider*)sphereCollider.GetUnsafePtr(),
+                Start = StartPos,
+                End = endPos,
+            };
+            var hits = new NativeList<ColliderCastHit>(Allocator.Temp);
+            World.CastCollider(rayCastInput, ref hits);
+            if (hits.Length > 1)
+            {
+                var closestHit = hits[hits.Length - 2];
+                if (EntityManager.HasComponent<ZombieTag>(closestHit.Entity))
+                {
+                    ECB.AppendToBuffer(closestHit.Entity, new DamageReceived
+                    {
+                        Value = Random.NextFloat(Damage.MinValue, Damage.MaxValue),
+                    });
+                    endPos = closestHit.Position;
+                }
+                else if (EntityManager.HasComponent<BuildingTag>(closestHit.Entity))
+                {
+                    endPos = closestHit.Position;
+                }
+            }
+            ECB.AppendToBuffer(DrawTrajectorySingleton, new Trajectory
+            {
+                Start = StartPos,
+                End = endPos,
+                ShowTime = 0.1f,
+            });
         }
     }
 }

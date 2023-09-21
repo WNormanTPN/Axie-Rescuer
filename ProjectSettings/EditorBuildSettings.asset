@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SimpleTown/DemoScene/Demo_Scene.unity
+    guid: 281eebb7a74d4e1439a5fd275e11619d
   m_configObjects: {}
