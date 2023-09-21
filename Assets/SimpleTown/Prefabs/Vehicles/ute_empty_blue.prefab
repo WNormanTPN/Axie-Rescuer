@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5134873896278023375}
   - component: {fileID: -5899822914313390219}
   - component: {fileID: -822996160695354090}
+  - component: {fileID: -9122451335385672563}
   m_Layer: 0
   m_Name: ute_empty_blue
   m_TagString: Untagged
@@ -296,3 +297,15 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 1.2570001, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &-9122451335385672563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: -4116990760035379738}
   - component: {fileID: 7651479611984971840}
   - component: {fileID: 1521853149362666591}
+  - component: {fileID: 3739278787858898389}
   m_Layer: 0
   m_Name: Building_Mall
   m_TagString: Untagged
@@ -753,6 +754,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -21.73631, y: 4.950182, z: -5.4}
   m_TimeToStationary: 0.5
+--- !u!114 &3739278787858898389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818789728283452185
 GameObject:
   m_ObjectHideFlags: 0

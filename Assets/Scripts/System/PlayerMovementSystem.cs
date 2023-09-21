@@ -62,12 +62,12 @@ namespace AxieRescuer
             var x = MoveInputData.x;
             var z = MoveInputData.y;
             moveDirection.Value.x = x * math.cos(OffsetAngle) + z * math.sin(OffsetAngle);
-            moveDirection.Value.z = (float)(-x * Math.Sin(OffsetAngle) + z * math.cos(OffsetAngle));
+            moveDirection.Value.z = -x * math.sin(OffsetAngle) + z * math.cos(OffsetAngle);
 
             x = LookInputData.x;
             z = LookInputData.y;
             targetRotation.Value.x = x * math.cos(OffsetAngle) + z * math.sin(OffsetAngle);
-            targetRotation.Value.z = (float)(-x * Math.Sin(OffsetAngle) + z * math.cos(OffsetAngle));
+            targetRotation.Value.z = -x * math.sin(OffsetAngle) + z * math.cos(OffsetAngle);
         }
     }
 }

@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 2698360530640263572}
   - component: {fileID: 7834839923334229455}
   - component: {fileID: 3738551173166583929}
+  - component: {fileID: 321214252291447998}
   m_Layer: 0
   m_Name: rubbish_truck_seperate_mesh
   m_TagString: Untagged
@@ -800,3 +801,15 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 2.0410001, z: -0.259}
   m_TimeToStationary: 0.5
+--- !u!114 &321214252291447998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
