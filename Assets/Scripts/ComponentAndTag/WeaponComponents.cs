@@ -1,4 +1,5 @@
 using Unity.Entities;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace AxieRescuer
@@ -10,6 +11,11 @@ namespace AxieRescuer
     public class WeaponPrefab : IComponentData
     {
         public GameObject Value;
+    }
+    public struct GunFlash : IComponentData
+    {
+        public Entity Entity;
+        public float3 Offset;
     }
     public struct Damage : IComponentData
     {

@@ -6,7 +6,9 @@ namespace AxieRescuer
 {
     public class WeaponAuthoring : MonoBehaviour
     {
-        public GameObject Prefab;
+        public GameObject WeaponPrefab;
+        public GameObject GunFlashPrefab;
+        public float3 GunFlashOffset;
         public WeaponTypeEnum WeaponType;
         public float2 DamageRange;
         public float Range;
@@ -23,11 +25,16 @@ namespace AxieRescuer
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
                 AddComponentObject(entity, new WeaponPrefab
                 {
-                    Value = authoring.Prefab,
+                    Value = authoring.WeaponPrefab,
                 });
                 AddComponent(entity, new WeaponType
                 {
                     Value = authoring.WeaponType,
+                });
+                AddComponent(entity, new GunFlash
+                {
+                    Entity = GetEntity(authoring.GunFlashPrefab, TransformUsageFlags.Dynamic),
+                    Offset = authoring.GunFlashOffset,
                 });
                 AddComponent(entity, new Damage
                 {
