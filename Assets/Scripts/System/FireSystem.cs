@@ -164,11 +164,11 @@ namespace AxieRescuer
                     {
                         Position = GunFlash.Offset + StartPos,
                         Rotation = quaternion.LookRotationSafe(Direction, math.up()),
-                        Scale = 1f,
+                        Scale = GunFlash.Scale,
                     });
                     EntityManager.SetComponentData(gunFlash, new NeedDestroy
                     {
-                        CountdownTime = 0.1f,
+                        CountdownTime = 0.05f,
                     });
                     EntityManager.SetComponentEnabled<NeedDestroy>(gunFlash, true);
 
@@ -190,7 +190,7 @@ namespace AxieRescuer
                     });
                     ECB.SetComponent(gunFlash, new NeedDestroy
                     {
-                        CountdownTime = 0.1f,
+                        CountdownTime = 0.05f,
                     });
                     ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
                     ShootWithoutPenetration();

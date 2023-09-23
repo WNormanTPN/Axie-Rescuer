@@ -16,6 +16,7 @@ namespace AxieRescuer
     {
         public Entity Entity;
         public float3 Offset;
+        public float Scale;
     }
     public struct Damage : IComponentData
     {

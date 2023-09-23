@@ -9,6 +9,7 @@ namespace AxieRescuer
         public GameObject WeaponPrefab;
         public GameObject GunFlashPrefab;
         public float3 GunFlashOffset;
+        public float GunFlashScale = 1f;
         public WeaponTypeEnum WeaponType;
         public float2 DamageRange;
         public float Range;
@@ -35,6 +36,7 @@ namespace AxieRescuer
                 {
                     Entity = GetEntity(authoring.GunFlashPrefab, TransformUsageFlags.Dynamic),
                     Offset = authoring.GunFlashOffset,
+                    Scale = authoring.GunFlashScale,
                 });
                 AddComponent(entity, new Damage
                 {
