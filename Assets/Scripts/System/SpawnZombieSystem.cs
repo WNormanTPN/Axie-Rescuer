@@ -29,9 +29,10 @@ namespace AxieRescuer
             var prefab = SystemAPI.GetSingleton<SpawnZombieComponent>();
             for (int i = 0; i < 30; i++)
             {
-                float3 randomPoint = float3.zero ;
+                float3 randomPoint = float3.zero;
+            
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 1f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPoint, out hit, 34, NavMesh.AllAreas))
                 {
                     count++;
                     ecb.AppendToBuffer(spawnerEntity, new SpawnBuffer
