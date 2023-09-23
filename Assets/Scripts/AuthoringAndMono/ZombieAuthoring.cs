@@ -20,6 +20,15 @@ public class ZombieAuthoring : MonoBehaviour
             AddBuffer<DamageReceived>(entity);
             AddComponent<IsDie>(entity);
             SetComponentEnabled<IsDie>(entity, false);
+
+            AddComponent(entity, new FindTargetComponents
+            {
+                onRange = false
+            });
+            AddComponent(entity, new DropRate
+            {
+                Value = 0.05f
+            });
         }
     }
 }

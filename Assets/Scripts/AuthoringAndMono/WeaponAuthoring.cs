@@ -63,6 +63,8 @@ namespace AxieRescuer
                     CurrentValue = authoring.MaxValuePerReload,
                     MaxValuePerReload = authoring.MaxValuePerReload,
                 });
+                AddComponent<DroppedItem>(entity);
+                SetComponentEnabled<DroppedItem>(entity, false);
             }
         }
     }

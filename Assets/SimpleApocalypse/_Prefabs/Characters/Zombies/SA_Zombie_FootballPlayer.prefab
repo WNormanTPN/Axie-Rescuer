@@ -1345,11 +1345,6 @@ GameObject:
   m_Component:
   - component: {fileID: 461512}
   - component: {fileID: 9587512}
-  - component: {fileID: -2682444496683001604}
-  - component: {fileID: -8872201882690014416}
-  - component: {fileID: 8433520452490697088}
-  - component: {fileID: -3423636190809674853}
-  - component: {fileID: -762426015455533155}
   m_Layer: 0
   m_Name: SA_Zombie_FootballPlayer
   m_TagString: Untagged
@@ -1444,87 +1439,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-2682444496683001604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 825ee44755f2e4846a6229365ed8d44c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MotionType: 2
-  Speed: 3.5
-  Acceleration: 8
-  AngularSpeed: 120
-  StoppingDistance: 0.1
-  AutoBreaking: 1
---- !u!114 &-8872201882690014416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fed5c6dd07c7d6e4f857b420fa8f559a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Radius: 0.5
-  Height: 2
---- !u!114 &8433520452490697088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0344116cd75eaaf488b894904a1649d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Radius: 2
-  Angle: 230
-  MaxAngle: 300
-  Mode: 3
-  BlockedStop: 0
-  UseWalls: 0
---- !u!114 &-3423636190809674853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00fe6fc1ebf8ff240ad5b12ad70ce1c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AgentTypeId: 0
-  AreaMask: -1
-  AutoRepath: 1
-  MappingExtent:
-    x: 10
-    y: 10
-    z: 10
---- !u!114 &-762426015455533155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d72058503702eb42aca97d680e69de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &124260
 GameObject:
   m_ObjectHideFlags: 0
