@@ -186,7 +186,7 @@ namespace AxieRescuer
                     {
                         Position = GunFlash.Offset + StartPos,
                         Rotation = quaternion.LookRotationSafe(Direction, math.up()),
-                        Scale = 1f,
+                        Scale = GunFlash.Scale,
                     });
                     ECB.SetComponent(gunFlash, new NeedDestroy
                     {

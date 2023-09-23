@@ -9,7 +9,7 @@ namespace AxieRescuer
         public GameObject WeaponPrefab;
         public GameObject GunFlashPrefab;
         public float3 GunFlashOffset;
-        public float GunFlashScale = 1f;
+        public float GunFlashScale;
         public WeaponTypeEnum WeaponType;
         public float2 DamageRange;
         public float Range;

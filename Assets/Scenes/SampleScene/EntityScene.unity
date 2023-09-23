@@ -466,7 +466,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 825ee44755f2e4846a6229365ed8d44c, type: 3}
   m_Name: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   MoveSpeed: 10
   RotationSpeed: 0.1
   MaxHealth: 100
-  Weapon: {fileID: 8858757864148113771, guid: a88d0289c36b70d4694a00ee321d2f7b, type: 3}
+  Weapon: {fileID: 6582699522017449344, guid: affb12550157c9644a6819f919b01769, type: 3}
 --- !u!114 &565013272
 MonoBehaviour:
   m_ObjectHideFlags: 0
