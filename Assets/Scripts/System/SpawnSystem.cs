@@ -37,10 +37,10 @@ namespace AxieRescuer
     {
         public NativeArray<SpawnBuffer> SpawnBuffers;
         public EntityCommandBuffer.ParallelWriter ECB;
-        public void Execute([EntityIndexInQuery]int index)
+        public void Execute([EntityIndexInQuery] int index)
         {
-            var entity = ECB.Instantiate(index,SpawnBuffers[index].Entity);
-            ECB.SetComponent(index,entity, SpawnBuffers[index].Transform);
+            var entity = ECB.Instantiate(index, SpawnBuffers[index].Entity);
+            ECB.SetComponent(index, entity, SpawnBuffers[index].Transform);
         }
     }
 }

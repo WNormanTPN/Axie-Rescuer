@@ -6,6 +6,7 @@ namespace AxieRescuer
     public class SpawnZombieAuthoring : MonoBehaviour
     {
         public GameObject ZombiePrefabs;
+        public float Range;
         public class SpawnZombieBaking : Baker<SpawnZombieAuthoring>
         {
             public override void Bake(SpawnZombieAuthoring authoring)
@@ -14,7 +15,8 @@ namespace AxieRescuer
                 AddComponent<SpawnEnemyTag>(entity);
                 AddComponent(entity, new SpawnZombieComponent
                 {
-                    Entity = GetEntity(authoring.ZombiePrefabs,TransformUsageFlags.Dynamic)
+                    Entity = GetEntity(authoring.ZombiePrefabs,TransformUsageFlags.Dynamic),
+                    Range = authoring.Range,
                 });
             }
         }

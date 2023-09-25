@@ -45,10 +45,10 @@ namespace AxieRescuer
             [EntityIndexInQuery] int sortKey
         )
         {
-            foreach(var damageReceived in damageReceiveds)
+            foreach (var damageReceived in damageReceiveds)
             {
                 health.Current -= damageReceived.Value;
-                if(health.Current <= 0)
+                if (health.Current <= 0)
                 {
                     ECB.SetComponentEnabled<IsDie>(sortKey, entity, true);
                 }
