@@ -9,7 +9,6 @@ namespace AxieRescuer
         [Header("Movement")]
         public float MoveSpeed;
         [Range(0, 1)] public float RotationSpeed;
-        public AudioClip FootStepAudio;
 
         [Header("Stats")]
         public float MaxHealth;
@@ -44,10 +43,6 @@ namespace AxieRescuer
                 AddComponent(entity, new RotationSpeed
                 {
                     Value = authoring.RotationSpeed,
-                });
-                AddComponentObject(entity, new FootStepAudio
-                {
-                    Value = authoring.FootStepAudio,
                 });
 
                 #endregion

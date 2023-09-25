@@ -235,8 +235,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ee3d0cd2-254e-47a7-a8cb-bc94d9658c54"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
+                    ""path"": ""<Joystick>/trigger"",
+                    ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
                     ""action"": ""Fire"",
