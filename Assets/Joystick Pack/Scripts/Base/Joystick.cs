@@ -79,10 +79,10 @@ public class Joystick : OnScreenControl, IPointerDownHandler, IDragHandler, IPoi
         Vector2 position = RectTransformUtility.WorldToScreenPoint(cam, background.position);
         Vector2 radius = background.sizeDelta / 2;
         input = (eventData.position - position) / (radius * canvas.scaleFactor);
+        SendValueToControl<Vector2>(input);
         FormatInput();
         HandleInput(input.magnitude, input.normalized, radius, cam);
         handle.anchoredPosition = input * radius * handleRange;
-        SendValueToControl<Vector2>((input * radius).normalized);
     }
 
     protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
