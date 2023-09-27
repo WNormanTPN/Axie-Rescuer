@@ -1002,7 +1002,7 @@ MonoBehaviour:
   MoveSpeed: 10
   RotationSpeed: 0.1
   MaxHealth: 100
-  Weapon: {fileID: 6582699522017449344, guid: affb12550157c9644a6819f919b01769, type: 3}
+  Weapon: {fileID: 7613660039384171917, guid: 6bda473d6df037f4395cb4b0aa6aa518, type: 3}
 --- !u!114 &565013272
 MonoBehaviour:
   m_ObjectHideFlags: 0

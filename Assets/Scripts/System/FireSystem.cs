@@ -154,23 +154,19 @@ namespace AxieRescuer
             Entity gunFlash;
             switch(WeaponType.Value)
             {
-                case WeaponTypeEnum.Bomb:
-                    
-
-                    break;
                 case WeaponTypeEnum.Shotgun:
-                    gunFlash = EntityManager.Instantiate(GunFlash.Entity);
-                    EntityManager.SetComponentData(gunFlash, new LocalTransform
+                    gunFlash = ECB.Instantiate(GunFlash.Entity);
+                    ECB.SetComponent(gunFlash, new LocalTransform
                     {
                         Position = GunFlash.Offset + StartPos,
                         Rotation = quaternion.LookRotationSafe(Direction, math.up()),
                         Scale = GunFlash.Scale,
                     });
-                    EntityManager.SetComponentData(gunFlash, new NeedDestroy
+                    ECB.SetComponent(gunFlash, new NeedDestroy
                     {
                         CountdownTime = 0.05f,
                     });
-                    EntityManager.SetComponentEnabled<NeedDestroy>(gunFlash, true);
+                    ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
 
 
                     var projectileCount = Random.NextInt(5, 10);
