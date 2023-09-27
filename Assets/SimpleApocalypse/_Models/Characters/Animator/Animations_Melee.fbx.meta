@@ -1,80 +1,197 @@
 fileFormatVersion: 2
 guid: ddf59738cd3fce848867929e0595edc5
-timeCreated: 1482021382
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Body_jnt
-    100004: Foot_Left_jnt
-    100006: Foot_Left_jnt1
-    100008: Foot_Right_jnt
-    100010: Foot_Right_jnt1
-    100012: Hand_Left_jnt
-    100014: Hand_Right_jnt
-    100016: Hat_jnt
-    100018: Hat_jnt1
-    100020: Head_jnt
-    100022: Hips_jnt
-    100024: LowerArm_Left_jnt
-    100026: LowerArm_Right_jnt
-    100028: LowerLeg_Left_jnt
-    100030: LowerLeg_Right_jnt
-    100032: Root_jnt
-    100034: Spine_jnt
-    100036: UpperArm_Left_jnt
-    100038: UpperArm_Right_jnt
-    100040: UpperLeg_Left_jnt
-    100042: UpperLeg_Right_jnt
-    400000: //RootNode
-    400002: Body_jnt
-    400004: Foot_Left_jnt
-    400006: Foot_Left_jnt1
-    400008: Foot_Right_jnt
-    400010: Foot_Right_jnt1
-    400012: Hand_Left_jnt
-    400014: Hand_Right_jnt
-    400016: Hat_jnt
-    400018: Hat_jnt1
-    400020: Head_jnt
-    400022: Hips_jnt
-    400024: LowerArm_Left_jnt
-    400026: LowerArm_Right_jnt
-    400028: LowerLeg_Left_jnt
-    400030: LowerLeg_Right_jnt
-    400032: Root_jnt
-    400034: Spine_jnt
-    400036: UpperArm_Left_jnt
-    400038: UpperArm_Right_jnt
-    400040: UpperLeg_Left_jnt
-    400042: UpperLeg_Right_jnt
-    7400000: Melee_OneHanded
-    7400002: Melee_TwoHanded
-    7400004: Melee_Stab
-    7400006: Bow_Idle
-    7400008: Bow_Load
-    7400010: Bow_Shoot
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Body_jnt
+  - first:
+      1: 100004
+    second: Foot_Left_jnt
+  - first:
+      1: 100006
+    second: Foot_Left_jnt1
+  - first:
+      1: 100008
+    second: Foot_Right_jnt
+  - first:
+      1: 100010
+    second: Foot_Right_jnt1
+  - first:
+      1: 100012
+    second: Hand_Left_jnt
+  - first:
+      1: 100014
+    second: Hand_Right_jnt
+  - first:
+      1: 100016
+    second: Hat_jnt
+  - first:
+      1: 100018
+    second: Hat_jnt1
+  - first:
+      1: 100020
+    second: Head_jnt
+  - first:
+      1: 100022
+    second: Hips_jnt
+  - first:
+      1: 100024
+    second: LowerArm_Left_jnt
+  - first:
+      1: 100026
+    second: LowerArm_Right_jnt
+  - first:
+      1: 100028
+    second: LowerLeg_Left_jnt
+  - first:
+      1: 100030
+    second: LowerLeg_Right_jnt
+  - first:
+      1: 100032
+    second: Root_jnt
+  - first:
+      1: 100034
+    second: Spine_jnt
+  - first:
+      1: 100036
+    second: UpperArm_Left_jnt
+  - first:
+      1: 100038
+    second: UpperArm_Right_jnt
+  - first:
+      1: 100040
+    second: UpperLeg_Left_jnt
+  - first:
+      1: 100042
+    second: UpperLeg_Right_jnt
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Body_jnt
+  - first:
+      4: 400004
+    second: Foot_Left_jnt
+  - first:
+      4: 400006
+    second: Foot_Left_jnt1
+  - first:
+      4: 400008
+    second: Foot_Right_jnt
+  - first:
+      4: 400010
+    second: Foot_Right_jnt1
+  - first:
+      4: 400012
+    second: Hand_Left_jnt
+  - first:
+      4: 400014
+    second: Hand_Right_jnt
+  - first:
+      4: 400016
+    second: Hat_jnt
+  - first:
+      4: 400018
+    second: Hat_jnt1
+  - first:
+      4: 400020
+    second: Head_jnt
+  - first:
+      4: 400022
+    second: Hips_jnt
+  - first:
+      4: 400024
+    second: LowerArm_Left_jnt
+  - first:
+      4: 400026
+    second: LowerArm_Right_jnt
+  - first:
+      4: 400028
+    second: LowerLeg_Left_jnt
+  - first:
+      4: 400030
+    second: LowerLeg_Right_jnt
+  - first:
+      4: 400032
+    second: Root_jnt
+  - first:
+      4: 400034
+    second: Spine_jnt
+  - first:
+      4: 400036
+    second: UpperArm_Left_jnt
+  - first:
+      4: 400038
+    second: UpperArm_Right_jnt
+  - first:
+      4: 400040
+    second: UpperLeg_Left_jnt
+  - first:
+      4: 400042
+    second: UpperLeg_Right_jnt
+  - first:
+      74: 7400000
+    second: Melee_OneHanded
+  - first:
+      74: 7400002
+    second: Melee_TwoHanded
+  - first:
+      74: 7400004
+    second: Melee_Stab
+  - first:
+      74: 7400006
+    second: Bow_Idle
+  - first:
+      74: 7400008
+    second: Bow_Load
+  - first:
+      74: 7400010
+    second: Bow_Shoot
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Body_jnt' has translation animation that
+      will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Melee_OneHanded
       takeName: Take 001
+      internalID: 0
       firstFrame: 810
       lastFrame: 845
       wrapMode: 0
@@ -82,6 +199,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -142,9 +260,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Melee_TwoHanded
       takeName: Take 001
+      internalID: 0
       firstFrame: 855
       lastFrame: 890
       wrapMode: 0
@@ -152,6 +272,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -212,9 +333,11 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Melee_Stab
       takeName: Take 001
+      internalID: 0
       firstFrame: 900
       lastFrame: 930
       wrapMode: 0
@@ -222,6 +345,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -282,9 +406,11 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Bow_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 940
       lastFrame: 990
       wrapMode: 0
@@ -292,6 +418,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -352,9 +479,11 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Bow_Load
       takeName: Take 001
+      internalID: 0
       firstFrame: 1000
       lastFrame: 1025
       wrapMode: 0
@@ -362,6 +491,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -422,9 +552,11 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Bow_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 1030
       lastFrame: 1100
       wrapMode: 0
@@ -432,6 +564,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
@@ -492,32 +625,56 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
-    isReadable: 0
+      additiveReferencePoseFrame: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 2
     tangentImportMode: 2
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human:
     - boneName: Hips_jnt
       humanName: Hips
@@ -681,126 +838,135 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: Animations_Melee(Clone)
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Root_jnt
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hips_jnt
-      position: {x: .00168260559, y: 1.03774917, z: -.00826595444}
-      rotation: {x: -.000730902422, y: -.0421281308, z: .252794385, w: .966602147}
+      parentName: 
+      position: {x: 0.0016826056, y: 1.0377492, z: -0.008265954}
+      rotation: {x: -0.0007309024, y: -0.04212813, z: 0.25279438, w: 0.96660215}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Body_jnt
-      position: {x: .0141042527, y: .0223129857, z: -.00589789264}
-      rotation: {x: .00660654576, y: .0336273015, z: -.856891155, w: .51435709}
+      parentName: 
+      position: {x: 0.014104253, y: 0.022312986, z: -0.0058978926}
+      rotation: {x: 0.0066065458, y: 0.0336273, z: -0.85689116, w: 0.5143571}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Spine_jnt
-      position: {x: -.67032522, y: 1.48842099e-16, z: 0}
-      rotation: {x: 0, y: -0, z: -1.66576822e-15, w: 1}
+      parentName: 
+      position: {x: -0.6703252, y: 1.488421e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -1.6657682e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Head_jnt
-      position: {x: -.31062609, y: 6.89728473e-17, z: 0}
-      rotation: {x: .0757951587, y: .00910171308, z: .0280000046, w: .996688664}
+      parentName: 
+      position: {x: -0.3106261, y: 6.897285e-17, z: 0}
+      rotation: {x: 0.07579516, y: 0.009101713, z: 0.028000005, w: 0.99668866}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hat_jnt
-      position: {x: -.542270958, y: 1.20408341e-16, z: 0}
-      rotation: {x: 3.58491237e-16, y: -1.38909221e-16, z: .707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.54227096, y: 1.2040834e-16, z: 0}
+      rotation: {x: 3.5849124e-16, y: -1.3890922e-16, z: 0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hat_jnt1
-      position: {x: -.542270958, y: 1.20408341e-16, z: 0}
-      rotation: {x: .707106829, y: .707106829, z: 1.57009256e-16, w: -2.43604876e-16}
+      parentName: 
+      position: {x: -0.54227096, y: 1.2040834e-16, z: 0}
+      rotation: {x: 0.7071068, y: 0.7071068, z: 1.5700926e-16, w: -2.4360488e-16}
       scale: {x: -1, y: -1, z: -1}
-      transformModified: 1
     - name: UpperArm_Left_jnt
-      position: {x: -.219108447, y: -.565231979, z: 0}
-      rotation: {x: -.1735387, y: .193713784, z: -.677246213, w: .688256502}
+      parentName: 
+      position: {x: -0.21910845, y: -0.565232, z: 0}
+      rotation: {x: -0.1735387, y: 0.19371378, z: -0.6772462, w: 0.6882565}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Left_jnt
-      position: {x: .471188009, y: -2.84217088e-16, z: 5.77040997e-17}
-      rotation: {x: .00207403256, y: -.0272488669, z: -.00677159149, w: .999603629}
+      parentName: 
+      position: {x: 0.471188, y: -2.842171e-16, z: 5.77041e-17}
+      rotation: {x: 0.0020740326, y: -0.027248867, z: -0.0067715915, w: 0.9996036}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Left_jnt
-      position: {x: .440299988, y: 0, z: 5.39208998e-17}
-      rotation: {x: -.0305715408, y: .996456921, z: -.00672820583, w: .0780623555}
+      parentName: 
+      position: {x: 0.4403, y: 0, z: 5.39209e-17}
+      rotation: {x: -0.03057154, y: 0.9964569, z: -0.006728206, w: 0.078062356}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperArm_Right_jnt
-      position: {x: -.219108447, y: .565231979, z: 0}
-      rotation: {x: -.650161743, y: .661050141, z: .275443852, w: -.25383696}
+      parentName: 
+      position: {x: -0.21910845, y: 0.565232, z: 0}
+      rotation: {x: -0.65016174, y: 0.66105014, z: 0.27544385, w: -0.25383696}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Right_jnt
-      position: {x: -.471189976, y: 5.68434176e-16, z: -5.77041328e-17}
-      rotation: {x: -.0387224704, y: -.0210619923, z: -.00599312363, w: .999010026}
+      parentName: 
+      position: {x: -0.47118998, y: 5.684342e-16, z: -5.770413e-17}
+      rotation: {x: -0.03872247, y: -0.021061992, z: -0.0059931236, w: 0.99901}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Right_jnt
-      position: {x: -.440299988, y: -8.52651264e-16, z: -5.39211976e-17}
-      rotation: {x: 6.77096234e-17, y: .993698835, z: -6.77096234e-17, w: .112083204}
+      parentName: 
+      position: {x: -0.4403, y: -8.5265126e-16, z: -5.3921198e-17}
+      rotation: {x: 6.7709623e-17, y: 0.99369884, z: -6.7709623e-17, w: 0.112083204}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Left_jnt
-      position: {x: -.256982446, y: -1.42108544e-16, z: 0}
-      rotation: {x: -.091892086, y: -.0234308559, z: .488119006, w: .867609739}
+      parentName: 
+      position: {x: -0.25698245, y: -1.4210854e-16, z: 0}
+      rotation: {x: -0.091892086, y: -0.023430856, z: 0.488119, w: 0.86760974}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Left_jnt
-      position: {x: -.374521643, y: -3.5527136e-17, z: -2.71050537e-22}
-      rotation: {x: -.707638562, y: 7.72403746e-06, z: -7.0297483e-06, w: .706574619}
+      parentName: 
+      position: {x: -0.37452164, y: -3.5527136e-17, z: -2.7105054e-22}
+      rotation: {x: -0.70763856, y: 0.0000077240375, z: -0.0000070297483, w: 0.7065746}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Left_jnt
-      position: {x: -.388743728, y: 1.22525682e-17, z: 7.34260656e-12}
-      rotation: {x: .55055815, y: .544998765, z: -.452087909, w: .442129761}
+      parentName: 
+      position: {x: -0.38874373, y: 1.2252568e-17, z: 7.3426066e-12}
+      rotation: {x: 0.55055815, y: 0.54499876, z: -0.4520879, w: 0.44212976}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Left_jnt1
-      position: {x: -6.72414988e-12, y: -.149733499, z: .219697013}
+      parentName: 
+      position: {x: -6.72415e-12, y: -0.1497335, z: 0.21969701}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Right_jnt
-      position: {x: .127638385, y: -.223043367, z: 0}
-      rotation: {x: -.52697438, y: .835821152, z: .0794017762, w: -.131895453}
+      parentName: 
+      position: {x: 0.12763838, y: -0.22304337, z: 0}
+      rotation: {x: -0.5269744, y: 0.83582115, z: 0.079401776, w: -0.13189545}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Right_jnt
-      position: {x: .374522001, y: 2.48689959e-16, z: -1.09874122e-12}
-      rotation: {x: -.694434047, y: -.0961280838, z: -.0991768017, w: .706176102}
+      parentName: 
+      position: {x: 0.374522, y: 2.4868996e-16, z: -1.0987412e-12}
+      rotation: {x: -0.69443405, y: -0.096128084, z: -0.0991768, w: 0.7061761}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Right_jnt
-      position: {x: .388743997, y: 8.19713481e-12, z: -3.69072238e-11}
-      rotation: {x: .495911717, y: .566249788, z: -.420576543, w: .506505787}
+      parentName: 
+      position: {x: 0.388744, y: 8.197135e-12, z: -3.6907224e-11}
+      rotation: {x: 0.49591172, y: 0.5662498, z: -0.42057654, w: 0.5065058}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Right_jnt1
-      position: {x: -3.4907971e-06, y: .149733305, z: -.219697013}
+      parentName: 
+      position: {x: -0.000003490797, y: 0.1497333, z: -0.21969701}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: dbbc53a6bc8f5c64bb234194ce1380aa,
-    type: 3}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

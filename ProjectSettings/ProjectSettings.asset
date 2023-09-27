@@ -136,7 +136,8 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.2.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 6aa0babe4c7db144199446e7967894f9, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -534,6 +535,8 @@ PlayerSettings:
     m_EncodingQuality: 0
   - m_BuildTarget: Standalone
     m_EncodingQuality: 2
+  - m_BuildTarget: WebGL
+    m_EncodingQuality: 1
   m_BuildTargetGroupHDRCubemapEncodingQuality:
   - m_BuildTarget: Android
     m_EncodingQuality: 1
@@ -791,13 +794,13 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 2
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLInitialMemorySize: 32
-  webGLMaximumMemorySize: 2048
+  webGLMaximumMemorySize: 4096
   webGLMemoryGrowthMode: 2
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
@@ -806,6 +809,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: UNITY_PHYSICS_CUSTOM;ENABLE_COMPUTE_DEFORMATIONS;UNITY_BURST_EXPERIMENTAL_ATOMIC_INTRINSICS
     Standalone: UNITY_PHYSICS_CUSTOM;AMPLIFY_SHADER_EDITOR;UNITY_BURST_EXPERIMENTAL_ATOMIC_INTRINSICS;ENABLE_COMPUTE_DEFORMATIONS
+    WebGL: UNITY_PHYSICS_CUSTOM;UNITY_BURST_EXPERIMENTAL_ATOMIC_INTRINSICS;ENABLE_COMPUTE_DEFORMATIONS;EXPERIMENTAL_SONAR_TIME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

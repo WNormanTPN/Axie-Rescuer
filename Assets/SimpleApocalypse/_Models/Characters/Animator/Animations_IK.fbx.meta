@@ -1,255 +1,728 @@
 fileFormatVersion: 2
 guid: 6e4b26fde7f77c046bed3bb532de26f1
 ModelImporter:
-  serializedVersion: 16
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Body_jnt
-    100004: Foot_Left_jnt
-    100006: Foot_Left_jnt1
-    100008: Foot_Right_jnt
-    100010: Foot_Right_jnt1
-    100012: Hand_Left_jnt
-    100014: Hand_Right_jnt
-    100016: Hat_jnt
-    100018: Hat_jnt1
-    100020: Head_jnt
-    100022: Hips_jnt
-    100024: LowerArm_Left_jnt
-    100026: LowerArm_Right_jnt
-    100028: LowerLeg_Left_jnt
-    100030: LowerLeg_Right_jnt
-    100032: Root_jnt
-    100034: Spine_jnt
-    100036: UpperArm_Left_jnt
-    100038: UpperArm_Right_jnt
-    100040: UpperLeg_Left_jnt
-    100042: UpperLeg_Right_jnt
-    100044: Body
-    100046: Foot_Left
-    100048: Foot_Right
-    100050: Hand_Left
-    100052: Hand_Right
-    100054: Head
-    100056: LowerArm_Left
-    100058: LowerArm_Right
-    100060: LowerBody
-    100062: LowerLeg_Left
-    100064: LowerLeg_Right
-    100066: Prop_FireFighterPack
-    100068: UpperArm_Left
-    100070: UpperArm_Left24
-    100072: UpperArm_Left25
-    100074: UpperArm_Right
-    100076: UpperArm_Right23
-    100078: UpperArm_Right24
-    100080: UpperLeg_Left
-    100082: UpperLeg_Right
-    100084: Weapon_AssultRifle01
-    100086: Weapon_AssultRifle02
-    100088: Weapon_FlashBang
-    100090: Weapon_Grenade
-    100092: Weapon_Pistol
-    100094: Weapon_Rifle
-    100096: Weapon_RPG
-    100098: Weapon_Shotgun
-    100100: Weapon_SmokeBomb
-    100102: Weapon_SniperRifle
-    100104: Weapon_SubMachineGun
-    100106: Weapons
-    100108: Weapon_Shield
-    400000: //RootNode
-    400002: Body_jnt
-    400004: Foot_Left_jnt
-    400006: Foot_Left_jnt1
-    400008: Foot_Right_jnt
-    400010: Foot_Right_jnt1
-    400012: Hand_Left_jnt
-    400014: Hand_Right_jnt
-    400016: Hat_jnt
-    400018: Hat_jnt1
-    400020: Head_jnt
-    400022: Hips_jnt
-    400024: LowerArm_Left_jnt
-    400026: LowerArm_Right_jnt
-    400028: LowerLeg_Left_jnt
-    400030: LowerLeg_Right_jnt
-    400032: Root_jnt
-    400034: Spine_jnt
-    400036: UpperArm_Left_jnt
-    400038: UpperArm_Right_jnt
-    400040: UpperLeg_Left_jnt
-    400042: UpperLeg_Right_jnt
-    400044: Body
-    400046: Foot_Left
-    400048: Foot_Right
-    400050: Hand_Left
-    400052: Hand_Right
-    400054: Head
-    400056: LowerArm_Left
-    400058: LowerArm_Right
-    400060: LowerBody
-    400062: LowerLeg_Left
-    400064: LowerLeg_Right
-    400066: Prop_FireFighterPack
-    400068: UpperArm_Left
-    400070: UpperArm_Left24
-    400072: UpperArm_Left25
-    400074: UpperArm_Right
-    400076: UpperArm_Right23
-    400078: UpperArm_Right24
-    400080: UpperLeg_Left
-    400082: UpperLeg_Right
-    400084: Weapon_AssultRifle01
-    400086: Weapon_AssultRifle02
-    400088: Weapon_FlashBang
-    400090: Weapon_Grenade
-    400092: Weapon_Pistol
-    400094: Weapon_Rifle
-    400096: Weapon_RPG
-    400098: Weapon_Shotgun
-    400100: Weapon_SmokeBomb
-    400102: Weapon_SniperRifle
-    400104: Weapon_SubMachineGun
-    400106: Weapons
-    400108: Weapon_Shield
-    2300000: Body
-    2300002: Foot_Left
-    2300004: Foot_Right
-    2300006: Hand_Left
-    2300008: Hand_Right
-    2300010: Head
-    2300012: LowerArm_Left
-    2300014: LowerArm_Right
-    2300016: LowerBody
-    2300018: LowerLeg_Left
-    2300020: LowerLeg_Right
-    2300022: Prop_FireFighterPack
-    2300024: UpperArm_Left
-    2300026: UpperArm_Left24
-    2300028: UpperArm_Left25
-    2300030: UpperArm_Right
-    2300032: UpperArm_Right23
-    2300034: UpperArm_Right24
-    2300036: UpperLeg_Left
-    2300038: UpperLeg_Right
-    2300040: Weapon_AssultRifle01
-    2300042: Weapon_AssultRifle02
-    2300044: Weapon_FlashBang
-    2300046: Weapon_Grenade
-    2300048: Weapon_Pistol
-    2300050: Weapon_Rifle
-    2300052: Weapon_RPG
-    2300054: Weapon_Shotgun
-    2300056: Weapon_SmokeBomb
-    2300058: Weapon_SniperRifle
-    2300060: Weapon_SubMachineGun
-    2300062: Weapon_Shield
-    3300000: Body
-    3300002: Foot_Left
-    3300004: Foot_Right
-    3300006: Hand_Left
-    3300008: Hand_Right
-    3300010: Head
-    3300012: LowerArm_Left
-    3300014: LowerArm_Right
-    3300016: LowerBody
-    3300018: LowerLeg_Left
-    3300020: LowerLeg_Right
-    3300022: Prop_FireFighterPack
-    3300024: UpperArm_Left
-    3300026: UpperArm_Left24
-    3300028: UpperArm_Left25
-    3300030: UpperArm_Right
-    3300032: UpperArm_Right23
-    3300034: UpperArm_Right24
-    3300036: UpperLeg_Left
-    3300038: UpperLeg_Right
-    3300040: Weapon_AssultRifle01
-    3300042: Weapon_AssultRifle02
-    3300044: Weapon_FlashBang
-    3300046: Weapon_Grenade
-    3300048: Weapon_Pistol
-    3300050: Weapon_Rifle
-    3300052: Weapon_RPG
-    3300054: Weapon_Shotgun
-    3300056: Weapon_SmokeBomb
-    3300058: Weapon_SniperRifle
-    3300060: Weapon_SubMachineGun
-    3300062: Weapon_Shield
-    4300000: Foot_Left
-    4300002: LowerLeg_Left
-    4300004: UpperLeg_Left
-    4300006: Foot_Right
-    4300008: LowerLeg_Right
-    4300010: UpperLeg_Right
-    4300012: Head
-    4300014: Hand_Right
-    4300016: Weapon_AssultRifle01
-    4300018: Weapon_AssultRifle02
-    4300020: Weapon_SubMachineGun
-    4300022: Weapon_Pistol
-    4300024: Weapon_Shotgun
-    4300026: Weapon_SniperRifle
-    4300028: Weapon_Rifle
-    4300030: Weapon_FlashBang
-    4300032: Weapon_SmokeBomb
-    4300034: Weapon_Grenade
-    4300036: Weapon_RPG
-    4300038: LowerArm_Right
-    4300040: UpperArm_Right
-    4300042: UpperArm_Left24
-    4300044: UpperArm_Right23
-    4300046: Hand_Left
-    4300048: LowerArm_Left
-    4300050: UpperArm_Left
-    4300052: UpperArm_Right24
-    4300054: UpperArm_Left25
-    4300056: Body
-    4300058: Prop_FireFighterPack
-    4300060: LowerBody
-    4300062: Weapon_Shield
-    7400000: Character_Handgun_Reload
-    7400002: Character_Handgun_Shoot
-    7400004: Character_Auto_SingleShot
-    7400006: Character_Auto_FullAuto_Shoot
-    7400008: Character_Auto_Reload
-    7400010: Character_SubMachineGun_SingleShot
-    7400012: Character_SubMachineGun_FullAuto_Shoot
-    7400014: Character_SubMachineGun_Reload
-    7400016: Character_Shotgun_Shoot
-    7400018: Character_Shotgun_Reload
-    7400020: Character_Rifle_Shoot_Reload
-    7400022: Character_RPG_Shoot
-    7400024: Character_Handgun_Idle
-    7400026: Character_Auto_Idle
-    7400028: Character_SubMachineGun_Idle
-    7400030: Character_Shotgun_Idle
-    7400032: Character_Rifle_Idle
-    7400034: CharacterUpper_RPG_Idle
-    7400036: Character_RPG_Idle
-    7400038: Character_MiniGun
-    7400040: Character_MiniGun_Idle
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Body_jnt
+  - first:
+      1: 100004
+    second: Foot_Left_jnt
+  - first:
+      1: 100006
+    second: Foot_Left_jnt1
+  - first:
+      1: 100008
+    second: Foot_Right_jnt
+  - first:
+      1: 100010
+    second: Foot_Right_jnt1
+  - first:
+      1: 100012
+    second: Hand_Left_jnt
+  - first:
+      1: 100014
+    second: Hand_Right_jnt
+  - first:
+      1: 100016
+    second: Hat_jnt
+  - first:
+      1: 100018
+    second: Hat_jnt1
+  - first:
+      1: 100020
+    second: Head_jnt
+  - first:
+      1: 100022
+    second: Hips_jnt
+  - first:
+      1: 100024
+    second: LowerArm_Left_jnt
+  - first:
+      1: 100026
+    second: LowerArm_Right_jnt
+  - first:
+      1: 100028
+    second: LowerLeg_Left_jnt
+  - first:
+      1: 100030
+    second: LowerLeg_Right_jnt
+  - first:
+      1: 100032
+    second: Root_jnt
+  - first:
+      1: 100034
+    second: Spine_jnt
+  - first:
+      1: 100036
+    second: UpperArm_Left_jnt
+  - first:
+      1: 100038
+    second: UpperArm_Right_jnt
+  - first:
+      1: 100040
+    second: UpperLeg_Left_jnt
+  - first:
+      1: 100042
+    second: UpperLeg_Right_jnt
+  - first:
+      1: 100044
+    second: Body
+  - first:
+      1: 100046
+    second: Foot_Left
+  - first:
+      1: 100048
+    second: Foot_Right
+  - first:
+      1: 100050
+    second: Hand_Left
+  - first:
+      1: 100052
+    second: Hand_Right
+  - first:
+      1: 100054
+    second: Head
+  - first:
+      1: 100056
+    second: LowerArm_Left
+  - first:
+      1: 100058
+    second: LowerArm_Right
+  - first:
+      1: 100060
+    second: LowerBody
+  - first:
+      1: 100062
+    second: LowerLeg_Left
+  - first:
+      1: 100064
+    second: LowerLeg_Right
+  - first:
+      1: 100066
+    second: Prop_FireFighterPack
+  - first:
+      1: 100068
+    second: UpperArm_Left
+  - first:
+      1: 100070
+    second: UpperArm_Left24
+  - first:
+      1: 100072
+    second: UpperArm_Left25
+  - first:
+      1: 100074
+    second: UpperArm_Right
+  - first:
+      1: 100076
+    second: UpperArm_Right23
+  - first:
+      1: 100078
+    second: UpperArm_Right24
+  - first:
+      1: 100080
+    second: UpperLeg_Left
+  - first:
+      1: 100082
+    second: UpperLeg_Right
+  - first:
+      1: 100084
+    second: Weapon_AssultRifle01
+  - first:
+      1: 100086
+    second: Weapon_AssultRifle02
+  - first:
+      1: 100088
+    second: Weapon_FlashBang
+  - first:
+      1: 100090
+    second: Weapon_Grenade
+  - first:
+      1: 100092
+    second: Weapon_Pistol
+  - first:
+      1: 100094
+    second: Weapon_Rifle
+  - first:
+      1: 100096
+    second: Weapon_RPG
+  - first:
+      1: 100098
+    second: Weapon_Shotgun
+  - first:
+      1: 100100
+    second: Weapon_SmokeBomb
+  - first:
+      1: 100102
+    second: Weapon_SniperRifle
+  - first:
+      1: 100104
+    second: Weapon_SubMachineGun
+  - first:
+      1: 100106
+    second: Weapons
+  - first:
+      1: 100108
+    second: Weapon_Shield
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Body_jnt
+  - first:
+      4: 400004
+    second: Foot_Left_jnt
+  - first:
+      4: 400006
+    second: Foot_Left_jnt1
+  - first:
+      4: 400008
+    second: Foot_Right_jnt
+  - first:
+      4: 400010
+    second: Foot_Right_jnt1
+  - first:
+      4: 400012
+    second: Hand_Left_jnt
+  - first:
+      4: 400014
+    second: Hand_Right_jnt
+  - first:
+      4: 400016
+    second: Hat_jnt
+  - first:
+      4: 400018
+    second: Hat_jnt1
+  - first:
+      4: 400020
+    second: Head_jnt
+  - first:
+      4: 400022
+    second: Hips_jnt
+  - first:
+      4: 400024
+    second: LowerArm_Left_jnt
+  - first:
+      4: 400026
+    second: LowerArm_Right_jnt
+  - first:
+      4: 400028
+    second: LowerLeg_Left_jnt
+  - first:
+      4: 400030
+    second: LowerLeg_Right_jnt
+  - first:
+      4: 400032
+    second: Root_jnt
+  - first:
+      4: 400034
+    second: Spine_jnt
+  - first:
+      4: 400036
+    second: UpperArm_Left_jnt
+  - first:
+      4: 400038
+    second: UpperArm_Right_jnt
+  - first:
+      4: 400040
+    second: UpperLeg_Left_jnt
+  - first:
+      4: 400042
+    second: UpperLeg_Right_jnt
+  - first:
+      4: 400044
+    second: Body
+  - first:
+      4: 400046
+    second: Foot_Left
+  - first:
+      4: 400048
+    second: Foot_Right
+  - first:
+      4: 400050
+    second: Hand_Left
+  - first:
+      4: 400052
+    second: Hand_Right
+  - first:
+      4: 400054
+    second: Head
+  - first:
+      4: 400056
+    second: LowerArm_Left
+  - first:
+      4: 400058
+    second: LowerArm_Right
+  - first:
+      4: 400060
+    second: LowerBody
+  - first:
+      4: 400062
+    second: LowerLeg_Left
+  - first:
+      4: 400064
+    second: LowerLeg_Right
+  - first:
+      4: 400066
+    second: Prop_FireFighterPack
+  - first:
+      4: 400068
+    second: UpperArm_Left
+  - first:
+      4: 400070
+    second: UpperArm_Left24
+  - first:
+      4: 400072
+    second: UpperArm_Left25
+  - first:
+      4: 400074
+    second: UpperArm_Right
+  - first:
+      4: 400076
+    second: UpperArm_Right23
+  - first:
+      4: 400078
+    second: UpperArm_Right24
+  - first:
+      4: 400080
+    second: UpperLeg_Left
+  - first:
+      4: 400082
+    second: UpperLeg_Right
+  - first:
+      4: 400084
+    second: Weapon_AssultRifle01
+  - first:
+      4: 400086
+    second: Weapon_AssultRifle02
+  - first:
+      4: 400088
+    second: Weapon_FlashBang
+  - first:
+      4: 400090
+    second: Weapon_Grenade
+  - first:
+      4: 400092
+    second: Weapon_Pistol
+  - first:
+      4: 400094
+    second: Weapon_Rifle
+  - first:
+      4: 400096
+    second: Weapon_RPG
+  - first:
+      4: 400098
+    second: Weapon_Shotgun
+  - first:
+      4: 400100
+    second: Weapon_SmokeBomb
+  - first:
+      4: 400102
+    second: Weapon_SniperRifle
+  - first:
+      4: 400104
+    second: Weapon_SubMachineGun
+  - first:
+      4: 400106
+    second: Weapons
+  - first:
+      4: 400108
+    second: Weapon_Shield
+  - first:
+      23: 2300000
+    second: Body
+  - first:
+      23: 2300002
+    second: Foot_Left
+  - first:
+      23: 2300004
+    second: Foot_Right
+  - first:
+      23: 2300006
+    second: Hand_Left
+  - first:
+      23: 2300008
+    second: Hand_Right
+  - first:
+      23: 2300010
+    second: Head
+  - first:
+      23: 2300012
+    second: LowerArm_Left
+  - first:
+      23: 2300014
+    second: LowerArm_Right
+  - first:
+      23: 2300016
+    second: LowerBody
+  - first:
+      23: 2300018
+    second: LowerLeg_Left
+  - first:
+      23: 2300020
+    second: LowerLeg_Right
+  - first:
+      23: 2300022
+    second: Prop_FireFighterPack
+  - first:
+      23: 2300024
+    second: UpperArm_Left
+  - first:
+      23: 2300026
+    second: UpperArm_Left24
+  - first:
+      23: 2300028
+    second: UpperArm_Left25
+  - first:
+      23: 2300030
+    second: UpperArm_Right
+  - first:
+      23: 2300032
+    second: UpperArm_Right23
+  - first:
+      23: 2300034
+    second: UpperArm_Right24
+  - first:
+      23: 2300036
+    second: UpperLeg_Left
+  - first:
+      23: 2300038
+    second: UpperLeg_Right
+  - first:
+      23: 2300040
+    second: Weapon_AssultRifle01
+  - first:
+      23: 2300042
+    second: Weapon_AssultRifle02
+  - first:
+      23: 2300044
+    second: Weapon_FlashBang
+  - first:
+      23: 2300046
+    second: Weapon_Grenade
+  - first:
+      23: 2300048
+    second: Weapon_Pistol
+  - first:
+      23: 2300050
+    second: Weapon_Rifle
+  - first:
+      23: 2300052
+    second: Weapon_RPG
+  - first:
+      23: 2300054
+    second: Weapon_Shotgun
+  - first:
+      23: 2300056
+    second: Weapon_SmokeBomb
+  - first:
+      23: 2300058
+    second: Weapon_SniperRifle
+  - first:
+      23: 2300060
+    second: Weapon_SubMachineGun
+  - first:
+      23: 2300062
+    second: Weapon_Shield
+  - first:
+      33: 3300000
+    second: Body
+  - first:
+      33: 3300002
+    second: Foot_Left
+  - first:
+      33: 3300004
+    second: Foot_Right
+  - first:
+      33: 3300006
+    second: Hand_Left
+  - first:
+      33: 3300008
+    second: Hand_Right
+  - first:
+      33: 3300010
+    second: Head
+  - first:
+      33: 3300012
+    second: LowerArm_Left
+  - first:
+      33: 3300014
+    second: LowerArm_Right
+  - first:
+      33: 3300016
+    second: LowerBody
+  - first:
+      33: 3300018
+    second: LowerLeg_Left
+  - first:
+      33: 3300020
+    second: LowerLeg_Right
+  - first:
+      33: 3300022
+    second: Prop_FireFighterPack
+  - first:
+      33: 3300024
+    second: UpperArm_Left
+  - first:
+      33: 3300026
+    second: UpperArm_Left24
+  - first:
+      33: 3300028
+    second: UpperArm_Left25
+  - first:
+      33: 3300030
+    second: UpperArm_Right
+  - first:
+      33: 3300032
+    second: UpperArm_Right23
+  - first:
+      33: 3300034
+    second: UpperArm_Right24
+  - first:
+      33: 3300036
+    second: UpperLeg_Left
+  - first:
+      33: 3300038
+    second: UpperLeg_Right
+  - first:
+      33: 3300040
+    second: Weapon_AssultRifle01
+  - first:
+      33: 3300042
+    second: Weapon_AssultRifle02
+  - first:
+      33: 3300044
+    second: Weapon_FlashBang
+  - first:
+      33: 3300046
+    second: Weapon_Grenade
+  - first:
+      33: 3300048
+    second: Weapon_Pistol
+  - first:
+      33: 3300050
+    second: Weapon_Rifle
+  - first:
+      33: 3300052
+    second: Weapon_RPG
+  - first:
+      33: 3300054
+    second: Weapon_Shotgun
+  - first:
+      33: 3300056
+    second: Weapon_SmokeBomb
+  - first:
+      33: 3300058
+    second: Weapon_SniperRifle
+  - first:
+      33: 3300060
+    second: Weapon_SubMachineGun
+  - first:
+      33: 3300062
+    second: Weapon_Shield
+  - first:
+      43: 4300000
+    second: Foot_Left
+  - first:
+      43: 4300002
+    second: LowerLeg_Left
+  - first:
+      43: 4300004
+    second: UpperLeg_Left
+  - first:
+      43: 4300006
+    second: Foot_Right
+  - first:
+      43: 4300008
+    second: LowerLeg_Right
+  - first:
+      43: 4300010
+    second: UpperLeg_Right
+  - first:
+      43: 4300012
+    second: Head
+  - first:
+      43: 4300014
+    second: Hand_Right
+  - first:
+      43: 4300016
+    second: Weapon_AssultRifle01
+  - first:
+      43: 4300018
+    second: Weapon_AssultRifle02
+  - first:
+      43: 4300020
+    second: Weapon_SubMachineGun
+  - first:
+      43: 4300022
+    second: Weapon_Pistol
+  - first:
+      43: 4300024
+    second: Weapon_Shotgun
+  - first:
+      43: 4300026
+    second: Weapon_SniperRifle
+  - first:
+      43: 4300028
+    second: Weapon_Rifle
+  - first:
+      43: 4300030
+    second: Weapon_FlashBang
+  - first:
+      43: 4300032
+    second: Weapon_SmokeBomb
+  - first:
+      43: 4300034
+    second: Weapon_Grenade
+  - first:
+      43: 4300036
+    second: Weapon_RPG
+  - first:
+      43: 4300038
+    second: LowerArm_Right
+  - first:
+      43: 4300040
+    second: UpperArm_Right
+  - first:
+      43: 4300042
+    second: UpperArm_Left24
+  - first:
+      43: 4300044
+    second: UpperArm_Right23
+  - first:
+      43: 4300046
+    second: Hand_Left
+  - first:
+      43: 4300048
+    second: LowerArm_Left
+  - first:
+      43: 4300050
+    second: UpperArm_Left
+  - first:
+      43: 4300052
+    second: UpperArm_Right24
+  - first:
+      43: 4300054
+    second: UpperArm_Left25
+  - first:
+      43: 4300056
+    second: Body
+  - first:
+      43: 4300058
+    second: Prop_FireFighterPack
+  - first:
+      43: 4300060
+    second: LowerBody
+  - first:
+      43: 4300062
+    second: Weapon_Shield
+  - first:
+      74: 7400000
+    second: Character_Handgun_Reload
+  - first:
+      74: 7400002
+    second: Character_Handgun_Shoot
+  - first:
+      74: 7400004
+    second: Character_Auto_SingleShot
+  - first:
+      74: 7400006
+    second: Character_Auto_FullAuto_Shoot
+  - first:
+      74: 7400008
+    second: Character_Auto_Reload
+  - first:
+      74: 7400010
+    second: Character_SubMachineGun_SingleShot
+  - first:
+      74: 7400012
+    second: Character_SubMachineGun_FullAuto_Shoot
+  - first:
+      74: 7400014
+    second: Character_SubMachineGun_Reload
+  - first:
+      74: 7400016
+    second: Character_Shotgun_Shoot
+  - first:
+      74: 7400018
+    second: Character_Shotgun_Reload
+  - first:
+      74: 7400020
+    second: Character_Rifle_Shoot_Reload
+  - first:
+      74: 7400022
+    second: Character_RPG_Shoot
+  - first:
+      74: 7400024
+    second: Character_Handgun_Idle
+  - first:
+      74: 7400026
+    second: Character_Auto_Idle
+  - first:
+      74: 7400028
+    second: Character_SubMachineGun_Idle
+  - first:
+      74: 7400030
+    second: Character_Shotgun_Idle
+  - first:
+      74: 7400032
+    second: Character_Rifle_Idle
+  - first:
+      74: 7400034
+    second: CharacterUpper_RPG_Idle
+  - first:
+      74: 7400036
+    second: Character_RPG_Idle
+  - first:
+      74: 7400038
+    second: Character_MiniGun
+  - first:
+      74: 7400040
+    second: Character_MiniGun_Idle
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Body_jnt' has translation animation that
+      will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Character_Handgun_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 5
       lastFrame: 22
       wrapMode: 0
@@ -257,6 +730,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -269,13 +743,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Handgun_Shoot
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Handgun_Reload
       takeName: Take 001
+      internalID: 0
       firstFrame: 23
       lastFrame: 70
       wrapMode: 0
@@ -283,6 +766,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -295,13 +779,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Handgun_Reload
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Auto_SingleShot
       takeName: Take 001
+      internalID: 0
       firstFrame: 72
       lastFrame: 88
       wrapMode: 0
@@ -309,6 +802,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -321,13 +815,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Autogun_Shoot
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Auto_FullAuto_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 92
       lastFrame: 100
       wrapMode: 0
@@ -335,6 +838,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -351,9 +855,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Auto_Reload
       takeName: Take 001
+      internalID: 0
       firstFrame: 101
       lastFrame: 159
       wrapMode: 0
@@ -361,6 +867,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -373,13 +880,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Autogun_Reload
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_SubMachineGun_SingleShot
       takeName: Take 001
+      internalID: 0
       firstFrame: 183
       lastFrame: 190
       wrapMode: 0
@@ -387,6 +903,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -399,13 +916,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Submachinegun_Shoot
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_SubMachineGun_FullAuto_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 181
       lastFrame: 190
       wrapMode: 0
@@ -413,6 +939,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -429,9 +956,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_SubMachineGun_Reload
       takeName: Take 001
+      internalID: 0
       firstFrame: 192
       lastFrame: 250
       wrapMode: 0
@@ -439,6 +968,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -451,13 +981,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Submachinegun_Reload
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Shotgun_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 251
       lastFrame: 271
       wrapMode: 0
@@ -465,6 +1004,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -477,13 +1017,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Shotgun_Shoot
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Shotgun_Reload
       takeName: Take 001
+      internalID: 0
       firstFrame: 272
       lastFrame: 300
       wrapMode: 0
@@ -491,6 +1040,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -503,13 +1053,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Shotgun_Reload
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Rifle_Shoot_Reload
       takeName: Take 001
+      internalID: 0
       firstFrame: 301
       lastFrame: 400
       wrapMode: 0
@@ -517,6 +1076,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -529,13 +1089,22 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: Rifle_ShootAndReload
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_RPG_Shoot
       takeName: Take 001
+      internalID: 0
       firstFrame: 401
       lastFrame: 428
       wrapMode: 0
@@ -543,6 +1112,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -559,9 +1129,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Handgun_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 6
       lastFrame: 7
       wrapMode: 0
@@ -569,6 +1141,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -585,9 +1158,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Auto_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 72
       lastFrame: 73
       wrapMode: 0
@@ -595,6 +1170,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -611,9 +1187,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_SubMachineGun_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 162
       lastFrame: 163
       wrapMode: 0
@@ -621,6 +1199,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -637,16 +1216,19 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Shotgun_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 252
-      lastFrame: 252.100006
+      lastFrame: 252.1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -663,9 +1245,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_Rifle_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 302
       lastFrame: 303
       wrapMode: 0
@@ -673,6 +1257,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -689,16 +1274,19 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_RPG_Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 401
-      lastFrame: 401.100006
+      lastFrame: 401.1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -715,9 +1303,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_MiniGun
       takeName: Take 001
+      internalID: 0
       firstFrame: 432
       lastFrame: 440
       wrapMode: 0
@@ -725,6 +1315,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -785,16 +1376,19 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Character_MiniGun_Idle
       takeName: Take 001
-      firstFrame: 432.899994
+      internalID: 0
+      firstFrame: 432.9
       lastFrame: 433
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -855,30 +1449,56 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
+    useFileScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 0
     normalImportMode: 2
     tangentImportMode: 2
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
+    serializedVersion: 3
     human:
     - boneName: Hips_jnt
       humanName: Hips
@@ -1026,115 +1646,127 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: Animations(Clone)
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Root_jnt
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hips_jnt
-      position: {x: -0, y: 1.04498756, z: 0}
-      rotation: {x: -.0104445312, y: -.0388307907, z: .259533554, w: .964896619}
+      parentName: 
+      position: {x: -0, y: 1.0449876, z: 0}
+      rotation: {x: -0.010444531, y: -0.03883079, z: 0.25953355, w: 0.9648966}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Body_jnt
-      position: {x: .00955589768, y: .0164783578, z: 5.01227321e-18}
-      rotation: {x: .0130837308, y: -.0227118693, z: .86620599, w: -.498999268}
+      parentName: 
+      position: {x: 0.009555898, y: 0.016478358, z: 5.0122732e-18}
+      rotation: {x: 0.013083731, y: -0.02271187, z: 0.866206, w: -0.49899927}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Spine_jnt
-      position: {x: -.67032522, y: 1.48842099e-16, z: 0}
-      rotation: {x: 0, y: -0, z: -1.66576822e-15, w: 1}
+      parentName: 
+      position: {x: -0.6703252, y: 1.488421e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -1.6657682e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Head_jnt
-      position: {x: -.31062609, y: 6.89728473e-17, z: 0}
-      rotation: {x: 0, y: -0, z: -1.99840123e-15, w: 1}
+      parentName: 
+      position: {x: -0.3106261, y: 6.897285e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -1.9984012e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hat_jnt
-      position: {x: -.542270958, y: 1.20408341e-16, z: 0}
-      rotation: {x: 3.59387212e-16, y: -1.40466451e-16, z: .707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.54227096, y: 1.2040834e-16, z: 0}
+      rotation: {x: 3.593872e-16, y: -1.4046645e-16, z: 0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hat_jnt1
-      position: {x: -.542270958, y: 1.20408341e-16, z: 0}
-      rotation: {x: 4.04521998e-16, y: -9.77849576e-17, z: .707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.54227096, y: 1.2040834e-16, z: 0}
+      rotation: {x: 4.04522e-16, y: -9.778496e-17, z: 0.7071068, w: 0.7071068}
       scale: {x: -1, y: -1, z: -1}
-      transformModified: 1
     - name: UpperArm_Left_jnt
-      position: {x: -.219108447, y: -.565231979, z: 0}
-      rotation: {x: 0, y: -0, z: -.707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.21910845, y: -0.565232, z: 0}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Left_jnt
-      position: {x: .471188009, y: -2.84217088e-16, z: 5.77040997e-17}
-      rotation: {x: 0, y: -0, z: -3.33066907e-15, w: 1}
+      parentName: 
+      position: {x: 0.471188, y: -2.842171e-16, z: 5.77041e-17}
+      rotation: {x: 0, y: -0, z: -3.330669e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Left_jnt
-      position: {x: .440299988, y: 0, z: 5.39208998e-17}
-      rotation: {x: 6.12323426e-17, y: 1, z: -6.12323426e-17, w: -2.28167848e-15}
+      parentName: 
+      position: {x: 0.4403, y: 0, z: 5.39209e-17}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -2.2816785e-15}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperArm_Right_jnt
-      position: {x: -.219108447, y: .565231979, z: 0}
-      rotation: {x: .707106829, y: -.707106829, z: 8.65956127e-17, w: 0}
+      parentName: 
+      position: {x: -0.21910845, y: 0.565232, z: 0}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 8.659561e-17, w: 0}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Right_jnt
-      position: {x: -.471189976, y: 5.68434176e-16, z: -5.77041328e-17}
-      rotation: {x: -6.62765696e-19, y: -3.58692211e-21, z: 5.02202446e-16, w: 1}
+      parentName: 
+      position: {x: -0.47118998, y: 5.684342e-16, z: -5.770413e-17}
+      rotation: {x: -6.627657e-19, y: -3.586922e-21, z: 5.0220245e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Right_jnt
-      position: {x: -.440299988, y: -8.52651264e-16, z: -5.39211976e-17}
-      rotation: {x: 6.12323426e-17, y: 1, z: -6.12323426e-17, w: 1.83758927e-15}
+      parentName: 
+      position: {x: -0.4403, y: -8.5265126e-16, z: -5.3921198e-17}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 1.8375893e-15}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Left_jnt
-      position: {x: -.256982446, y: -1.42108544e-16, z: 0}
-      rotation: {x: .0286495741, y: .0300121363, z: .498748749, w: .865752995}
+      parentName: 
+      position: {x: -0.25698245, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0.028649574, y: 0.030012136, z: 0.49874875, w: 0.865753}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Left_jnt
-      position: {x: -.374521643, y: -3.5527136e-17, z: -2.71050537e-22}
-      rotation: {x: -.707590222, y: 6.44689135e-06, z: -6.14591227e-06, w: .706623018}
+      parentName: 
+      position: {x: -0.37452164, y: -3.5527136e-17, z: -2.7105054e-22}
+      rotation: {x: -0.7075902, y: 0.0000064468913, z: -0.0000061459123, w: 0.706623}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Left_jnt
-      position: {x: -.388743728, y: 1.22525682e-17, z: 7.34260656e-12}
-      rotation: {x: .506745458, y: .494267881, z: -.505197346, w: .493643671}
+      parentName: 
+      position: {x: -0.38874373, y: 1.2252568e-17, z: 7.3426066e-12}
+      rotation: {x: 0.50674546, y: 0.49426788, z: -0.50519735, w: 0.49364367}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Right_jnt
-      position: {x: .127638385, y: -.223043367, z: 0}
-      rotation: {x: -.498678356, y: .865429282, z: .0466289222, w: -.0133334827}
+      parentName: 
+      position: {x: 0.12763838, y: -0.22304337, z: 0}
+      rotation: {x: -0.49867836, y: 0.8654293, z: 0.046628922, w: -0.013333483}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Right_jnt
-      position: {x: .374522001, y: 2.48689959e-16, z: -1.09874122e-12}
-      rotation: {x: -.704109967, y: -3.09605057e-05, z: 5.18196284e-05, w: .710090995}
+      parentName: 
+      position: {x: 0.374522, y: 2.4868996e-16, z: -1.0987412e-12}
+      rotation: {x: -0.70410997, y: -0.000030960506, z: 0.00005181963, w: 0.710091}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Right_jnt
-      position: {x: .388743997, y: 8.19713481e-12, z: -3.69072238e-11}
-      rotation: {x: .495834172, y: .506727397, z: -.492732584, w: .50456953}
+      parentName: 
+      position: {x: 0.388744, y: 8.197135e-12, z: -3.6907224e-11}
+      rotation: {x: 0.49583417, y: 0.5067274, z: -0.49273258, w: 0.50456953}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    armTwist: .541999996
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.542
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: Root_jnt
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d55a3dafe23105e409ee70d6605cbd49,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 1
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

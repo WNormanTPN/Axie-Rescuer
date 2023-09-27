@@ -1,171 +1,455 @@
 fileFormatVersion: 2
 guid: 255377ae1700518438342ed74889e165
 ModelImporter:
-  serializedVersion: 16
-  fileIDToRecycleName:
-    100000: Base_mesh
-    100002: Body_jnt
-    100004: BombDisposal_mesh
-    100006: Female_mesh
-    100008: FemaleMedic_mesh
-    100010: Foot_Left_jnt
-    100012: Foot_Right_jnt
-    100014: GasMask_mesh
-    100016: Hand_Left_jnt
-    100018: Hand_Right_jnt
-    100020: Hat_jnt
-    100022: Head_jnt
-    100024: Hips_jnt
-    100026: JungleCommando_mesh
-    100028: LowerArm_Left_jnt
-    100030: LowerArm_Right_jnt
-    100032: LowerLeg_Left_jnt
-    100034: LowerLeg_Right_jnt
-    100036: Medic_mesh
-    100038: Mercenary_mesh
-    100040: Officer_mesh
-    100042: Pilot_mesh
-    100044: Root_jnt
-    100046: //RootNode
-    100048: Soldier_01_mesh
-    100050: Soldier_02_mesh
-    100052: Soldier_03_mesh
-    100054: SpecialForces_01_mesh
-    100056: SpecialForces_02_mesh
-    100058: SpecialForces_03_mesh
-    100060: SpecialForces_04_mesh
-    100062: Spine_jnt
-    100064: Terrorist_01_mesh
-    100066: Terrorist_02_mesh
-    100068: Terrorist_03_mesh
-    100070: Terrorist_04_mesh
-    100072: UpperArm_Left_jnt
-    100074: UpperArm_Right_jnt
-    100076: UpperLeg_Left_jnt
-    100078: UpperLeg_Right_jnt
-    400000: Base_mesh
-    400002: Body_jnt
-    400004: BombDisposal_mesh
-    400006: Female_mesh
-    400008: FemaleMedic_mesh
-    400010: Foot_Left_jnt
-    400012: Foot_Right_jnt
-    400014: GasMask_mesh
-    400016: Hand_Left_jnt
-    400018: Hand_Right_jnt
-    400020: Hat_jnt
-    400022: Head_jnt
-    400024: Hips_jnt
-    400026: JungleCommando_mesh
-    400028: LowerArm_Left_jnt
-    400030: LowerArm_Right_jnt
-    400032: LowerLeg_Left_jnt
-    400034: LowerLeg_Right_jnt
-    400036: Medic_mesh
-    400038: Mercenary_mesh
-    400040: Officer_mesh
-    400042: Pilot_mesh
-    400044: Root_jnt
-    400046: //RootNode
-    400048: Soldier_01_mesh
-    400050: Soldier_02_mesh
-    400052: Soldier_03_mesh
-    400054: SpecialForces_01_mesh
-    400056: SpecialForces_02_mesh
-    400058: SpecialForces_03_mesh
-    400060: SpecialForces_04_mesh
-    400062: Spine_jnt
-    400064: Terrorist_01_mesh
-    400066: Terrorist_02_mesh
-    400068: Terrorist_03_mesh
-    400070: Terrorist_04_mesh
-    400072: UpperArm_Left_jnt
-    400074: UpperArm_Right_jnt
-    400076: UpperLeg_Left_jnt
-    400078: UpperLeg_Right_jnt
-    4300000: Base_mesh
-    4300002: Terrorist_04_mesh
-    4300004: Terrorist_03_mesh
-    4300006: Terrorist_02_mesh
-    4300008: Terrorist_01_mesh
-    4300010: Female_mesh
-    4300012: JungleCommando_mesh
-    4300014: FemaleMedic_mesh
-    4300016: GasMask_mesh
-    4300018: SpecialForces_04_mesh
-    4300020: SpecialForces_03_mesh
-    4300022: SpecialForces_02_mesh
-    4300024: SpecialForces_01_mesh
-    4300026: Pilot_mesh
-    4300028: Mercenary_mesh
-    4300030: Officer_mesh
-    4300032: Soldier_03_mesh
-    4300034: Soldier_02_mesh
-    4300036: Soldier_01_mesh
-    4300038: BombDisposal_mesh
-    4300040: Medic_mesh
-    9500000: //RootNode
-    13700000: Base_mesh
-    13700002: BombDisposal_mesh
-    13700004: Female_mesh
-    13700006: FemaleMedic_mesh
-    13700008: GasMask_mesh
-    13700010: JungleCommando_mesh
-    13700012: Medic_mesh
-    13700014: Mercenary_mesh
-    13700016: Officer_mesh
-    13700018: Pilot_mesh
-    13700020: Soldier_01_mesh
-    13700022: Soldier_02_mesh
-    13700024: Soldier_03_mesh
-    13700026: SpecialForces_01_mesh
-    13700028: SpecialForces_02_mesh
-    13700030: SpecialForces_03_mesh
-    13700032: SpecialForces_04_mesh
-    13700034: Terrorist_01_mesh
-    13700036: Terrorist_02_mesh
-    13700038: Terrorist_03_mesh
-    13700040: Terrorist_04_mesh
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Base_mesh
+  - first:
+      1: 100002
+    second: Body_jnt
+  - first:
+      1: 100004
+    second: BombDisposal_mesh
+  - first:
+      1: 100006
+    second: Female_mesh
+  - first:
+      1: 100008
+    second: FemaleMedic_mesh
+  - first:
+      1: 100010
+    second: Foot_Left_jnt
+  - first:
+      1: 100012
+    second: Foot_Right_jnt
+  - first:
+      1: 100014
+    second: GasMask_mesh
+  - first:
+      1: 100016
+    second: Hand_Left_jnt
+  - first:
+      1: 100018
+    second: Hand_Right_jnt
+  - first:
+      1: 100020
+    second: Hat_jnt
+  - first:
+      1: 100022
+    second: Head_jnt
+  - first:
+      1: 100024
+    second: Hips_jnt
+  - first:
+      1: 100026
+    second: JungleCommando_mesh
+  - first:
+      1: 100028
+    second: LowerArm_Left_jnt
+  - first:
+      1: 100030
+    second: LowerArm_Right_jnt
+  - first:
+      1: 100032
+    second: LowerLeg_Left_jnt
+  - first:
+      1: 100034
+    second: LowerLeg_Right_jnt
+  - first:
+      1: 100036
+    second: Medic_mesh
+  - first:
+      1: 100038
+    second: Mercenary_mesh
+  - first:
+      1: 100040
+    second: Officer_mesh
+  - first:
+      1: 100042
+    second: Pilot_mesh
+  - first:
+      1: 100044
+    second: Root_jnt
+  - first:
+      1: 100046
+    second: //RootNode
+  - first:
+      1: 100048
+    second: Soldier_01_mesh
+  - first:
+      1: 100050
+    second: Soldier_02_mesh
+  - first:
+      1: 100052
+    second: Soldier_03_mesh
+  - first:
+      1: 100054
+    second: SpecialForces_01_mesh
+  - first:
+      1: 100056
+    second: SpecialForces_02_mesh
+  - first:
+      1: 100058
+    second: SpecialForces_03_mesh
+  - first:
+      1: 100060
+    second: SpecialForces_04_mesh
+  - first:
+      1: 100062
+    second: Spine_jnt
+  - first:
+      1: 100064
+    second: Terrorist_01_mesh
+  - first:
+      1: 100066
+    second: Terrorist_02_mesh
+  - first:
+      1: 100068
+    second: Terrorist_03_mesh
+  - first:
+      1: 100070
+    second: Terrorist_04_mesh
+  - first:
+      1: 100072
+    second: UpperArm_Left_jnt
+  - first:
+      1: 100074
+    second: UpperArm_Right_jnt
+  - first:
+      1: 100076
+    second: UpperLeg_Left_jnt
+  - first:
+      1: 100078
+    second: UpperLeg_Right_jnt
+  - first:
+      4: 400000
+    second: Base_mesh
+  - first:
+      4: 400002
+    second: Body_jnt
+  - first:
+      4: 400004
+    second: BombDisposal_mesh
+  - first:
+      4: 400006
+    second: Female_mesh
+  - first:
+      4: 400008
+    second: FemaleMedic_mesh
+  - first:
+      4: 400010
+    second: Foot_Left_jnt
+  - first:
+      4: 400012
+    second: Foot_Right_jnt
+  - first:
+      4: 400014
+    second: GasMask_mesh
+  - first:
+      4: 400016
+    second: Hand_Left_jnt
+  - first:
+      4: 400018
+    second: Hand_Right_jnt
+  - first:
+      4: 400020
+    second: Hat_jnt
+  - first:
+      4: 400022
+    second: Head_jnt
+  - first:
+      4: 400024
+    second: Hips_jnt
+  - first:
+      4: 400026
+    second: JungleCommando_mesh
+  - first:
+      4: 400028
+    second: LowerArm_Left_jnt
+  - first:
+      4: 400030
+    second: LowerArm_Right_jnt
+  - first:
+      4: 400032
+    second: LowerLeg_Left_jnt
+  - first:
+      4: 400034
+    second: LowerLeg_Right_jnt
+  - first:
+      4: 400036
+    second: Medic_mesh
+  - first:
+      4: 400038
+    second: Mercenary_mesh
+  - first:
+      4: 400040
+    second: Officer_mesh
+  - first:
+      4: 400042
+    second: Pilot_mesh
+  - first:
+      4: 400044
+    second: Root_jnt
+  - first:
+      4: 400046
+    second: //RootNode
+  - first:
+      4: 400048
+    second: Soldier_01_mesh
+  - first:
+      4: 400050
+    second: Soldier_02_mesh
+  - first:
+      4: 400052
+    second: Soldier_03_mesh
+  - first:
+      4: 400054
+    second: SpecialForces_01_mesh
+  - first:
+      4: 400056
+    second: SpecialForces_02_mesh
+  - first:
+      4: 400058
+    second: SpecialForces_03_mesh
+  - first:
+      4: 400060
+    second: SpecialForces_04_mesh
+  - first:
+      4: 400062
+    second: Spine_jnt
+  - first:
+      4: 400064
+    second: Terrorist_01_mesh
+  - first:
+      4: 400066
+    second: Terrorist_02_mesh
+  - first:
+      4: 400068
+    second: Terrorist_03_mesh
+  - first:
+      4: 400070
+    second: Terrorist_04_mesh
+  - first:
+      4: 400072
+    second: UpperArm_Left_jnt
+  - first:
+      4: 400074
+    second: UpperArm_Right_jnt
+  - first:
+      4: 400076
+    second: UpperLeg_Left_jnt
+  - first:
+      4: 400078
+    second: UpperLeg_Right_jnt
+  - first:
+      43: 4300000
+    second: Base_mesh
+  - first:
+      43: 4300002
+    second: Terrorist_04_mesh
+  - first:
+      43: 4300004
+    second: Terrorist_03_mesh
+  - first:
+      43: 4300006
+    second: Terrorist_02_mesh
+  - first:
+      43: 4300008
+    second: Terrorist_01_mesh
+  - first:
+      43: 4300010
+    second: Female_mesh
+  - first:
+      43: 4300012
+    second: JungleCommando_mesh
+  - first:
+      43: 4300014
+    second: FemaleMedic_mesh
+  - first:
+      43: 4300016
+    second: GasMask_mesh
+  - first:
+      43: 4300018
+    second: SpecialForces_04_mesh
+  - first:
+      43: 4300020
+    second: SpecialForces_03_mesh
+  - first:
+      43: 4300022
+    second: SpecialForces_02_mesh
+  - first:
+      43: 4300024
+    second: SpecialForces_01_mesh
+  - first:
+      43: 4300026
+    second: Pilot_mesh
+  - first:
+      43: 4300028
+    second: Mercenary_mesh
+  - first:
+      43: 4300030
+    second: Officer_mesh
+  - first:
+      43: 4300032
+    second: Soldier_03_mesh
+  - first:
+      43: 4300034
+    second: Soldier_02_mesh
+  - first:
+      43: 4300036
+    second: Soldier_01_mesh
+  - first:
+      43: 4300038
+    second: BombDisposal_mesh
+  - first:
+      43: 4300040
+    second: Medic_mesh
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Base_mesh
+  - first:
+      137: 13700002
+    second: BombDisposal_mesh
+  - first:
+      137: 13700004
+    second: Female_mesh
+  - first:
+      137: 13700006
+    second: FemaleMedic_mesh
+  - first:
+      137: 13700008
+    second: GasMask_mesh
+  - first:
+      137: 13700010
+    second: JungleCommando_mesh
+  - first:
+      137: 13700012
+    second: Medic_mesh
+  - first:
+      137: 13700014
+    second: Mercenary_mesh
+  - first:
+      137: 13700016
+    second: Officer_mesh
+  - first:
+      137: 13700018
+    second: Pilot_mesh
+  - first:
+      137: 13700020
+    second: Soldier_01_mesh
+  - first:
+      137: 13700022
+    second: Soldier_02_mesh
+  - first:
+      137: 13700024
+    second: Soldier_03_mesh
+  - first:
+      137: 13700026
+    second: SpecialForces_01_mesh
+  - first:
+      137: 13700028
+    second: SpecialForces_02_mesh
+  - first:
+      137: 13700030
+    second: SpecialForces_03_mesh
+  - first:
+      137: 13700032
+    second: SpecialForces_04_mesh
+  - first:
+      137: 13700034
+    second: Terrorist_01_mesh
+  - first:
+      137: 13700036
+    second: Terrorist_02_mesh
+  - first:
+      137: 13700038
+    second: Terrorist_03_mesh
+  - first:
+      137: 13700040
+    second: Terrorist_04_mesh
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
+    useFileScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 0
     normalImportMode: 0
     tangentImportMode: 1
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human:
     - boneName: Hips_jnt
       humanName: Hips
@@ -297,215 +581,226 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: SimpleMilitary_Characters(Clone)
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Base_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: BombDisposal_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Female_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: FemaleMedic_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: GasMask_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: JungleCommando_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Medic_mesh
-      position: {x: -0, y: -.0109435199, z: 0}
+      parentName: 
+      position: {x: -0, y: -0.01094352, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Mercenary_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Officer_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Pilot_mesh
-      position: {x: -0, y: .039513398, z: 0}
+      parentName: 
+      position: {x: -0, y: 0.039513398, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Soldier_01_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Soldier_02_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Soldier_03_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: SpecialForces_01_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: SpecialForces_02_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: SpecialForces_03_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: SpecialForces_04_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Terrorist_01_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Terrorist_02_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Terrorist_03_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Terrorist_04_mesh
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Root_jnt
+      parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hips_jnt
-      position: {x: -0, y: 1.04498756, z: 0}
-      rotation: {x: 0, y: 0, z: .259743601, w: .965677619}
+      parentName: 
+      position: {x: -0, y: 1.0449876, z: 0}
+      rotation: {x: 0, y: 0, z: 0.2597436, w: 0.9656776}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Right_jnt
-      position: {x: .127638385, y: -.223043367, z: 0}
-      rotation: {x: -.499185681, y: .86646992, z: .00572497724, w: -.00328412396}
+      parentName: 
+      position: {x: 0.12763838, y: -0.22304337, z: 0}
+      rotation: {x: -0.49918568, y: 0.8664699, z: 0.0057249772, w: -0.003284124}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Right_jnt
-      position: {x: .374522001, y: 2.48689959e-16, z: -1.09874122e-12}
-      rotation: {x: -.704109967, y: -3.09605057e-05, z: 5.18196284e-05, w: .710090935}
+      parentName: 
+      position: {x: 0.374522, y: 2.4868996e-16, z: -1.0987412e-12}
+      rotation: {x: -0.70410997, y: -0.000030960506, z: 0.00005181963, w: 0.71009094}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Right_jnt
-      position: {x: .388743997, y: 8.19713481e-12, z: -3.69072238e-11}
-      rotation: {x: .501171231, y: .501196921, z: -.498829007, w: .498797357}
+      parentName: 
+      position: {x: 0.388744, y: 8.197135e-12, z: -3.6907224e-11}
+      rotation: {x: 0.50117123, y: 0.5011969, z: -0.498829, w: 0.49879736}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperLeg_Left_jnt
-      position: {x: -.256982446, y: -1.42108544e-16, z: 0}
-      rotation: {x: -.000137111041, y: -8.42471709e-05, z: .499174654, w: .866501391}
+      parentName: 
+      position: {x: -0.25698245, y: -1.4210854e-16, z: 0}
+      rotation: {x: -0.00013711104, y: -0.00008424717, z: 0.49917465, w: 0.8665014}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerLeg_Left_jnt
-      position: {x: -.374521643, y: -3.5527136e-17, z: -2.71050537e-22}
-      rotation: {x: -.707590222, y: 6.4468918e-06, z: -6.14591181e-06, w: .706623018}
+      parentName: 
+      position: {x: -0.37452164, y: -3.5527136e-17, z: -2.7105054e-22}
+      rotation: {x: -0.7075902, y: 0.000006446892, z: -0.000006145912, w: 0.706623}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Foot_Left_jnt
-      position: {x: -.388743728, y: 1.22525682e-17, z: 7.34260656e-12}
-      rotation: {x: .500422239, y: .50042218, z: -.499573082, w: .499581784}
+      parentName: 
+      position: {x: -0.38874373, y: 1.2252568e-17, z: 7.3426066e-12}
+      rotation: {x: 0.50042224, y: 0.5004222, z: -0.49957308, w: 0.49958178}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Body_jnt
-      position: {x: .00955589768, y: .0164783578, z: 0}
-      rotation: {x: -0, y: 0, z: .866503656, w: -.499170721}
+      parentName: 
+      position: {x: 0.009555898, y: 0.016478358, z: 0}
+      rotation: {x: -0, y: 0, z: 0.86650366, w: -0.49917072}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Spine_jnt
-      position: {x: -.67032522, y: 1.33003946e-16, z: 0}
-      rotation: {x: 0, y: 0, z: -1.58250149e-15, w: 1}
+      parentName: 
+      position: {x: -0.6703252, y: 1.3300395e-16, z: 0}
+      rotation: {x: 0, y: 0, z: -1.5825015e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperArm_Left_jnt
-      position: {x: -.219108447, y: -.565231979, z: 0}
-      rotation: {x: 0, y: 0, z: -.707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.21910845, y: -0.565232, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Left_jnt
-      position: {x: .471188009, y: -2.84217088e-16, z: 5.77040997e-17}
-      rotation: {x: 0, y: 0, z: -1.94289029e-16, w: 1}
+      parentName: 
+      position: {x: 0.471188, y: -2.842171e-16, z: 5.77041e-17}
+      rotation: {x: 0, y: 0, z: -1.9428903e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Left_jnt
-      position: {x: .440299988, y: 0, z: 5.39208998e-17}
-      rotation: {x: -2.28167848e-15, y: 1, z: 6.12323426e-17, w: 3.55753838e-20}
+      parentName: 
+      position: {x: 0.4403, y: 0, z: 5.39209e-17}
+      rotation: {x: -2.2816785e-15, y: 1, z: 6.123234e-17, w: 3.5575384e-20}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: UpperArm_Right_jnt
-      position: {x: -.219108447, y: .565231979, z: 0}
-      rotation: {x: -.707106829, y: .707106829, z: 4.33522844e-17, w: -4.32433282e-17}
+      parentName: 
+      position: {x: -0.21910845, y: 0.565232, z: 0}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 4.3352284e-17, w: -4.3243328e-17}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: LowerArm_Right_jnt
-      position: {x: -.471189976, y: 5.68434176e-16, z: -5.77041328e-17}
-      rotation: {x: 6.12322897e-17, y: 7.70451338e-20, z: -2.63677968e-15, w: 1}
+      parentName: 
+      position: {x: -0.47118998, y: 5.684342e-16, z: -5.770413e-17}
+      rotation: {x: 6.123229e-17, y: 7.7045134e-20, z: -2.6367797e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hand_Right_jnt
-      position: {x: -.440299988, y: -8.52651264e-16, z: -5.39211976e-17}
-      rotation: {x: 2.9478123e-15, y: 1, z: 6.12323426e-17, w: -2.71050543e-20}
+      parentName: 
+      position: {x: -0.4403, y: -8.5265126e-16, z: -5.3921198e-17}
+      rotation: {x: 2.9478123e-15, y: 1, z: 6.123234e-17, w: -2.7105054e-20}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Head_jnt
-      position: {x: -.31062609, y: 6.89728473e-17, z: 0}
-      rotation: {x: 0, y: 0, z: 1.63757896e-15, w: 1}
+      parentName: 
+      position: {x: -0.3106261, y: 6.897285e-17, z: 0}
+      rotation: {x: 0, y: 0, z: 1.637579e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Hat_jnt
-      position: {x: -.542270958, y: 1.20408341e-16, z: 0}
-      rotation: {x: -3.04861887e-19, y: 3.08455547e-19, z: .707106829, w: .707106829}
+      parentName: 
+      position: {x: -0.54227096, y: 1.2040834e-16, z: 0}
+      rotation: {x: -3.0486189e-19, y: 3.0845555e-19, z: 0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    armTwist: .541999996
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.542
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: Root_jnt
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d55a3dafe23105e409ee70d6605cbd49,
-    type: 3}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
