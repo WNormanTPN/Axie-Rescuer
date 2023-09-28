@@ -1664,6 +1664,7 @@ GameObject:
   - component: {fileID: 24087651}
   - component: {fileID: 24087650}
   - component: {fileID: 24087649}
+  - component: {fileID: 24087652}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
@@ -1752,6 +1753,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24087646}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &24087652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24087646}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &25854994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,6 +3614,7 @@ GameObject:
   - component: {fileID: 59181270}
   - component: {fileID: 59181269}
   - component: {fileID: 59181268}
+  - component: {fileID: 59181271}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -3680,6 +3703,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59181266}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &59181271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59181266}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631947, y: 6.6556005, z: 8.369377}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &59937708
 GameObject:
   m_ObjectHideFlags: 0
@@ -6625,6 +6669,7 @@ GameObject:
   - component: {fileID: 106292233}
   - component: {fileID: 106292232}
   - component: {fileID: 106292231}
+  - component: {fileID: 106292234}
   m_Layer: 0
   m_Name: Building_House_013
   m_TagString: Untagged
@@ -6713,6 +6758,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106292228}
   m_Mesh: {fileID: 4300000, guid: 8f27340513872594b9de2bd644c76073, type: 3}
+--- !u!65 &106292234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106292228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.860611, y: 10.869454, z: 14.830273}
+  m_Center: {x: 0.000001907349, y: 5.434727, z: -0.000003814698}
 --- !u!1 &108084550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8707,6 +8773,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136741296}
   m_Mesh: {fileID: 4300000, guid: f4f3301d159ef694486580351d7ec94a, type: 3}
+--- !u!1 &139384126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139384130}
+  - component: {fileID: 139384129}
+  - component: {fileID: 139384128}
+  - component: {fileID: 139384127}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &139384127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139384126}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &139384128
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139384126}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1881dcc2b2e53244f86e1589ace55fd2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &139384129
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139384126}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &139384130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139384126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.5, y: 6.09, z: 13.15}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146108288
 GameObject:
   m_ObjectHideFlags: 0
@@ -10949,6 +11120,7 @@ GameObject:
   - component: {fileID: 172440971}
   - component: {fileID: 172440970}
   - component: {fileID: 172440969}
+  - component: {fileID: 172440972}
   m_Layer: 0
   m_Name: Building_Shop_03
   m_TagString: Untagged
@@ -11037,6 +11209,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172440966}
   m_Mesh: {fileID: 4300000, guid: bb848708c367de94c9720b9da6531747, type: 3}
+--- !u!65 &172440972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172440966}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.916865, y: 10.412291, z: 11.8753195}
+  m_Center: {x: 0.000003814698, y: 5.2061453, z: -0.000001907349}
 --- !u!1 &173359508
 GameObject:
   m_ObjectHideFlags: 0
@@ -11811,7 +12004,8 @@ GameObject:
   - component: {fileID: 182218179}
   - component: {fileID: 182218178}
   - component: {fileID: 182218177}
-  m_Layer: 0
+  - component: {fileID: 182218180}
+  m_Layer: 3
   m_Name: Building_Cinema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11899,6 +12093,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182218174}
   m_Mesh: {fileID: 4300000, guid: d5ed28ae93a48774b8fe6d997232f9e6, type: 3}
+--- !u!65 &182218180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182218174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 31.341118, y: 15.541443, z: 26.752445}
+  m_Center: {x: 0.0000038146973, y: 7.7707214, z: 0}
 --- !u!1 &185354106
 GameObject:
   m_ObjectHideFlags: 0
@@ -13092,6 +13307,7 @@ GameObject:
   - component: {fileID: 207662573}
   - component: {fileID: 207662572}
   - component: {fileID: 207662571}
+  - component: {fileID: 207662574}
   m_Layer: 0
   m_Name: Building_ApartmentLarge_Orange
   m_TagString: Untagged
@@ -13180,6 +13396,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207662568}
   m_Mesh: {fileID: 4300000, guid: 1dbd4941c0c376e4086d9ccc9d733540, type: 3}
+--- !u!65 &207662574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207662568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 16.746765, z: 11.819447}
+  m_Center: {x: 0, y: 8.373383, z: 0}
 --- !u!1 &208045333
 GameObject:
   m_ObjectHideFlags: 0
@@ -14494,6 +14731,7 @@ GameObject:
   - component: {fileID: 244461970}
   - component: {fileID: 244461969}
   - component: {fileID: 244461968}
+  - component: {fileID: 244461971}
   m_Layer: 0
   m_Name: Building_Shop_04
   m_TagString: Untagged
@@ -14582,6 +14820,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244461965}
   m_Mesh: {fileID: 4300000, guid: fed19069578bc954ab108435bad01963, type: 3}
+--- !u!65 &244461971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244461965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.91687, y: 10.412291, z: 11.875317}
+  m_Center: {x: 0, y: 5.2061453, z: -0.0000019073486}
 --- !u!1 &250702553
 GameObject:
   m_ObjectHideFlags: 0
@@ -15211,6 +15470,7 @@ GameObject:
   - component: {fileID: 261999132}
   - component: {fileID: 261999131}
   - component: {fileID: 261999130}
+  - component: {fileID: 261999133}
   m_Layer: 0
   m_Name: store_corner_video
   m_TagString: Untagged
@@ -15299,6 +15559,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261999127}
   m_Mesh: {fileID: 4300000, guid: 84fe384c1a39c47438803ccb7ab183d8, type: 3}
+--- !u!65 &261999133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261999127}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.061421, y: 6.6556005, z: 11.256145}
+  m_Center: {x: 0.0000009536745, y: 3.3278003, z: 0}
 --- !u!1 &265516176
 GameObject:
   m_ObjectHideFlags: 0
@@ -15311,6 +15592,7 @@ GameObject:
   - component: {fileID: 265516181}
   - component: {fileID: 265516180}
   - component: {fileID: 265516179}
+  - component: {fileID: 265516182}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
@@ -15399,6 +15681,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265516176}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &265516182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265516176}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335052, y: 20.043293, z: 15.166833}
+  m_Center: {x: 0.000014781952, y: 10.0216465, z: 0}
 --- !u!1 &267586720
 GameObject:
   m_ObjectHideFlags: 0
@@ -15743,6 +16046,7 @@ GameObject:
   - component: {fileID: 278091432}
   - component: {fileID: 278091431}
   - component: {fileID: 278091430}
+  - component: {fileID: 278091433}
   m_Layer: 0
   m_Name: Building_House_012
   m_TagString: Untagged
@@ -15831,6 +16135,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278091427}
   m_Mesh: {fileID: 4300000, guid: 07dad37e21dca5e49baa78cb36a70b3c, type: 3}
+--- !u!65 &278091433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278091427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.860607, y: 10.869454, z: 14.830269}
+  m_Center: {x: 0.0000019073486, y: 5.434727, z: -0.0000038146973}
 --- !u!1 &278094883
 GameObject:
   m_ObjectHideFlags: 0
@@ -16914,6 +17239,7 @@ GameObject:
   - component: {fileID: 293378219}
   - component: {fileID: 293378218}
   - component: {fileID: 293378217}
+  - component: {fileID: 293378220}
   m_Layer: 0
   m_Name: Building_Garage_01
   m_TagString: Untagged
@@ -17002,6 +17328,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293378214}
   m_Mesh: {fileID: 4300000, guid: df1ce49f4109e474896a5ec21b7133fd, type: 3}
+--- !u!65 &293378220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293378214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.373889, y: 11.606873, z: 14.740887}
+  m_Center: {x: 0, y: 5.7591686, z: -0.000003814698}
 --- !u!1 &293844041
 GameObject:
   m_ObjectHideFlags: 0
@@ -22769,6 +23116,7 @@ GameObject:
   - component: {fileID: 382895309}
   - component: {fileID: 382895308}
   - component: {fileID: 382895307}
+  - component: {fileID: 382895310}
   m_Layer: 0
   m_Name: Building_House_08
   m_TagString: Untagged
@@ -22857,6 +23205,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382895304}
   m_Mesh: {fileID: 4300000, guid: e2000e869517d9447b009ddc5f8e9c4d, type: 3}
+--- !u!65 &382895310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382895304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.564323, y: 15.976265, z: 25.711502}
+  m_Center: {x: 0.0000038146973, y: 7.9881325, z: 0.0000076293945}
 --- !u!1 &383190834
 GameObject:
   m_ObjectHideFlags: 0
@@ -24691,6 +25060,7 @@ GameObject:
   - component: {fileID: 407337466}
   - component: {fileID: 407337465}
   - component: {fileID: 407337464}
+  - component: {fileID: 407337467}
   m_Layer: 0
   m_Name: Building_House_05
   m_TagString: Untagged
@@ -24779,6 +25149,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407337461}
   m_Mesh: {fileID: 4300000, guid: bb0c33da9f0cc394c967b7b19026c95a, type: 3}
+--- !u!65 &407337467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407337461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.564323, y: 15.976265, z: 25.711502}
+  m_Center: {x: 0.0000038146973, y: 7.9881325, z: 0.0000076293945}
 --- !u!1 &409240038
 GameObject:
   m_ObjectHideFlags: 0
@@ -27250,6 +27641,7 @@ GameObject:
   - component: {fileID: 425626879}
   - component: {fileID: 425626878}
   - component: {fileID: 425626877}
+  - component: {fileID: 425626880}
   m_Layer: 0
   m_Name: Building_House_012
   m_TagString: Untagged
@@ -27338,6 +27730,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425626874}
   m_Mesh: {fileID: 4300000, guid: 07dad37e21dca5e49baa78cb36a70b3c, type: 3}
+--- !u!65 &425626880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425626874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.860607, y: 10.869454, z: 14.830269}
+  m_Center: {x: 0.0000019073486, y: 5.434727, z: -0.0000038146973}
 --- !u!1 &429806325
 GameObject:
   m_ObjectHideFlags: 0
@@ -27433,6 +27846,7 @@ GameObject:
   - component: {fileID: 430619471}
   - component: {fileID: 430619470}
   - component: {fileID: 430619469}
+  - component: {fileID: 430619472}
   m_Layer: 0
   m_Name: Building_OfficeSmall_Grey
   m_TagString: Untagged
@@ -27521,6 +27935,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430619466}
   m_Mesh: {fileID: 4300000, guid: 8752711a958b2ca4a884a364100df2af, type: 3}
+--- !u!65 &430619472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430619466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620883, y: 12.829048, z: 15.166836}
+  m_Center: {x: 0, y: 6.414524, z: 0}
 --- !u!1 &432027428
 GameObject:
   m_ObjectHideFlags: 0
@@ -28465,6 +28900,7 @@ GameObject:
   - component: {fileID: 444973621}
   - component: {fileID: 444973620}
   - component: {fileID: 444973619}
+  - component: {fileID: 444973622}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Blue
   m_TagString: Untagged
@@ -28553,6 +28989,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444973616}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &444973622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444973616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &447388437
 GameObject:
   m_ObjectHideFlags: 0
@@ -31202,6 +31659,7 @@ GameObject:
   - component: {fileID: 492270982}
   - component: {fileID: 492270981}
   - component: {fileID: 492270979}
+  - component: {fileID: 492270983}
   m_Layer: 0
   m_Name: Building_Mall
   m_TagString: Untagged
@@ -31293,6 +31751,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492270976}
   m_Mesh: {fileID: 4300000, guid: 3340ad4fea81fc24ea110c402f43fc43, type: 3}
+--- !u!65 &492270983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492270976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 37.995277, y: 8.458705, z: 43.187973}
+  m_Center: {x: -17.470333, y: 4.229344, z: -20.06668}
 --- !u!1 &492568029
 GameObject:
   m_ObjectHideFlags: 0
@@ -34527,6 +35006,7 @@ GameObject:
   - component: {fileID: 548639707}
   - component: {fileID: 548639706}
   - component: {fileID: 548639705}
+  - component: {fileID: 548639708}
   m_Layer: 0
   m_Name: Building_ApartmentLarge_Brown
   m_TagString: Untagged
@@ -34615,6 +35095,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548639702}
   m_Mesh: {fileID: 4300000, guid: 1dbd4941c0c376e4086d9ccc9d733540, type: 3}
+--- !u!65 &548639708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548639702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 16.746765, z: 11.819447}
+  m_Center: {x: 0, y: 8.373383, z: 0}
 --- !u!1 &550435464
 GameObject:
   m_ObjectHideFlags: 0
@@ -35125,6 +35626,7 @@ GameObject:
   - component: {fileID: 555907304}
   - component: {fileID: 555907303}
   - component: {fileID: 555907302}
+  - component: {fileID: 555907305}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
@@ -35213,6 +35715,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555907299}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &555907305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555907299}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335052, y: 20.043293, z: 15.166833}
+  m_Center: {x: 0.000014781952, y: 10.0216465, z: 0}
 --- !u!1 &556043004
 GameObject:
   m_ObjectHideFlags: 0
@@ -35308,6 +35831,7 @@ GameObject:
   - component: {fileID: 556104871}
   - component: {fileID: 556104870}
   - component: {fileID: 556104869}
+  - component: {fileID: 556104872}
   m_Layer: 0
   m_Name: Building_Shop_05
   m_TagString: Untagged
@@ -35396,6 +35920,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556104866}
   m_Mesh: {fileID: 4300000, guid: 4b9512614ba1c6646a53f6c8fbb6f6b8, type: 3}
+--- !u!65 &556104872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556104866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.916855, y: 10.412291, z: 11.875317}
+  m_Center: {x: -0.0000076293945, y: 5.2061453, z: -0.0000019073486}
 --- !u!1 &556457588
 GameObject:
   m_ObjectHideFlags: 0
@@ -36392,6 +36937,7 @@ GameObject:
   - component: {fileID: 574935351}
   - component: {fileID: 574935350}
   - component: {fileID: 574935349}
+  - component: {fileID: 574935352}
   m_Layer: 0
   m_Name: Building_Shop_01
   m_TagString: Untagged
@@ -36480,6 +37026,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574935346}
   m_Mesh: {fileID: 4300000, guid: 737e142b3005c884a88e7a2d352d5f3a, type: 3}
+--- !u!65 &574935352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574935346}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508232, y: 11.418497, z: 10.161064}
+  m_Center: {x: -0.0000038146973, y: 5.7092485, z: 0.91194916}
 --- !u!1 &577223901
 GameObject:
   m_ObjectHideFlags: 0
@@ -40372,6 +40939,7 @@ GameObject:
   - component: {fileID: 634618352}
   - component: {fileID: 634618351}
   - component: {fileID: 634618350}
+  - component: {fileID: 634618353}
   m_Layer: 0
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
@@ -40460,6 +41028,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634618347}
   m_Mesh: {fileID: 4300000, guid: af06ce55a27e0ab489a48111a4aa5093, type: 3}
+--- !u!65 &634618353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634618347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 11.954611, z: 11.819447}
+  m_Center: {x: 0, y: 5.9773054, z: 0}
 --- !u!1 &635437051
 GameObject:
   m_ObjectHideFlags: 0
@@ -41785,6 +42374,7 @@ GameObject:
   - component: {fileID: 657643916}
   - component: {fileID: 657643915}
   - component: {fileID: 657643914}
+  - component: {fileID: 657643917}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -41873,6 +42463,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657643911}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &657643917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657643911}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.62088, y: 20.04329, z: 15.166832}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &661240674
 GameObject:
   m_ObjectHideFlags: 0
@@ -43092,6 +43703,7 @@ GameObject:
   - component: {fileID: 686625454}
   - component: {fileID: 686625453}
   - component: {fileID: 686625452}
+  - component: {fileID: 686625455}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
@@ -43180,6 +43792,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686625449}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &686625455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686625449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335052, y: 20.043293, z: 15.166833}
+  m_Center: {x: 0.000014781952, y: 10.0216465, z: 0}
 --- !u!1 &690379777
 GameObject:
   m_ObjectHideFlags: 0
@@ -44196,6 +44829,7 @@ GameObject:
   - component: {fileID: 700533910}
   - component: {fileID: 700533909}
   - component: {fileID: 700533908}
+  - component: {fileID: 700533911}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
@@ -44284,6 +44918,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700533905}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &700533911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700533905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335058, y: 20.043293, z: 15.166837}
+  m_Center: {x: 0.0000147819555, y: 10.0216465, z: 0}
 --- !u!1 &702670644
 GameObject:
   m_ObjectHideFlags: 0
@@ -44645,6 +45300,7 @@ GameObject:
   - component: {fileID: 704411236}
   - component: {fileID: 704411235}
   - component: {fileID: 704411234}
+  - component: {fileID: 704411237}
   m_Layer: 0
   m_Name: Building_OfficeSmall_Grey
   m_TagString: Untagged
@@ -44733,6 +45389,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704411231}
   m_Mesh: {fileID: 4300000, guid: 8752711a958b2ca4a884a364100df2af, type: 3}
+--- !u!65 &704411237
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704411231}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.62088, y: 12.829048, z: 15.166832}
+  m_Center: {x: 0, y: 6.414524, z: 0}
 --- !u!1 &706771326
 GameObject:
   m_ObjectHideFlags: 0
@@ -46150,6 +46827,7 @@ GameObject:
   - component: {fileID: 739814335}
   - component: {fileID: 739814334}
   - component: {fileID: 739814333}
+  - component: {fileID: 739814336}
   m_Layer: 0
   m_Name: Building_House_04
   m_TagString: Untagged
@@ -46238,6 +46916,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739814330}
   m_Mesh: {fileID: 4300000, guid: 6dd48a96d0ad1d74d92b8b7afb57eb55, type: 3}
+--- !u!65 &739814336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739814330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.630146, y: 14.524448, z: 18.521076}
+  m_Center: {x: 0.000005722046, y: 7.262224, z: -0.000005722046}
 --- !u!1 &740218931
 GameObject:
   m_ObjectHideFlags: 0
@@ -46399,6 +47098,7 @@ GameObject:
   - component: {fileID: 746710752}
   - component: {fileID: 746710751}
   - component: {fileID: 746710750}
+  - component: {fileID: 746710753}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -46487,6 +47187,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746710747}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &746710753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746710747}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.62088, y: 20.04329, z: 15.166832}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &748068638
 GameObject:
   m_ObjectHideFlags: 0
@@ -48540,6 +49261,7 @@ GameObject:
   - component: {fileID: 779262715}
   - component: {fileID: 779262714}
   - component: {fileID: 779262713}
+  - component: {fileID: 779262716}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Blue
   m_TagString: Untagged
@@ -48628,6 +49350,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779262710}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &779262716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779262710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &779894018
 GameObject:
   m_ObjectHideFlags: 0
@@ -49777,6 +50520,7 @@ GameObject:
   - component: {fileID: 791579785}
   - component: {fileID: 791579784}
   - component: {fileID: 791579783}
+  - component: {fileID: 791579786}
   m_Layer: 0
   m_Name: Building_House_02
   m_TagString: Untagged
@@ -49865,6 +50609,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791579780}
   m_Mesh: {fileID: 4300000, guid: 3bdfb076d1ef4b94bb84ba0c61c3ee7a, type: 3}
+--- !u!65 &791579786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791579780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.630149, y: 14.524448, z: 18.52108}
+  m_Center: {x: 0.0000057220473, y: 7.262224, z: -0.0000057220473}
 --- !u!1 &794615862
 GameObject:
   m_ObjectHideFlags: 0
@@ -51269,6 +52034,7 @@ GameObject:
   - component: {fileID: 815263939}
   - component: {fileID: 815263938}
   - component: {fileID: 815263937}
+  - component: {fileID: 815263940}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -51357,6 +52123,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815263935}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &815263940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815263935}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631949, y: 6.6556005, z: 8.369379}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &816173560
 GameObject:
   m_ObjectHideFlags: 0
@@ -52184,6 +52971,7 @@ GameObject:
   - component: {fileID: 832297794}
   - component: {fileID: 832297793}
   - component: {fileID: 832297792}
+  - component: {fileID: 832297795}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
@@ -52272,6 +53060,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832297789}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &832297795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832297789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &834499096
 GameObject:
   m_ObjectHideFlags: 0
@@ -52384,6 +53193,7 @@ GameObject:
   - component: {fileID: 838064929}
   - component: {fileID: 838064928}
   - component: {fileID: 838064927}
+  - component: {fileID: 838064930}
   m_Layer: 0
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
@@ -52472,6 +53282,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838064924}
   m_Mesh: {fileID: 4300000, guid: af06ce55a27e0ab489a48111a4aa5093, type: 3}
+--- !u!65 &838064930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838064924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 11.954611, z: 11.819447}
+  m_Center: {x: 0, y: 5.9773054, z: 0}
 --- !u!1 &838962271
 GameObject:
   m_ObjectHideFlags: 0
@@ -56349,6 +57180,7 @@ GameObject:
   - component: {fileID: 924537656}
   - component: {fileID: 924537655}
   - component: {fileID: 924537654}
+  - component: {fileID: 924537657}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Brown
   m_TagString: Untagged
@@ -56437,6 +57269,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924537651}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &924537657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924537651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &926364124
 GameObject:
   m_ObjectHideFlags: 0
@@ -60556,6 +61409,7 @@ GameObject:
   - component: {fileID: 993041718}
   - component: {fileID: 993041717}
   - component: {fileID: 993041716}
+  - component: {fileID: 993041719}
   m_Layer: 0
   m_Name: Building_Shop_05
   m_TagString: Untagged
@@ -60644,6 +61498,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993041713}
   m_Mesh: {fileID: 4300000, guid: 4b9512614ba1c6646a53f6c8fbb6f6b8, type: 3}
+--- !u!65 &993041719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993041713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.916855, y: 10.412291, z: 11.875317}
+  m_Center: {x: -0.0000076293945, y: 5.2061453, z: -0.0000019073486}
 --- !u!1 &993812663
 GameObject:
   m_ObjectHideFlags: 0
@@ -61497,6 +62372,7 @@ GameObject:
   - component: {fileID: 1005827494}
   - component: {fileID: 1005827493}
   - component: {fileID: 1005827492}
+  - component: {fileID: 1005827495}
   m_Layer: 0
   m_Name: Building_AutoRepair
   m_TagString: Untagged
@@ -61585,6 +62461,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005827484}
   m_Mesh: {fileID: 4300002, guid: 85b19c2bdfd536e47a82f2cf20fbd921, type: 3}
+--- !u!65 &1005827495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005827484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 21.489054, y: 10.665697, z: 10.8053}
+  m_Center: {x: 0.0000004768373, y: 5.3328476, z: -0.0000004768373}
 --- !u!1 &1007477172
 GameObject:
   m_ObjectHideFlags: 0
@@ -61963,6 +62860,7 @@ GameObject:
   - component: {fileID: 1008947019}
   - component: {fileID: 1008947018}
   - component: {fileID: 1008947017}
+  - component: {fileID: 1008947020}
   m_Layer: 0
   m_Name: Building_House_03
   m_TagString: Untagged
@@ -62051,6 +62949,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008947014}
   m_Mesh: {fileID: 4300000, guid: e7e8c4161a559d24e8fa2220566ea000, type: 3}
+--- !u!65 &1008947020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008947014}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.630146, y: 14.524448, z: 18.521076}
+  m_Center: {x: 0.000005722046, y: 7.262224, z: -0.000005722046}
 --- !u!1 &1012158070
 GameObject:
   m_ObjectHideFlags: 0
@@ -62146,6 +63065,7 @@ GameObject:
   - component: {fileID: 1013282759}
   - component: {fileID: 1013282758}
   - component: {fileID: 1013282757}
+  - component: {fileID: 1013282760}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -62234,6 +63154,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013282754}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &1013282760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013282754}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620883, y: 20.04329, z: 15.166836}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &1015535817
 GameObject:
   m_ObjectHideFlags: 0
@@ -63276,6 +64217,7 @@ GameObject:
   - component: {fileID: 1042093181}
   - component: {fileID: 1042093180}
   - component: {fileID: 1042093179}
+  - component: {fileID: 1042093182}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -63364,6 +64306,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042093176}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &1042093182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042093176}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620883, y: 20.04329, z: 15.166836}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &1042872765
 GameObject:
   m_ObjectHideFlags: 0
@@ -64240,6 +65203,7 @@ GameObject:
   - component: {fileID: 1072913399}
   - component: {fileID: 1072913398}
   - component: {fileID: 1072913397}
+  - component: {fileID: 1072913400}
   m_Layer: 0
   m_Name: Building_House_06
   m_TagString: Untagged
@@ -64328,6 +65292,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072913394}
   m_Mesh: {fileID: 4300000, guid: be4f0d99ab8a7bb45b68f5f2955ce32c, type: 3}
+--- !u!65 &1072913400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072913394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.564327, y: 15.976265, z: 25.711508}
+  m_Center: {x: 0.000003814698, y: 7.9881325, z: 0.000007629396}
 --- !u!1 &1076570810
 GameObject:
   m_ObjectHideFlags: 0
@@ -64606,6 +65591,7 @@ GameObject:
   - component: {fileID: 1087439336}
   - component: {fileID: 1087439335}
   - component: {fileID: 1087439334}
+  - component: {fileID: 1087439337}
   m_Layer: 0
   m_Name: Building_House_07
   m_TagString: Untagged
@@ -64694,6 +65680,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087439331}
   m_Mesh: {fileID: 4300000, guid: 81177943e4c90c54f9c5a708797f2dd6, type: 3}
+--- !u!65 &1087439337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087439331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.564323, y: 15.976265, z: 25.711502}
+  m_Center: {x: 0.0000038146973, y: 7.9881325, z: 0.0000076293945}
 --- !u!1 &1088501170
 GameObject:
   m_ObjectHideFlags: 0
@@ -64902,6 +65909,7 @@ GameObject:
   - component: {fileID: 1090395174}
   - component: {fileID: 1090395173}
   - component: {fileID: 1090395172}
+  - component: {fileID: 1090395175}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -64990,6 +65998,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090395170}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &1090395175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090395170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631947, y: 6.6556005, z: 8.369377}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &1094506259
 GameObject:
   m_ObjectHideFlags: 0
@@ -66220,6 +67249,7 @@ GameObject:
   - component: {fileID: 1115278824}
   - component: {fileID: 1115278823}
   - component: {fileID: 1115278822}
+  - component: {fileID: 1115278825}
   m_Layer: 0
   m_Name: Building_StoreCorner_Pawn
   m_TagString: Untagged
@@ -66308,6 +67338,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115278819}
   m_Mesh: {fileID: 4300000, guid: 84fe384c1a39c47438803ccb7ab183d8, type: 3}
+--- !u!65 &1115278825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115278819}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.061419, y: 6.6556005, z: 11.256142}
+  m_Center: {x: 0.0000009536743, y: 3.3278003, z: 0}
 --- !u!1 &1117463691
 GameObject:
   m_ObjectHideFlags: 0
@@ -67336,6 +68387,7 @@ GameObject:
   - component: {fileID: 1126568306}
   - component: {fileID: 1126568305}
   - component: {fileID: 1126568310}
+  - component: {fileID: 1126568311}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -67469,6 +68521,22 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1126568311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126568304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a0b7d373471404faeba4f2815b503e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 139384130}
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1128290481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67813,6 +68881,7 @@ GameObject:
   - component: {fileID: 1135012515}
   - component: {fileID: 1135012514}
   - component: {fileID: 1135012513}
+  - component: {fileID: 1135012516}
   m_Layer: 0
   m_Name: Building_StoreCorner_Drug
   m_TagString: Untagged
@@ -67901,6 +68970,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135012510}
   m_Mesh: {fileID: 4300000, guid: 84fe384c1a39c47438803ccb7ab183d8, type: 3}
+--- !u!65 &1135012516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135012510}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.061421, y: 6.6556005, z: 11.256145}
+  m_Center: {x: 0.0000009536745, y: 3.3278003, z: 0}
 --- !u!1 &1138349628
 GameObject:
   m_ObjectHideFlags: 0
@@ -69392,6 +70482,7 @@ GameObject:
   - component: {fileID: 1158979002}
   - component: {fileID: 1158979001}
   - component: {fileID: 1158979000}
+  - component: {fileID: 1158979003}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Grey
   m_TagString: Untagged
@@ -69480,6 +70571,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158978997}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &1158979003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158978997}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335052, y: 20.043293, z: 15.166833}
+  m_Center: {x: 0.000014781952, y: 10.0216465, z: 0}
 --- !u!1 &1162336526
 GameObject:
   m_ObjectHideFlags: 0
@@ -73659,6 +74771,7 @@ GameObject:
   - component: {fileID: 1226115295}
   - component: {fileID: 1226115294}
   - component: {fileID: 1226115293}
+  - component: {fileID: 1226115296}
   m_Layer: 0
   m_Name: Building_House_01
   m_TagString: Untagged
@@ -73747,6 +74860,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226115290}
   m_Mesh: {fileID: 4300000, guid: f92cd4b2b3e84f94084adcf615a7cfa5, type: 3}
+--- !u!65 &1226115296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226115290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.630146, y: 14.524448, z: 18.521076}
+  m_Center: {x: 0.000005722046, y: 7.262224, z: -0.000005722046}
 --- !u!1 &1228674307
 GameObject:
   m_ObjectHideFlags: 0
@@ -73925,6 +75059,7 @@ GameObject:
   - component: {fileID: 1232660236}
   - component: {fileID: 1232660235}
   - component: {fileID: 1232660234}
+  - component: {fileID: 1232660237}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -74013,6 +75148,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232660232}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &1232660237
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232660232}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631949, y: 6.6556005, z: 8.369379}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &1235080352
 GameObject:
   m_ObjectHideFlags: 0
@@ -74374,6 +75530,7 @@ GameObject:
   - component: {fileID: 1239556554}
   - component: {fileID: 1239556553}
   - component: {fileID: 1239556552}
+  - component: {fileID: 1239556555}
   m_Layer: 0
   m_Name: Building_Gym
   m_TagString: Untagged
@@ -74462,6 +75619,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239556549}
   m_Mesh: {fileID: 4300000, guid: 6810d4db6c3405d4aa114f096f817e14, type: 3}
+--- !u!65 &1239556555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239556549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508232, y: 11.418497, z: 11.984962}
+  m_Center: {x: -0.0000038146973, y: 5.7092485, z: 0}
 --- !u!1 &1241049060
 GameObject:
   m_ObjectHideFlags: 0
@@ -74657,6 +75835,7 @@ GameObject:
   - component: {fileID: 1243325756}
   - component: {fileID: 1243325755}
   - component: {fileID: 1243325754}
+  - component: {fileID: 1243325757}
   m_Layer: 0
   m_Name: Building_ApartmentLarge_Brown
   m_TagString: Untagged
@@ -74745,6 +75924,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243325751}
   m_Mesh: {fileID: 4300000, guid: 1dbd4941c0c376e4086d9ccc9d733540, type: 3}
+--- !u!65 &1243325757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243325751}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 16.746765, z: 11.819447}
+  m_Center: {x: 0, y: 8.373383, z: 0}
 --- !u!1 &1248292986
 GameObject:
   m_ObjectHideFlags: 0
@@ -75232,6 +76432,7 @@ GameObject:
   - component: {fileID: 1249950133}
   - component: {fileID: 1249950132}
   - component: {fileID: 1249950131}
+  - component: {fileID: 1249950134}
   m_Layer: 0
   m_Name: Building_Shop_02
   m_TagString: Untagged
@@ -75320,6 +76521,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249950128}
   m_Mesh: {fileID: 4300000, guid: f826f14373faa1b46b90e0262b9a2b20, type: 3}
+--- !u!65 &1249950134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249950128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508235, y: 11.418497, z: 10.161067}
+  m_Center: {x: -0.000003814698, y: 5.7092485, z: 0.9119494}
 --- !u!1 &1251020308
 GameObject:
   m_ObjectHideFlags: 0
@@ -76539,6 +77761,7 @@ GameObject:
   - component: {fileID: 1264787961}
   - component: {fileID: 1264787960}
   - component: {fileID: 1264787959}
+  - component: {fileID: 1264787962}
   m_Layer: 0
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
@@ -76627,6 +77850,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264787956}
   m_Mesh: {fileID: 4300000, guid: af06ce55a27e0ab489a48111a4aa5093, type: 3}
+--- !u!65 &1264787962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264787956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631958, y: 11.954611, z: 11.819447}
+  m_Center: {x: 0, y: 5.9773054, z: 0}
 --- !u!1 &1268741127
 GameObject:
   m_ObjectHideFlags: 0
@@ -77420,6 +78664,7 @@ GameObject:
   - component: {fileID: 1291870910}
   - component: {fileID: 1291870909}
   - component: {fileID: 1291870908}
+  - component: {fileID: 1291870911}
   m_Layer: 0
   m_Name: Building_OfficeStepped_Grey
   m_TagString: Untagged
@@ -77508,6 +78753,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291870905}
   m_Mesh: {fileID: 4300000, guid: 82eb5699714912a4595b1f4351d116b2, type: 3}
+--- !u!65 &1291870911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291870905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.335052, y: 20.043293, z: 15.166833}
+  m_Center: {x: 0.000014781952, y: 10.0216465, z: 0}
 --- !u!1 &1292516159
 GameObject:
   m_ObjectHideFlags: 0
@@ -79993,6 +81259,7 @@ GameObject:
   - component: {fileID: 1325176293}
   - component: {fileID: 1325176292}
   - component: {fileID: 1325176291}
+  - component: {fileID: 1325176294}
   m_Layer: 0
   m_Name: Building_Shop_05
   m_TagString: Untagged
@@ -80081,6 +81348,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325176288}
   m_Mesh: {fileID: 4300000, guid: 4b9512614ba1c6646a53f6c8fbb6f6b8, type: 3}
+--- !u!65 &1325176294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325176288}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.916855, y: 10.412291, z: 11.875317}
+  m_Center: {x: -0.0000076293945, y: 5.2061453, z: -0.0000019073486}
 --- !u!1 &1325669516
 GameObject:
   m_ObjectHideFlags: 0
@@ -82524,6 +83812,7 @@ GameObject:
   - component: {fileID: 1356030984}
   - component: {fileID: 1356030983}
   - component: {fileID: 1356030982}
+  - component: {fileID: 1356030985}
   m_Layer: 0
   m_Name: Building_CoffeeShop
   m_TagString: Untagged
@@ -82612,6 +83901,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356030973}
   m_Mesh: {fileID: 4300000, guid: 7d9c8c8303f1ac74cbf055cf9cac9a22, type: 3}
+--- !u!65 &1356030985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356030973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.39943, y: 15.631265, z: 12.922249}
+  m_Center: {x: 0, y: 7.8156323, z: 0}
 --- !u!1 &1357660358
 GameObject:
   m_ObjectHideFlags: 0
@@ -87079,7 +88389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1434538520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93591,6 +94901,7 @@ GameObject:
   - component: {fileID: 1554994791}
   - component: {fileID: 1554994790}
   - component: {fileID: 1554994789}
+  - component: {fileID: 1554994792}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -93679,6 +94990,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554994786}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &1554994792
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554994786}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.62088, y: 20.04329, z: 15.166832}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &1555400762
 GameObject:
   m_ObjectHideFlags: 0
@@ -96352,6 +97684,7 @@ GameObject:
   - component: {fileID: 1578947735}
   - component: {fileID: 1578947734}
   - component: {fileID: 1578947733}
+  - component: {fileID: 1578947736}
   m_Layer: 0
   m_Name: Building_BaberShop
   m_TagString: Untagged
@@ -96440,6 +97773,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578947730}
   m_Mesh: {fileID: 4300000, guid: e3d5b709a0c709247a94b00fa39e91ec, type: 3}
+--- !u!65 &1578947736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578947730}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.399433, y: 11.290919, z: 10.906009}
+  m_Center: {x: 0, y: 5.6454597, z: 1.0081217}
 --- !u!1 &1580893591
 GameObject:
   m_ObjectHideFlags: 0
@@ -96701,6 +98055,7 @@ GameObject:
   - component: {fileID: 1589762861}
   - component: {fileID: 1589762860}
   - component: {fileID: 1589762859}
+  - component: {fileID: 1589762862}
   m_Layer: 0
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
@@ -96789,6 +98144,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589762856}
   m_Mesh: {fileID: 4300000, guid: af06ce55a27e0ab489a48111a4aa5093, type: 3}
+--- !u!65 &1589762862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589762856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631961, y: 11.954611, z: 11.819449}
+  m_Center: {x: 0, y: 5.9773054, z: 0}
 --- !u!1 &1589863624
 GameObject:
   m_ObjectHideFlags: 0
@@ -96801,6 +98177,7 @@ GameObject:
   - component: {fileID: 1589863629}
   - component: {fileID: 1589863628}
   - component: {fileID: 1589863627}
+  - component: {fileID: 1589863630}
   m_Layer: 0
   m_Name: Building_Shop_02
   m_TagString: Untagged
@@ -96889,6 +98266,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589863624}
   m_Mesh: {fileID: 4300000, guid: f826f14373faa1b46b90e0262b9a2b20, type: 3}
+--- !u!65 &1589863630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589863624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508232, y: 11.418497, z: 10.161064}
+  m_Center: {x: -0.0000038146973, y: 5.7092485, z: 0.91194916}
 --- !u!1 &1593592291
 GameObject:
   m_ObjectHideFlags: 0
@@ -101781,6 +103179,7 @@ GameObject:
   - component: {fileID: 1683068295}
   - component: {fileID: 1683068294}
   - component: {fileID: 1683068293}
+  - component: {fileID: 1683068296}
   m_Layer: 0
   m_Name: Building_House_05
   m_TagString: Untagged
@@ -101869,6 +103268,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683068290}
   m_Mesh: {fileID: 4300000, guid: bb0c33da9f0cc394c967b7b19026c95a, type: 3}
+--- !u!65 &1683068296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683068290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.564323, y: 15.976265, z: 25.711502}
+  m_Center: {x: 0.0000038146973, y: 7.9881325, z: 0.0000076293945}
 --- !u!1 &1684965448
 GameObject:
   m_ObjectHideFlags: 0
@@ -102047,6 +103467,7 @@ GameObject:
   - component: {fileID: 1686624855}
   - component: {fileID: 1686624854}
   - component: {fileID: 1686624853}
+  - component: {fileID: 1686624856}
   m_Layer: 0
   m_Name: Building_BaberShop
   m_TagString: Untagged
@@ -102135,6 +103556,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686624850}
   m_Mesh: {fileID: 4300000, guid: e3d5b709a0c709247a94b00fa39e91ec, type: 3}
+--- !u!65 &1686624856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686624850}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.399433, y: 11.290919, z: 10.906009}
+  m_Center: {x: 0, y: 5.6454597, z: 1.0081217}
 --- !u!1 &1688947803
 GameObject:
   m_ObjectHideFlags: 0
@@ -108436,6 +109878,7 @@ GameObject:
   - component: {fileID: 1818404546}
   - component: {fileID: 1818404545}
   - component: {fileID: 1818404544}
+  - component: {fileID: 1818404547}
   m_Layer: 0
   m_Name: Building_StripClub
   m_TagString: Untagged
@@ -108524,6 +109967,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818404541}
   m_Mesh: {fileID: 4300000, guid: f4682b3daa940a549b9ad91454ca60ff, type: 3}
+--- !u!65 &1818404547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818404541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.997097, y: 7.924445, z: 15.874205}
+  m_Center: {x: 0.24597597, y: 3.9622216, z: 1.2436507}
 --- !u!1 &1818948801
 GameObject:
   m_ObjectHideFlags: 0
@@ -109783,6 +111247,7 @@ GameObject:
   - component: {fileID: 1842196862}
   - component: {fileID: 1842196861}
   - component: {fileID: 1842196860}
+  - component: {fileID: 1842196863}
   m_Layer: 0
   m_Name: Building_Garage_03
   m_TagString: Untagged
@@ -109871,6 +111336,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842196857}
   m_Mesh: {fileID: 4300000, guid: 057c0fffab1b79c40a60f5aa643fa4ed, type: 3}
+--- !u!65 &1842196863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842196857}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.373886, y: 11.606873, z: 14.740883}
+  m_Center: {x: 0, y: 5.7591686, z: -0.0000038146973}
 --- !u!1 &1845350523
 GameObject:
   m_ObjectHideFlags: 0
@@ -109883,6 +111369,7 @@ GameObject:
   - component: {fileID: 1845350528}
   - component: {fileID: 1845350527}
   - component: {fileID: 1845350526}
+  - component: {fileID: 1845350529}
   m_Layer: 0
   m_Name: Building_ApartmentSmall_Orange
   m_TagString: Untagged
@@ -109971,6 +111458,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845350523}
   m_Mesh: {fileID: 4300000, guid: af06ce55a27e0ab489a48111a4aa5093, type: 3}
+--- !u!65 &1845350529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845350523}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631961, y: 11.954611, z: 11.819449}
+  m_Center: {x: 0, y: 5.9773054, z: 0}
 --- !u!1 &1848863036
 GameObject:
   m_ObjectHideFlags: 0
@@ -111753,6 +113261,7 @@ GameObject:
   - component: {fileID: 1869436466}
   - component: {fileID: 1869436465}
   - component: {fileID: 1869436464}
+  - component: {fileID: 1869436467}
   m_Layer: 0
   m_Name: Building_Gym
   m_TagString: Untagged
@@ -111841,6 +113350,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869436461}
   m_Mesh: {fileID: 4300000, guid: 6810d4db6c3405d4aa114f096f817e14, type: 3}
+--- !u!65 &1869436467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869436461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508235, y: 11.418497, z: 11.984965}
+  m_Center: {x: -0.000003814698, y: 5.7092485, z: 0}
 --- !u!1 &1870048717
 GameObject:
   m_ObjectHideFlags: 0
@@ -112734,6 +114264,7 @@ GameObject:
   - component: {fileID: 1878645268}
   - component: {fileID: 1878645267}
   - component: {fileID: 1878645266}
+  - component: {fileID: 1878645269}
   m_Layer: 0
   m_Name: Building_House_011
   m_TagString: Untagged
@@ -112822,6 +114353,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878645263}
   m_Mesh: {fileID: 4300000, guid: a7e6ec230f6360b43ab5b901b22e8b0e, type: 3}
+--- !u!65 &1878645269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878645263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.185364, y: 10.143138, z: 16.103283}
+  m_Center: {x: 0, y: 5.071569, z: 0}
 --- !u!1 &1881546180
 GameObject:
   m_ObjectHideFlags: 0
@@ -114193,6 +115745,7 @@ GameObject:
   - component: {fileID: 1899252363}
   - component: {fileID: 1899252362}
   - component: {fileID: 1899252361}
+  - component: {fileID: 1899252364}
   m_Layer: 0
   m_Name: Building_Shop_01
   m_TagString: Untagged
@@ -114281,6 +115834,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899252358}
   m_Mesh: {fileID: 4300000, guid: 737e142b3005c884a88e7a2d352d5f3a, type: 3}
+--- !u!65 &1899252364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899252358}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.508232, y: 11.418497, z: 10.161064}
+  m_Center: {x: -0.0000038146973, y: 5.7092485, z: 0.91194916}
 --- !u!1 &1900107034
 GameObject:
   m_ObjectHideFlags: 0
@@ -115076,6 +116650,7 @@ GameObject:
   - component: {fileID: 1909192667}
   - component: {fileID: 1909192666}
   - component: {fileID: 1909192665}
+  - component: {fileID: 1909192668}
   m_Layer: 0
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
@@ -115164,6 +116739,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909192662}
   m_Mesh: {fileID: 4300000, guid: 9a5c88c0d89c2d94488c3b498162eade, type: 3}
+--- !u!65 &1909192668
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909192662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.620886, y: 27.237041, z: 15.166836}
+  m_Center: {x: 0, y: 13.618521, z: 0}
 --- !u!1 &1911437475
 GameObject:
   m_ObjectHideFlags: 0
@@ -116257,6 +117853,7 @@ GameObject:
   - component: {fileID: 1928168781}
   - component: {fileID: 1928168780}
   - component: {fileID: 1928168779}
+  - component: {fileID: 1928168782}
   m_Layer: 0
   m_Name: Building_House_09
   m_TagString: Untagged
@@ -116345,6 +117942,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928168776}
   m_Mesh: {fileID: 4300000, guid: 5bbfbd4cd58836d4084c67a44561bc46, type: 3}
+--- !u!65 &1928168782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928168776}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.185368, y: 10.143138, z: 16.103287}
+  m_Center: {x: 0, y: 5.071569, z: 0}
 --- !u!1 &1928489866
 GameObject:
   m_ObjectHideFlags: 0
@@ -117470,6 +119088,7 @@ GameObject:
   - component: {fileID: 1950036551}
   - component: {fileID: 1950036550}
   - component: {fileID: 1950036549}
+  - component: {fileID: 1950036552}
   m_Layer: 0
   m_Name: Building_House_014
   m_TagString: Untagged
@@ -117558,6 +119177,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950036546}
   m_Mesh: {fileID: 4300000, guid: a2fbcab7769299c42a6101911ee306c4, type: 3}
+--- !u!65 &1950036552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950036546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.860607, y: 10.869454, z: 14.830269}
+  m_Center: {x: 0.0000019073486, y: 5.434727, z: -0.0000038146973}
 --- !u!1 &1950145614
 GameObject:
   m_ObjectHideFlags: 0
@@ -121278,6 +122918,7 @@ GameObject:
   - component: {fileID: 2021730394}
   - component: {fileID: 2021730393}
   - component: {fileID: 2021730392}
+  - component: {fileID: 2021730395}
   m_Layer: 0
   m_Name: Building_House_04
   m_TagString: Untagged
@@ -121366,6 +123007,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021730389}
   m_Mesh: {fileID: 4300000, guid: 6dd48a96d0ad1d74d92b8b7afb57eb55, type: 3}
+--- !u!65 &2021730395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021730389}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.630149, y: 14.524448, z: 18.52108}
+  m_Center: {x: 0.0000057220473, y: 7.262224, z: -0.0000057220473}
 --- !u!1 &2023182379
 GameObject:
   m_ObjectHideFlags: 0
@@ -121644,6 +123306,7 @@ GameObject:
   - component: {fileID: 2028362356}
   - component: {fileID: 2028362355}
   - component: {fileID: 2028362354}
+  - component: {fileID: 2028362357}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -121732,6 +123395,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028362352}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &2028362357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028362352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631949, y: 6.6556005, z: 8.369379}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &2029102772
 GameObject:
   m_ObjectHideFlags: 0
@@ -121827,6 +123511,7 @@ GameObject:
   - component: {fileID: 2029751831}
   - component: {fileID: 2029751830}
   - component: {fileID: 2029751829}
+  - component: {fileID: 2029751832}
   m_Layer: 0
   m_Name: store_small_mesh
   m_TagString: Untagged
@@ -121915,6 +123600,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029751827}
   m_Mesh: {fileID: 4300000, guid: 4f42a997e137e964195c8a6f93b0b6e2, type: 3}
+--- !u!65 &2029751832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029751827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.631949, y: 6.6556005, z: 8.369379}
+  m_Center: {x: 0, y: 3.3278003, z: 0}
 --- !u!1 &2031343748
 GameObject:
   m_ObjectHideFlags: 0
@@ -123274,6 +124980,7 @@ GameObject:
   - component: {fileID: 2062702904}
   - component: {fileID: 2062702903}
   - component: {fileID: 2062702902}
+  - component: {fileID: 2062702905}
   m_Layer: 0
   m_Name: Building_Shop_05
   m_TagString: Untagged
@@ -123362,6 +125069,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062702899}
   m_Mesh: {fileID: 4300000, guid: 4b9512614ba1c6646a53f6c8fbb6f6b8, type: 3}
+--- !u!65 &2062702905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062702899}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.916858, y: 10.412291, z: 11.8753195}
+  m_Center: {x: -0.000007629396, y: 5.2061453, z: -0.000001907349}
 --- !u!1 &2066863459
 GameObject:
   m_ObjectHideFlags: 0
@@ -123474,6 +125202,7 @@ GameObject:
   - component: {fileID: 2067645020}
   - component: {fileID: 2067645019}
   - component: {fileID: 2067645018}
+  - component: {fileID: 2067645021}
   m_Layer: 0
   m_Name: Building_StoreCorner_Drug
   m_TagString: Untagged
@@ -123562,6 +125291,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067645015}
   m_Mesh: {fileID: 4300000, guid: 84fe384c1a39c47438803ccb7ab183d8, type: 3}
+--- !u!65 &2067645021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067645015}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.061421, y: 6.6556005, z: 11.256145}
+  m_Center: {x: 0.0000009536745, y: 3.3278003, z: 0}
 --- !u!1 &2067917329
 GameObject:
   m_ObjectHideFlags: 0
@@ -125017,6 +126767,7 @@ GameObject:
   - component: {fileID: 2090599083}
   - component: {fileID: 2090599082}
   - component: {fileID: 2090599081}
+  - component: {fileID: 2090599084}
   m_Layer: 0
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
@@ -125105,6 +126856,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090599078}
   m_Mesh: {fileID: 4300000, guid: c304cd2c4cb00ee4ab83f32bf6a4757c, type: 3}
+--- !u!65 &2090599084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090599078}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.62088, y: 20.04329, z: 15.166832}
+  m_Center: {x: 0, y: 10.021645, z: 0}
 --- !u!1 &2092765236
 GameObject:
   m_ObjectHideFlags: 0
@@ -125779,6 +127551,7 @@ GameObject:
   - component: {fileID: 2102915724}
   - component: {fileID: 2102915723}
   - component: {fileID: 2102915722}
+  - component: {fileID: 2102915725}
   m_Layer: 0
   m_Name: Building_CoffeeShop
   m_TagString: Untagged
@@ -125867,6 +127640,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102915719}
   m_Mesh: {fileID: 4300000, guid: 7d9c8c8303f1ac74cbf055cf9cac9a22, type: 3}
+--- !u!65 &2102915725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102915719}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.399433, y: 15.631265, z: 12.922252}
+  m_Center: {x: 0, y: 7.8156323, z: 0}
 --- !u!1 &2104431262
 GameObject:
   m_ObjectHideFlags: 0
@@ -128895,5 +130689,6 @@ SceneRoots:
   - {fileID: 1434538521}
   - {fileID: 1892678173}
   - {fileID: 1379985479}
+  - {fileID: 139384130}
   - {fileID: 421938803}
   - {fileID: 680953252}
