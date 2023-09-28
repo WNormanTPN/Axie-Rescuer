@@ -2793,7 +2793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51885d513fabe34c8330f5bd19ebca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: SampleScene
+  SceneName: Demo_Scene
   _audioSlider: {fileID: 40389827}
   _audioTextValue: {fileID: 1181148926}
   _confirmbox: {fileID: 234069483}
@@ -3390,7 +3390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1626806399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,6 +5141,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767448542066229496, guid: 2548b738a9677ad4fa59c19b59fbec03,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767448542066229496, guid: 2548b738a9677ad4fa59c19b59fbec03,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767448542066229496, guid: 2548b738a9677ad4fa59c19b59fbec03,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767448542066229496, guid: 2548b738a9677ad4fa59c19b59fbec03,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.3490566
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

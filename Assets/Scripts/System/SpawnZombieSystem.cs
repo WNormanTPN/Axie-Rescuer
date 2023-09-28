@@ -32,19 +32,18 @@ namespace AxieRescuer
             var spawnerEntity = SystemAPI.GetSingletonEntity<SpawnBuffer>();
             var prefab = SystemAPI.GetSingleton<SpawnZombieComponent>();
             var random = SystemAPI.GetSingleton<RandomSingleton>();
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < prefab.Value; i++)
             {
                 
                 float3 randomPoint = new float3
                 {
-                    x = random.Random.NextFloat(playerTransform.Position.x -20f, playerTransform.Position.x + 20f),
+                    x = random.Random.NextFloat(65, -181),
                     y = playerTransform.Position.y,
-                    z = random.Random.NextFloat(playerTransform.Position.z - 20f, playerTransform.Position.z + 20f)
+                    z = random.Random.NextFloat(-50, 157)
                 };
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 10f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPoint, out hit, 40000f, NavMesh.AllAreas))
                 {
-                    Debug.Log("1");
                     count++;
                     ecb.AppendToBuffer(spawnerEntity, new SpawnBuffer
                     {
@@ -59,29 +58,6 @@ namespace AxieRescuer
                 }
             }
             ecb.Playback(state.EntityManager);
-            //if (count >= 30)
-            //{
-            //    state.Enabled = false;
-            //}
-        }
-        public float3 NextInsideSphere(Unity.Mathematics.Random rand)
-        {
-            var phi = rand.NextFloat(2 * math.PI);
-            var theta = math.acos(rand.NextFloat(-1f, 1f));
-            var r = math.pow(rand.NextFloat(), 1f / 3f);
-            var x = math.sin(theta) * math.cos(phi);
-            var y = math.sin(theta) * math.sin(phi);
-            var z = math.cos(theta);
-            return r * new float3(x, y, z);
-        }
-        public static float3 NextOnSphereSurfase(Unity.Mathematics.Random rand)
-        {
-            var phi = rand.NextFloat(2 * math.PI);
-            var theta = math.acos(rand.NextFloat(-1f, 1f));
-            var x = math.sin(theta) * math.cos(phi);
-            var y = math.sin(theta) * math.sin(phi);
-            var z = math.cos(theta);
-            return new float3(x, y, z);
         }
     }
 }
