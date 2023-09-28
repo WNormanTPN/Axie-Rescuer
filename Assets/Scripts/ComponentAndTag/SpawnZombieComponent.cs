@@ -5,6 +5,6 @@ namespace AxieRescuer
     public struct SpawnZombieComponent : IComponentData
     {
         public Entity Entity;
-        public float Range;
+        public float Value;
     }
 }
