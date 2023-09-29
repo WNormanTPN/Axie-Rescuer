@@ -4,14 +4,17 @@ using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
-public class BuildingAuthoring : MonoBehaviour
+namespace AxieRescuer
 {
-    public class BuildingBaker : Baker<BuildingAuthoring>
+    public class BuildingAuthoring : MonoBehaviour
     {
-        public override void Bake(BuildingAuthoring authoring)
+        public class BuildingBaker : Baker<BuildingAuthoring>
         {
-            var entity = GetEntity(TransformUsageFlags.Dynamic);
-            AddComponent<BuildingTag>(entity);
+            public override void Bake(BuildingAuthoring authoring)
+            {
+                var entity = GetEntity(TransformUsageFlags.Dynamic);
+                AddComponent<BuildingTag>(entity);
+            }
         }
     }
 }

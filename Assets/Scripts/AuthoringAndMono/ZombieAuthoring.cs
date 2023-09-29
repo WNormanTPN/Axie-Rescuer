@@ -29,6 +29,12 @@ public class ZombieAuthoring : MonoBehaviour
             {
                 Value = 0.05f
             });
+            AddComponent(entity, new NeedDestroy
+            {
+                CountdownTime = 1,
+            });
+            SetComponentEnabled<NeedDestroy>(entity, false);
+
         }
     }
 }

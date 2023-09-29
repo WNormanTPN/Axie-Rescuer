@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 5489431095677282639}
   - component: {fileID: 3058120534364887373}
   - component: {fileID: 6680844641631024006}
+  - component: {fileID: 1587623853395275008}
+  - component: {fileID: 6868565133271202012}
   m_Layer: 0
   m_Name: Agent Cylinder
   m_TagString: Untagged
@@ -134,9 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotionType: 2
-  Speed: 5
-  Acceleration: 8
-  AngularSpeed: 120
+  Speed: 4
+  Acceleration: 2
+  AngularSpeed: 20
   StoppingDistance: 0.1
   AutoBreaking: 1
 --- !u!114 &8909686674692713816
@@ -151,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed5c6dd07c7d6e4f857b420fa8f559a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 0.5
+  Radius: 2
   Height: 2
 --- !u!114 &2407426596913432799
 MonoBehaviour:
@@ -167,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MotionType: 0
   m_Smoothing: 0
-  m_Mass: 40
+  m_Mass: 10
   m_LinearDamping: 0.01
   m_AngularDamping: 0.05
   m_InitialLinearVelocity:
@@ -222,8 +224,8 @@ MonoBehaviour:
     y: 1
     z: 0
   m_PrimitiveSize:
-    x: 1
-    y: 1
+    x: 1.4
+    y: 1.4
     z: 2
   m_PrimitiveOrientation:
     Value:
@@ -233,11 +235,11 @@ MonoBehaviour:
     RotationOrder: 4
   m_Capsule:
     Height: 2
-    Radius: 0.5
+    Radius: 0.7
     Axis: 2
   m_Cylinder:
     Height: 2
-    Radius: 0.5
+    Radius: 0.7
     Axis: 2
   m_CylinderSideCount: 20
   m_SphereRadius: 1
@@ -257,7 +259,7 @@ MonoBehaviour:
     m_Friction:
       m_Override: 0
       m_Value:
-        Value: 0.9
+        Value: 0.8
         CombineMode: 0
     m_Restitution:
       m_Override: 0
@@ -385,3 +387,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4df892a9adf4424d80ef79d4ca100ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1587623853395275008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651556285239013162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a4cd4cbf6cf044887ce5ff1955fa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HiveMindStop:
+    Enabled: 1
+    Radius: 3
+--- !u!114 &6868565133271202012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651556285239013162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0344116cd75eaaf488b894904a1649d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Radius: 5
+  Angle: 230
+  MaxAngle: 300
+  Mode: 3
+  BlockedStop: 0
+  UseWalls: 0

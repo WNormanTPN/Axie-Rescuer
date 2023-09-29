@@ -1,4 +1,5 @@
 using Unity.Entities;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace AxieRescuer
@@ -7,6 +8,8 @@ namespace AxieRescuer
     {
         public GameObject ZombiePrefabs;
         public float Value;
+        public float2 StartMap;
+        public float2 EndMap;
         public class SpawnZombieBaking : Baker<SpawnZombieAuthoring>
         {
             public override void Bake(SpawnZombieAuthoring authoring)
@@ -17,6 +20,8 @@ namespace AxieRescuer
                 {
                     Entity = GetEntity(authoring.ZombiePrefabs,TransformUsageFlags.Dynamic),
                     Value = authoring.Value,
+                    StartMap = authoring.StartMap,
+                    EndMap = authoring.EndMap
                 });
             }
         }

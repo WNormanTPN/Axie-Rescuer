@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.Burst;
 using Unity.Entities;
 using UnityEditor;

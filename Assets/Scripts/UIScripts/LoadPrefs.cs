@@ -4,33 +4,35 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LoadPrefs : MonoBehaviour
+namespace AxieRescuer
 {
-    [Header("Volume Setting")]
-    [SerializeField] private Slider _volumeSlider;
-    [SerializeField] private TMP_Text _volumeValue;
-    [SerializeField] private Toggle _toggleFPS;
-    private float _defaultVolume = 50f;
-    private void Awake()
+    public class LoadPrefs : MonoBehaviour
     {
-        if (PlayerPrefs.HasKey("mastervolume"))
+        [Header("Volume Setting")]
+        [SerializeField] private Slider _volumeSlider;
+        [SerializeField] private TMP_Text _volumeValue;
+        [SerializeField] private Toggle _toggleFPS;
+        private float _defaultVolume = 50f;
+        private void Awake()
         {
-            float _localVolume = PlayerPrefs.GetFloat("mastervolume");
-            _volumeSlider.value = _localVolume;
-            _volumeValue.text = ((int)_localVolume).ToString();
-        }
-        if(PlayerPrefs.HasKey("istoggle"))
-        {
-            int checkToggle = PlayerPrefs.GetInt("istoggle");
-            if (checkToggle == 1) 
+            if (PlayerPrefs.HasKey("mastervolume"))
             {
-                _toggleFPS.isOn = true;
+                float _localVolume = PlayerPrefs.GetFloat("mastervolume");
+                _volumeSlider.value = _localVolume;
+                _volumeValue.text = ((int)_localVolume).ToString();
             }
-            else
+            if (PlayerPrefs.HasKey("istoggle"))
             {
-                _toggleFPS.isOn= false;
+                int checkToggle = PlayerPrefs.GetInt("istoggle");
+                if (checkToggle == 1)
+                {
+                    _toggleFPS.isOn = true;
+                }
+                else
+                {
+                    _toggleFPS.isOn = false;
+                }
             }
         }
     }
-
 }
