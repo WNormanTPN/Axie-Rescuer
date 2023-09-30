@@ -30,7 +30,7 @@ namespace AxieRescuer
             {
                 counter++;
             }
-            Debug.Log((counter + GameObject.FindObjectsOfType<Object>().Length));
+            //Debug.Log((counter + GameObject.FindObjectsOfType<Object>().Length));
         }
     }
 }

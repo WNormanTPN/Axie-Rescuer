@@ -15,13 +15,13 @@ public class CutoutObjectv2 : MonoBehaviour
 
     private void Awake()
     {
-        TargetObjects = new NativeList<LocalTransform>();
+        TargetObjects = new NativeList<LocalTransform>(Allocator.Persistent);
         mainCamera = GetComponent<Camera>();
     }
 
     private void Update()
     {
-        foreach (var targetObject in TargetObjects)
+        foreach (LocalTransform targetObject in TargetObjects)
         {
             Vector2 cutoutPos = mainCamera.WorldToViewportPoint(targetObject.Position);
             cutoutPos.y /= (Screen.width / Screen.height);
@@ -41,5 +41,10 @@ public class CutoutObjectv2 : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        TargetObjects.Dispose();
     }
 }
