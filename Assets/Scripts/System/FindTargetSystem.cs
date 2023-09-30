@@ -45,7 +45,7 @@ public partial struct FindTargetJob : IJobEntity
         ref FindTargetComponents find
         )
     {
-        if (math.distancesq(transform.Position,PlayerPosition.Position) < 30)
+        if (math.distancesq(transform.Position,PlayerPosition.Position) < 300)
         {
             find.onRange = true;
         }

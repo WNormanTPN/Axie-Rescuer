@@ -49,14 +49,15 @@ MonoBehaviour:
   GunFlashPrefab: {fileID: 160510, guid: 6e1113468f14f5d47908179a77a9654c, type: 3}
   GunFlashOffset:
     x: 0
-    y: 0
+    y: 1.2
     z: 0
+  GunFlashScale: 1.5
   WeaponType: 1
   DamageRange:
     x: 50
     y: 80
   Range: 8
-  Accuracy: 80
+  Accuracy: 90
   FireRate: 2
   ReloadTime: 1
   TotalMagazineValue: 120

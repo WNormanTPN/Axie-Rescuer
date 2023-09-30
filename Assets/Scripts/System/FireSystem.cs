@@ -98,7 +98,6 @@ namespace AxieRescuer
                             else
                             {
                                 animatorReference.Value.SetBool("Shoot_b", false);
-
                             }
                         }
                         else // Reload
@@ -119,7 +118,6 @@ namespace AxieRescuer
                     if (reloadTime.ValueRO.Timer >= reloadTime.ValueRO.Value)
                     {
                         _isReloading = false;
-                        magazineData.ValueRW.TotalValue -= magazineData.ValueRO.MaxValuePerReload - magazineData.ValueRO.CurrentValue;
                         magazineData.ValueRW.CurrentValue = magazineData.ValueRO.MaxValuePerReload;
                         animatorReference.Value.SetBool("Reload_b", false);
                     }

@@ -8,6 +8,7 @@ using UnityEngine;
 
 namespace AxieRescuer
 {
+    [UpdateInGroup(typeof(InitializationSystemGroup))]
     public partial struct EquipWeaponSystem : ISystem
     {
         [BurstCompile]
@@ -22,12 +23,23 @@ namespace AxieRescuer
 
             #region Initialize
             foreach (var (_, entity) in SystemAPI.Query<LocalTransform>()
-                .WithDisabled<InitialWeapon>()
+                .WithAll<InitialWeapon>()
                 .WithAbsent<EquippingWeapon>()
                 .WithEntityAccess()
                 )
             {
                 ecb.AddComponent(entity, new EquippingWeapon 
+                {
+                    Entity = Entity.Null,
+                });
+            }
+            foreach (var (_, entity) in SystemAPI.Query<LocalTransform>()
+                .WithDisabled<InitialWeapon>()
+                .WithAbsent<EquippingWeapon>()
+                .WithEntityAccess()
+                )
+            {
+                ecb.AddComponent(entity, new EquippingWeapon
                 {
                     Entity = Entity.Null,
                 });
