@@ -5797,9 +5797,9 @@ MonoBehaviour:
   AutogunReloadAudioClip: {fileID: 0}
   AutogunReloadVolume: 1
   ShotgunShootAudioClip: {fileID: 0}
-  ShotgunShootVolume: 1
+  ShotgunShootVolume: 0.2
   ShotgunReloadAudioClip: {fileID: 0}
-  ShotgunReloadVolume: 1
+  ShotgunReloadVolume: 0.5
   RifleShootAndReloadAudioClip: {fileID: 0}
   RifleShootAndReloadVolume: 1
   SubmachineGunShootAudioClip: {fileID: 0}

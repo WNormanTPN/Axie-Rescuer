@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace AxieRescuer
 {
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup), OrderLast = true)]
+
     public partial struct ZombieDestroySystem : ISystem
     {
         public EntityQuery ZombieDieQuery;
@@ -25,7 +27,8 @@ namespace AxieRescuer
             new ZombieDestroyJob
             {
                 ECB = ecb.AsParallelWriter(),
-            }.ScheduleParallel(ZombieDieQuery);
+            }.ScheduleParallel(ZombieDieQuery, state.Dependency).Complete();
+            ecb.Playback(state.EntityManager);
         } 
     }
     public partial struct ZombieDestroyJob : IJobEntity
@@ -36,7 +39,6 @@ namespace AxieRescuer
             in Entity entity)
         {
             ECB.SetComponentEnabled<NeedDestroy>(index,entity,true);
-
         }
     }
 }

@@ -120,6 +120,7 @@ namespace AxieRescuer
                         _isReloading = false;
                         magazineData.ValueRW.CurrentValue = magazineData.ValueRO.MaxValuePerReload;
                         animatorReference.Value.SetBool("Reload_b", false);
+                        reloadTime.ValueRW.Timer = 0;
                     }
                 }
 
@@ -209,7 +210,7 @@ namespace AxieRescuer
                 CollidesWith = ~0u,
                 GroupIndex = 0
             };
-            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 0.5f };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 1f };
             BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
             var rayCastInput = new ColliderCastInput
             {
@@ -266,7 +267,7 @@ namespace AxieRescuer
                 CollidesWith = ~0u,
                 GroupIndex = 0
             };
-            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 0.5f };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 1f };
             BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
             var rayCastInput = new ColliderCastInput
             {

@@ -25894,7 +25894,7 @@ Transform:
   - {fileID: 1487065200}
   - {fileID: 122824215}
   - {fileID: 1254797904}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1379985479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411768015
 GameObject:
@@ -85548,6 +85548,7 @@ Transform:
   - {fileID: 567454553}
   - {fileID: 1340598465}
   - {fileID: 1992973122}
+  - {fileID: 411064732}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380040673
@@ -113798,7 +113799,7 @@ PrefabInstance:
     - target: {fileID: 2123401276559792554, guid: a45a47124831bad498ee039d380e9ec6,
         type: 3}
       propertyPath: m_text
-      value: vinh
+      value: FPS
       objectReference: {fileID: 0}
     - target: {fileID: 2123401276559792554, guid: a45a47124831bad498ee039d380e9ec6,
         type: 3}
@@ -131129,4 +131130,3 @@ SceneRoots:
   - {fileID: 680953252}
   - {fileID: 1835500547}
   - {fileID: 2014630671}
-  - {fileID: 411064732}

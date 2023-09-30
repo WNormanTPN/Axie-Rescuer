@@ -1,6 +1,7 @@
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Transforms;
 
 namespace AxieRescuer
 {
@@ -8,6 +9,7 @@ namespace AxieRescuer
     public partial struct DestroyEntitySystem : ISystem
     {
         private EntityQuery _needDestroyQuery;
+        private EntityQuery _needDestroyCompletelyQuery;
 
         [BurstCompile]
         public void OnCreate(ref SystemState state)
@@ -27,7 +29,8 @@ namespace AxieRescuer
             {
                 DeltaTime = deltaTime,
                 ECB = ecb.AsParallelWriter(),
-            }.ScheduleParallel(state.Dependency).Complete();
+            }.ScheduleParallel(_needDestroyQuery, state.Dependency).Complete();
+
             ecb.Playback(state.EntityManager);
             ecb.Dispose();
         }

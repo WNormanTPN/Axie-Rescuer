@@ -59,6 +59,6 @@ MonoBehaviour:
   Range: 25
   Accuracy: 40
   FireRate: 1
-  ReloadTime: 1
+  ReloadTime: 2
   TotalMagazineValue: 100
-  MaxValuePerReload: 20
+  MaxValuePerReload: 1

@@ -6,35 +6,38 @@ using UnityEngine.UI;
 
 public class StartIntro : MonoBehaviour
 {
+    public GameObject IntroUI;
     public Image IntroText;
-    public Image IntroBackground;
-    public float WaitTime;
-    public float FadeRate;
+    public GameObject NextUI;
+
     void Awake()
     {
-        StartCoroutine(FadeIn());
-        
+        StartCoroutine(FadeInAndOut());
     }
-    IEnumerator FadeIn()
+    IEnumerator FadeInAndOut()
     {
         var targetAlpha = 1.0f;
         Color curColor = IntroText.color;
-        while (Mathf.Abs(curColor.a - targetAlpha) > 0.0001f)
+        while (curColor.a < targetAlpha)
         {
-            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
+            curColor.a += 0.04f;
+            IntroText.transform.localScale *= 1.005f;
             IntroText.color = curColor;
-            yield return null;
+            yield return new WaitForSeconds(0.08f);
         }
+        yield return StartCoroutine(FadeOut());
     }
     IEnumerator FadeOut()
     {
-        var targetAlpha = 0;
+        var targetAlpha = 0f;
         Color curColor = IntroText.color;
         while (curColor.a > targetAlpha)
         {
-            curColor.a = Mathf.Lerp(targetAlpha, curColor.a, FadeRate * Time.deltaTime);
+            curColor.a -= 0.03f;
             IntroText.color = curColor;
-            yield return null;
+            yield return new WaitForSeconds(0.08f);
         }
+        IntroUI.SetActive(false);
+        NextUI.SetActive(true);
     }
 }

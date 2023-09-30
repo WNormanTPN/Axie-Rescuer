@@ -31,7 +31,7 @@ public class ZombieAuthoring : MonoBehaviour
             });
             AddComponent(entity, new NeedDestroy
             {
-                CountdownTime = 1,
+                CountdownTime = 0f,
             });
             SetComponentEnabled<NeedDestroy>(entity, false);
 

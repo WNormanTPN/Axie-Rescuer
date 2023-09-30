@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AxieRescuer
 {
-    public class RunningAudioManager : MonoBehaviour
+    public class CharacterAudioManager : MonoBehaviour
     {
         [Header("Running")]
         public AudioClip RunningAudioClip;

@@ -5,6 +5,7 @@ using Unity.Logging;
 
 namespace AxieRescuer
 {
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup), OrderFirst = true)]
     public partial struct ApplyDamageSystem : ISystem
     {
         private EntityQuery _damageReceiverQuery;
