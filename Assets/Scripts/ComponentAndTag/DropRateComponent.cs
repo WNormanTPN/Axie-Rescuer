@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
-
-public struct DropRate : IComponentData
+namespace AxieRescuer
 {
-    public float Value;
+    public struct DropRate : IComponentData
+    {
+        public float Value;
+    }
 }

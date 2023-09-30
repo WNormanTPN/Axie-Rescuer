@@ -37,9 +37,9 @@ namespace AxieRescuer
                 
                 float3 randomPoint = new float3
                 {
-                    x = random.Random.NextFloat(65, -181),
+                    x = random.Random.NextFloat(prefab.StartMap.x, prefab.EndMap.x),
                     y = playerTransform.Position.y,
-                    z = random.Random.NextFloat(-50, 157)
+                    z = random.Random.NextFloat(prefab.StartMap.y, prefab.EndMap.y)
                 };
                 NavMeshHit hit;
                 if (NavMesh.SamplePosition(randomPoint, out hit, 40000f, NavMesh.AllAreas))
