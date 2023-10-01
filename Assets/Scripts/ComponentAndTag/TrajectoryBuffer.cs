@@ -8,6 +8,7 @@ namespace AxieRescuer
     {
         public float3 Start;
         public float3 End;
+        public float Width;
         public float ShowTime;
     }
 }

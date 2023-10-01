@@ -25,12 +25,12 @@ namespace AxieRescuer
             var trajectories = SystemAPI.GetSingletonBuffer<Trajectory>();
             for(int i = 0; i < trajectories.Length; i++)
             {
-                DrawLine(trajectories[i].Start, trajectories[i].End, Color.yellow, trajectories[i].ShowTime);
+                DrawLine(trajectories[i].Start, trajectories[i].End, trajectories[i].Width, Color.yellow, trajectories[i].ShowTime);
             }
             trajectories.Clear();
         }
 
-        void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
+        void DrawLine(Vector3 start, Vector3 end, float width, Color color, float duration = 0.2f)
         {
             GameObject myLine = new GameObject();
             myLine.transform.position = start;
@@ -38,8 +38,8 @@ namespace AxieRescuer
             LineRenderer lr = myLine.GetComponent<LineRenderer>();
             lr.material = new Material(Shader.Find("Universal Render Pipeline/Lit"));
             lr.material.color = Color.yellow;
-            lr.startWidth = 0.1f;
-            lr.endWidth = 0.1f;
+            lr.startWidth = width;
+            lr.endWidth = width;
             lr.SetPosition(0, start);
             lr.SetPosition(1, end);
             GameObject.Destroy(myLine, duration);

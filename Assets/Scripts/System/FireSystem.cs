@@ -1,17 +1,12 @@
-using System.Collections;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
-using Unity.Entities.UniversalDelegates;
 using Unity.Jobs;
-using Unity.Logging;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
-using UnityEngine;
 using Collider = Unity.Physics.Collider;
 using Random = Unity.Mathematics.Random;
-using RaycastHit = Unity.Physics.RaycastHit;
 using SphereCollider = Unity.Physics.SphereCollider;
 
 namespace AxieRescuer
@@ -54,9 +49,9 @@ namespace AxieRescuer
                 {
                     if (magazineData.ValueRO.TotalValue > 0)
                     {
-                        if (magazineData.ValueRO.CurrentValue > 0) // If projectile count > 0
+                        if (fireRate.ValueRO.Timer >= 1.0 / fireRate.ValueRO.Value) // if can fire
                         {
-                            if (fireRate.ValueRO.Timer >= 1.0 / fireRate.ValueRO.Value) // if can fire
+                            if (magazineData.ValueRO.CurrentValue > 0) // If projectile count > 0
                             {
                                 magazineData.ValueRW.CurrentValue--;
                                 magazineData.ValueRW.TotalValue--;
@@ -79,7 +74,7 @@ namespace AxieRescuer
                                     animatorReference.Value.SetBool("Shoot_b", true);
                                     state.Dependency = new FireJob
                                     {
-                                        StartPos = playerTransform.Position + math.up() + playerTransform.Forward()*1,
+                                        StartPos = playerTransform.Position + math.up()*2 + playerTransform.Forward()*1,
                                         Direction = playerTransform.Forward(),
                                         GunFlash = gunFlash,
                                         WeaponType = weaponType,
@@ -95,16 +90,16 @@ namespace AxieRescuer
                                     state.Dependency.Complete();
                                 }
                             }
-                            else
+                            else // Reload
                             {
+                                _isReloading = true;
                                 animatorReference.Value.SetBool("Shoot_b", false);
+                                animatorReference.Value.SetBool("Reload_b", true);
                             }
                         }
-                        else // Reload
+                        else
                         {
-                            _isReloading = true;
                             animatorReference.Value.SetBool("Shoot_b", false);
-                            animatorReference.Value.SetBool("Reload_b", true);
                         }
                     }
                 }
@@ -131,7 +126,7 @@ namespace AxieRescuer
             }
         }
     }
-    
+
     [BurstCompile]
     public struct FireJob : IJob
     {
@@ -151,51 +146,43 @@ namespace AxieRescuer
         public void Execute()
         {
             Entity gunFlash;
-            switch(WeaponType.Value)
+            gunFlash = ECB.Instantiate(GunFlash.Entity);
+            ECB.SetComponent(gunFlash, new LocalTransform
             {
+                Position = GunFlash.Offset + StartPos,
+                Rotation = quaternion.LookRotationSafe(Direction, math.up()),
+                Scale = GunFlash.Scale,
+            });
+            ECB.SetComponent(gunFlash, new NeedDestroy
+            {
+                CountdownTime = 0.05f,
+            });
+            ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
+            switch (WeaponType.Value)
+            {
+                case WeaponTypeEnum.Handgun:
+                    ShootThrough(1.2f);
+                    break;
+                case WeaponTypeEnum.Rifle:
+                    ShootThrough(1.5f);
+                    break;
                 case WeaponTypeEnum.Shotgun:
-                    gunFlash = ECB.Instantiate(GunFlash.Entity);
-                    ECB.SetComponent(gunFlash, new LocalTransform
-                    {
-                        Position = GunFlash.Offset + StartPos,
-                        Rotation = quaternion.LookRotationSafe(Direction, math.up()),
-                        Scale = GunFlash.Scale,
-                    });
-                    ECB.SetComponent(gunFlash, new NeedDestroy
-                    {
-                        CountdownTime = 0.05f,
-                    });
-                    ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
-
-
                     var projectileCount = Random.NextInt(5, 10);
-                    for(int i = 0; i < projectileCount; i++)
+                    for (int i = 0; i < projectileCount; i++)
                     {
-                        ShootWithoutPenetration();
+                        ShootWithoutPenetration(1f);
                     }
 
                     break;
                 default:
-                    gunFlash = ECB.Instantiate(GunFlash.Entity);
-                    ECB.SetComponent(gunFlash, new LocalTransform
-                    {
-                        Position = GunFlash.Offset + StartPos,
-                        Rotation = quaternion.LookRotationSafe(Direction, math.up()),
-                        Scale = GunFlash.Scale,
-                    });
-                    ECB.SetComponent(gunFlash, new NeedDestroy
-                    {
-                        CountdownTime = 0.05f,
-                    });
-                    ECB.SetComponentEnabled<NeedDestroy>(gunFlash, true);
-                    ShootWithoutPenetration();
-                    
+                    ShootWithoutPenetration(1.2f);
+
                     break;
             }
         }
 
         [BurstCompile]
-        public unsafe void ShootThrough()
+        public unsafe void ShootThrough(float projectileRadius)
         {
             var deviationAngle = 90 * (100 - Accuracy.Value) / 100;
             deviationAngle = math.radians(Random.NextFloat(-deviationAngle, deviationAngle));
@@ -210,7 +197,7 @@ namespace AxieRescuer
                 CollidesWith = ~0u,
                 GroupIndex = 0
             };
-            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 1f };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = projectileRadius };
             BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
             var rayCastInput = new ColliderCastInput
             {
@@ -220,12 +207,14 @@ namespace AxieRescuer
             };
             var hits = new NativeList<ColliderCastHit>(Allocator.Temp);
             World.CastCollider(rayCastInput, ref hits);
-            var tempHits = hits;
+            var tempHits = new NativeList<ColliderCastHit>(Allocator.Temp);
+            tempHits.CopyFrom(hits);
             hits.Clear();
             ECB.AppendToBuffer(DrawTrajectorySingleton, new Trajectory
             {
                 Start = StartPos,
                 End = endPos,
+                Width = projectileRadius / 4,
                 ShowTime = 0.1f,
             });
             for (int i = tempHits.Length - 2; i > 0; i--)
@@ -249,10 +238,12 @@ namespace AxieRescuer
                     });
                 }
             }
+            hits.Dispose();
+            tempHits.Dispose();
         }
 
         [BurstCompile]
-        public unsafe void ShootWithoutPenetration()
+        public unsafe void ShootWithoutPenetration(float projectileRadius)
         {
             var deviationAngle = 90 * (100 - Accuracy.Value) / 100;
             deviationAngle = math.radians(Random.NextFloat(-deviationAngle, deviationAngle));
@@ -267,7 +258,7 @@ namespace AxieRescuer
                 CollidesWith = ~0u,
                 GroupIndex = 0
             };
-            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = 1f };
+            SphereGeometry sphereGeometry = new SphereGeometry() { Center = float3.zero, Radius = projectileRadius };
             BlobAssetReference<Collider> sphereCollider = SphereCollider.Create(sphereGeometry, filter);
             var rayCastInput = new ColliderCastInput
             {
@@ -277,9 +268,10 @@ namespace AxieRescuer
             };
             var hits = new NativeList<ColliderCastHit>(Allocator.Temp);
             World.CastCollider(rayCastInput, ref hits);
-            if (hits.Length > 1)
+
+            var isHit = GetClosestHitPosition(EntityManager, StartPos, hits, out var closestHit);
+            if (isHit)
             {
-                var closestHit = hits[hits.Length - 2];
                 if (EntityManager.HasComponent<ZombieTag>(closestHit.Entity))
                 {
                     ECB.AppendToBuffer(closestHit.Entity, new DamageReceived
@@ -293,12 +285,57 @@ namespace AxieRescuer
                     endPos = closestHit.Position;
                 }
             }
+
             ECB.AppendToBuffer(DrawTrajectorySingleton, new Trajectory
             {
                 Start = StartPos,
                 End = endPos,
+                Width = projectileRadius / 4,
                 ShowTime = 0.1f,
             });
+            hits.Dispose();
+        }
+
+        [BurstCompile]
+        public bool GetClosestHitPosition(EntityManager entityManager, float3 startPos, NativeList<ColliderCastHit> hits, out ColliderCastHit closestHit)
+        {
+            if (hits.Length == 0)
+            {
+                closestHit = new ColliderCastHit(); // Provide a default value or handle the case where there are no hits.
+                return false; // No hits to process.
+            }
+
+            ColliderCastHit? validClosestHit = null;
+            float closestDistance = float.MaxValue;
+
+            for (int i = 0; i < hits.Length; i++)
+            {
+                ColliderCastHit currentHit = hits[i];
+                Entity hitEntity = currentHit.Entity;
+
+                if (entityManager.HasComponent<ZombieTag>(hitEntity) ||
+                    entityManager.HasComponent<BuildingTag>(hitEntity))
+                {
+                    float currentDistance = math.length(currentHit.Position - startPos);
+
+                    if (currentDistance < closestDistance)
+                    {
+                        closestDistance = currentDistance;
+                        validClosestHit = currentHit;
+                    }
+                }
+            }
+
+            if (validClosestHit.HasValue)
+            {
+                closestHit = validClosestHit.Value;
+                return true; // Valid closest hit found.
+            }
+            else
+            {
+                closestHit = new ColliderCastHit(); // Provide a default value when no valid hits are found.
+                return false; // No valid hits found.
+            }
         }
     }
 }

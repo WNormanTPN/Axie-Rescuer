@@ -3885,28 +3885,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunningAudioClip: {fileID: 8300000, guid: bd0c678a57935284a8557158dbb84e37, type: 3}
   RunningAudioVolume: 1
-  HandgunShootAudioClip: {fileID: 0}
-  HandgunShootVolume: 1
-  HandgunReloadAudioClip: {fileID: 0}
-  HandgunReloadVolume: 1
+  HandgunShootAudioClip: {fileID: 8300000, guid: a276ea42bef0e514587278a8d3fb2c8c,
+    type: 3}
+  HandgunShootVolume: 0.1
+  HandgunReloadAudioClip: {fileID: 8300000, guid: d76faec0f977127459d2adc912435646,
+    type: 3}
+  HandgunReloadVolume: 0.1
   AutogunShootAudioClip: {fileID: 0}
-  AutogunShootVolume: 1
+  AutogunShootVolume: 0.1
   AutogunReloadAudioClip: {fileID: 0}
-  AutogunReloadVolume: 1
-  ShotgunShootAudioClip: {fileID: 0}
-  ShotgunShootVolume: 0.2
-  ShotgunReloadAudioClip: {fileID: 0}
-  ShotgunReloadVolume: 0.5
-  RifleShootAndReloadAudioClip: {fileID: 0}
-  RifleShootAndReloadVolume: 1
+  AutogunReloadVolume: 0.1
+  ShotgunShootAudioClip: {fileID: 8300000, guid: a2579e780a6cfd1409296de8e739e7b1,
+    type: 3}
+  ShotgunShootVolume: 0.1
+  ShotgunReloadAudioClip: {fileID: 8300000, guid: 558cefe01fa2818479af6501f1a3501d,
+    type: 3}
+  ShotgunReloadVolume: 0.1
+  RifleShootAndReloadAudioClip: {fileID: 8300000, guid: dad4ec2fd02628847bc40aa73f534a23,
+    type: 3}
+  RifleShootAndReloadVolume: 0.1
   SubmachineGunShootAudioClip: {fileID: 0}
-  SubmachineGunShootVolume: 1
+  SubmachineGunShootVolume: 0.1
   SubmachineGunReloadAudioClip: {fileID: 0}
-  SubmachinegunReloadVolume: 1
+  SubmachinegunReloadVolume: 0.1
   MinigunShootAudioClip: {fileID: 0}
-  MinigunShootVolume: 1
+  MinigunShootVolume: 0.1
   MinigunReloadAudioClip: {fileID: 0}
-  MinigunReloadVolume: 1
+  MinigunReloadVolume: 0.1
 --- !u!114 &7173685932822286810
 MonoBehaviour:
   m_ObjectHideFlags: 0

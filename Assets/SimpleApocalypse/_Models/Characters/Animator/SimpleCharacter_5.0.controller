@@ -1177,8 +1177,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.26785684
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
-  m_HasExitTime: 1
+  m_ExitTime: 0.5
+  m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -2438,7 +2438,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.26785684
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
+  m_ExitTime: 0.2
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -3097,7 +3097,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.15957445
   m_TransitionOffset: 0
-  m_ExitTime: 0.84042555
+  m_ExitTime: 1
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -3638,7 +3638,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.15957445
   m_TransitionOffset: 0
   m_ExitTime: 0.84042555
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -5032,8 +5032,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.44117647
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
-  m_HasExitTime: 1
+  m_ExitTime: 0.1
+  m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -6736,7 +6736,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.37499982
   m_TransitionOffset: 0
-  m_ExitTime: 1
+  m_ExitTime: 0.5
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -6836,7 +6836,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.07575757
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
+  m_ExitTime: 0.5
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -7158,8 +7158,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.37499982
   m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
+  m_ExitTime: 0.5
+  m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -9408,7 +9408,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Character_Shotgun_Reload
-  m_Speed: 0.5
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110127643}
@@ -10305,7 +10305,7 @@ AnimatorStateMachine:
     m_Position: {x: -528, y: 372, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110268270}
-    m_Position: {x: 170, y: 220, z: 0}
+    m_Position: {x: 80, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110265482}
     m_Position: {x: 276, y: 372, z: 0}
