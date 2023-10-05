@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 3058120534364887373}
   - component: {fileID: 6680844641631024006}
   - component: {fileID: -5379545939336726551}
+  - component: {fileID: -6302043499426312448}
+  - component: {fileID: 6868858820362718768}
   m_Layer: 0
   m_Name: ZombieEntity
   m_TagString: Untagged
@@ -55,7 +57,7 @@ MonoBehaviour:
   MotionType: 2
   Speed: 4
   Acceleration: 2
-  AngularSpeed: 20
+  AngularSpeed: 400
   StoppingDistance: 0.1
   AutoBreaking: 1
 --- !u!114 &8909686674692713816
@@ -70,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed5c6dd07c7d6e4f857b420fa8f559a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 2
+  Radius: 1
   Height: 2
 --- !u!114 &1587623853395275008
 MonoBehaviour:
@@ -99,12 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0344116cd75eaaf488b894904a1649d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 5
+  Radius: 1
   Angle: 230
   MaxAngle: 300
   Mode: 3
   BlockedStop: 0
-  UseWalls: 0
+  UseWalls: 1
 --- !u!114 &2407426596913432799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,3 +352,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterPrefab: {fileID: 0}
+--- !u!114 &-6302043499426312448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651556285239013162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fe6fc1ebf8ff240ad5b12ad70ce1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AgentTypeId: 0
+  AreaMask: -1
+  AutoRepath: 1
+  MappingExtent:
+    x: 10
+    y: 10
+    z: 10
+--- !u!114 &6868858820362718768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651556285239013162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d72058503702eb42aca97d680e69de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
