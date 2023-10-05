@@ -12,6 +12,8 @@ public class ZombieAuthoring : MonoBehaviour
         {
             var entity = GetEntity(TransformUsageFlags.Dynamic);
             AddComponent<ZombieTag>(entity);
+            AddComponent<ZombieNeedInitTag>(entity);
+            SetComponentEnabled<ZombieNeedInitTag>(entity, true);
             AddComponent(entity, new Health
             {
                 Max = 10,
@@ -34,7 +36,6 @@ public class ZombieAuthoring : MonoBehaviour
                 CountdownTime = 0f,
             });
             SetComponentEnabled<NeedDestroy>(entity, false);
-
         }
     }
 }

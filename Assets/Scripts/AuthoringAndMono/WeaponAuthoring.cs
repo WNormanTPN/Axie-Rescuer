@@ -67,6 +67,8 @@ namespace AxieRescuer
                 });
                 AddComponent<DroppedItem>(entity);
                 SetComponentEnabled<DroppedItem>(entity, false);
+                AddComponent<NeedDestroy>(entity);
+                SetComponentEnabled<NeedDestroy>(entity, false);
             }
         }
     }

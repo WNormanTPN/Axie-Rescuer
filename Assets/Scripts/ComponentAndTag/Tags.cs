@@ -8,4 +8,5 @@ namespace AxieRescuer
     public struct IsDie : IComponentData, IEnableableComponent { }
     public struct DroppedItem : IComponentData, IEnableableComponent { }
     public struct SpawnEnemyTag : IComponentData { }
+    public struct ZombieNeedInitTag : IComponentData, IEnableableComponent { }
 }

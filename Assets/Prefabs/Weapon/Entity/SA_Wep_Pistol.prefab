@@ -61,4 +61,4 @@ MonoBehaviour:
   FireRate: 1.5
   ReloadTime: 3
   TotalMagazineValue: 120
-  MaxValuePerReload: 30
+  MaxValuePerReload: 10
