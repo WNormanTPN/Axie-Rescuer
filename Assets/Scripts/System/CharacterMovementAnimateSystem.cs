@@ -53,12 +53,22 @@ namespace AxieRescuer
             #endregion
 
             #region Zombie Movement
-            foreach (var (transform, animatorReference) in
-                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<ZombieTag>())
+            foreach (var (transform, animatorReference, entity) in
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<ZombieTag>().WithEntityAccess())
             {
-                animatorReference.Value.Play("Zombie_Walk");
-                animatorReference.Value.transform.position = (Vector3)transform.Position;
-                animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
+                var hasTarget = SystemAPI.GetComponent<FindTargetComponents>(entity).onRange;
+                if (hasTarget)
+                {
+                    animatorReference.Value.Play("Zombie_Walk");
+                    animatorReference.Value.transform.position = (Vector3)transform.Position;
+                    animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
+                }
+                else
+                {
+                    animatorReference.Value.Play("Zombie_Idle");
+                    animatorReference.Value.transform.position = (Vector3)transform.Position;
+                    animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
+                }
             }
 
             #endregion
