@@ -24,6 +24,7 @@ namespace AxieRescuer
         }
         public void OnUpdate(ref SystemState state)
         {
+          
             state.Enabled = false;
             var count = 0;
             var ecb = new EntityCommandBuffer(Allocator.Temp);
@@ -34,7 +35,6 @@ namespace AxieRescuer
             var random = SystemAPI.GetSingleton<RandomSingleton>();
             for (int i = 0; i < prefab.Value; i++)
             {
-                
                 float3 randomPoint = new float3
                 {
                     x = random.Random.NextFloat(prefab.StartMap.x, prefab.EndMap.x),
