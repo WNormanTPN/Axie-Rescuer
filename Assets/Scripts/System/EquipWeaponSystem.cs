@@ -58,6 +58,14 @@ namespace AxieRescuer
                 // Remove current weapon
                 if(equippingWeapon.Entity != Entity.Null)
                 {
+                    var children = state.EntityManager.GetBuffer<Child>(entity);
+                    for(int i = 0; i < children.Length; i++)
+                    {
+                        if (children[i].Value.Equals(equippingWeapon.Entity))
+                        {
+                            children.RemoveAt(i);
+                        }
+                    }
                     ecb.DestroyEntity(equippingWeapon.Entity);
                     GameObject.Destroy(equippingWeapon.Object);
                 }

@@ -5,7 +5,7 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 4
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 281eebb7a74d4e1439a5fd275e11619d
@@ -3620,7 +3620,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &59181267
 Transform:
@@ -52108,7 +52108,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &815263936
 Transform:
@@ -65983,7 +65983,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &1090395171
 Transform:
@@ -68457,6 +68457,7 @@ GameObject:
   - component: {fileID: 1126568310}
   - component: {fileID: 1126568311}
   - component: {fileID: 1126568312}
+  - component: {fileID: 1126568313}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -68621,6 +68622,47 @@ MonoBehaviour:
   wallMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1126568313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126568304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4640b6287f12b244bcb849ae925a9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZombiePrefabList:
+  - {fileID: 196320, guid: 042872c1bba04d84eb9f9e686d669877, type: 3}
+  - {fileID: 177236, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 3}
+  - {fileID: 171480, guid: ea9791ddb8d44474bbcec609b9748edf, type: 3}
+  - {fileID: 150210, guid: ffd8d0a68e87f5640819a89549abfb79, type: 3}
+  - {fileID: 126046, guid: 4502d6ca501d94b47aec5f55c8697011, type: 3}
+  - {fileID: 137060, guid: f388b7171e9ede04f99aec418f5411d2, type: 3}
+  - {fileID: 121698, guid: 4b567cfc65370f04fbceead813c886d6, type: 3}
+  - {fileID: 199286, guid: 94a1f41d699408c4b89c5dd302ad12ea, type: 3}
+  - {fileID: 119274, guid: 6c48ed3b2c64908448212ef062aace3e, type: 3}
+  - {fileID: 123560, guid: 87e8f7080f063734abc6a8369a1ff993, type: 3}
+  - {fileID: 155090, guid: 6b616d5eee8e5bf4abc92b3d1fff00bf, type: 3}
+  - {fileID: 165266, guid: 1e2e55f2b72bd944baa992df728abe80, type: 3}
+  - {fileID: 105456, guid: eff2b11c7f07f0647942c29a970c06a9, type: 3}
+  - {fileID: 102404, guid: f47fae03f2aefa243a408ff3ac3fcdc3, type: 3}
+  - {fileID: 195656, guid: ce30757dc561ff843b915619973f7f78, type: 3}
+  - {fileID: 110810, guid: b0db85a3948205d47baea4b77656fb11, type: 3}
+  - {fileID: 144900, guid: aea60f95e48ea874da1cd93b8e9b4db5, type: 3}
+  - {fileID: 126250, guid: 366bb547ba7bba243addbcf5bea7e9fe, type: 3}
+  - {fileID: 177384, guid: 0e04ae10af860dc46abd93e450a1472b, type: 3}
+  - {fileID: 164274, guid: 4c55634be023e4d40ba3a85407347daf, type: 3}
+  - {fileID: 140344, guid: d3c324f7d1cc64045ab231e0e0c0e9f7, type: 3}
+  - {fileID: 136720, guid: 1e56599280e0eff43b580ef5c7e3dec2, type: 3}
+  - {fileID: 167418, guid: 86fad03278650744eaecbe900ae34d6d, type: 3}
+  - {fileID: 114854, guid: 7822b01f89476d846847d47f7c45f689, type: 3}
+  - {fileID: 147980, guid: 33fe945564a51f64f8d6ea8f0c2e8be9, type: 3}
+  - {fileID: 160776, guid: 9172b776598ca90448277d43a7b00e08, type: 3}
+  - {fileID: 181348, guid: 02fa487f63c3989429418e446c705207, type: 3}
+  - {fileID: 135638, guid: 433545daff80fe347a73cc1fd76ebeee, type: 3}
 --- !u!1001 &1128290481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75149,7 +75191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &1232660233
 Transform:
@@ -123748,7 +123790,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &2028362353
 Transform:
@@ -123953,7 +123995,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &2029751828
 Transform:

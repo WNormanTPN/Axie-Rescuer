@@ -17,6 +17,7 @@ namespace AxieRescuer
             foreach (var (CharacterGameObjectPrefab, entity) in
                      SystemAPI.Query<CharacterGameObjectPrefab>().WithNone<CharacterAnimatorReference>().WithEntityAccess())
             {
+                if (CharacterGameObjectPrefab.Value == null) continue;
                 var newCompanionGameObject = Object.Instantiate(CharacterGameObjectPrefab.Value);
                 StaticGameObjectReference.Player = newCompanionGameObject;
                 var newAnimatorReference = new CharacterAnimatorReference
@@ -52,12 +53,12 @@ namespace AxieRescuer
             #endregion
 
             #region Zombie Movement
-            foreach (var (transform, animatorReference, moveDirection) in
-                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference, MoveDirection>().WithAll<ZombieTag>())
+            foreach (var (transform, animatorReference) in
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<ZombieTag>())
             {
                 animatorReference.Value.Play("Zombie_Walk");
-                animatorReference.Value.transform.position = transform.Position;
-                animatorReference.Value.transform.rotation = transform.Rotation;
+                animatorReference.Value.transform.position = (Vector3)transform.Position;
+                animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
             }
 
             #endregion

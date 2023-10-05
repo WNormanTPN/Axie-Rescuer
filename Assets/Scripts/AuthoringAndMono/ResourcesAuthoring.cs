@@ -8,7 +8,6 @@ namespace AxieRescuer
 public class ResourcesAuthoring : MonoBehaviour
 {
     public List<GameObject> WeaponList = new List<GameObject>();
-    public List<GameObject> ZombiePrefabs = new List<GameObject>();
     public class ResourcesBaker : Baker<ResourcesAuthoring>
     {
             public override void Bake(ResourcesAuthoring authoring)
@@ -22,7 +21,6 @@ public class ResourcesAuthoring : MonoBehaviour
                         Value = GetEntity(weaponObject, TransformUsageFlags.Dynamic),
                     });
                 }
-
             }
         }
     }
