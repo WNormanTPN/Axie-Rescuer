@@ -65,6 +65,10 @@ namespace AxieRescuer
 
                 #endregion
 
+                #region Other Components
+                AddBuffer<FollowingAxie>(entity);
+
+                #endregion
             }
         }
     }

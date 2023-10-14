@@ -31,7 +31,7 @@ namespace AxieRescuer
 
             #region Character Movement
             foreach (var (transform, animatorReference, moveDirection) in
-                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference, MoveDirection>().WithNone<ZombieTag>())
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference, MoveDirection>().WithAll<PlayerTag>())
             {
                 animatorReference.Value.transform.rotation = transform.Rotation;
                 animatorReference.Value.transform.position = transform.Position;
@@ -53,10 +53,31 @@ namespace AxieRescuer
             #endregion
 
             #region Zombie Movement
-            foreach (var (transform, animatorReference) in
-                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<ZombieTag>())
+            foreach (var (transform, animatorReference, entity) in
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<ZombieTag>().WithEntityAccess())
             {
-                animatorReference.Value.Play("Zombie_Walk");
+                var hasTarget = SystemAPI.GetComponent<FindTargetComponents>(entity).onRange;
+                if (hasTarget)
+                {
+                    animatorReference.Value.Play("Zombie_Walk");
+                    animatorReference.Value.transform.position = (Vector3)transform.Position;
+                    animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
+                }
+                else
+                {
+                    animatorReference.Value.Play("Zombie_Idle");
+                    animatorReference.Value.transform.position = (Vector3)transform.Position;
+                    animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
+                }
+            }
+
+            #endregion
+
+            #region Axie Movement
+            foreach (var (transform, animatorReference, entity) in
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<AxieTag>().WithEntityAccess())
+            {
+                animatorReference.Value.SetInteger("Anim_Value_i", 0);
                 animatorReference.Value.transform.position = (Vector3)transform.Position;
                 animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
             }

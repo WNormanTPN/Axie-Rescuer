@@ -5682,7 +5682,7 @@ GameObject:
   - component: {fileID: -8922187301093865509}
   m_Layer: 0
   m_Name: SA_Character_MaleSurvivor01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

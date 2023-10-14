@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 2930251900337123947}
   m_Layer: 0
   m_Name: SA_Character_Biohazard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

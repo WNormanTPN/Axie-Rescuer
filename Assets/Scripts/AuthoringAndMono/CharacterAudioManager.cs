@@ -56,6 +56,7 @@ namespace AxieRescuer
             runningAudioSource.loop = true;
             runningAudioSource.playOnAwake = false;
             runningAudioSource.volume = RunningAudioVolume;
+            runningAudioSource.pitch = 0.9f;
             var gunAudioSourceObject = Instantiate(new GameObject(nameof(gunAudioSource)), transform);
             gunAudioSource = gunAudioSourceObject.AddComponent<AudioSource>();
             gunAudioSource.clip = RunningAudioClip;

@@ -1,7 +1,13 @@
+using System;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Jobs;
 using Unity.Logging;
+using Unity.Mathematics;
+using Unity.Transforms;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace AxieRescuer
 {
@@ -16,18 +22,37 @@ namespace AxieRescuer
             _damageReceiverQuery = SystemAPI.QueryBuilder()
                 .WithAll<Health>()
                 .WithAll<DamageReceived>()
+                .WithAll<LocalTransform>()
                 .Build();
             state.RequireForUpdate(_damageReceiverQuery);
+            state.RequireForUpdate<FollowOffset>();
         }
 
-        [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
             var ecb = new EntityCommandBuffer(Allocator.TempJob);
+            var posAliveList = new NativeList<float3>(_damageReceiverQuery.CalculateEntityCountWithoutFiltering(), state.WorldUpdateAllocator);
+            var healthAliveList = new NativeList<Health>(_damageReceiverQuery.CalculateEntityCountWithoutFiltering(), state.WorldUpdateAllocator);
+            var angleOffset = SystemAPI.GetSingleton<FollowOffset>().Rotation.y;
+
             new ApplyDamageJob
             {
                 ECB = ecb.AsParallelWriter(),
-            }.ScheduleParallel(state.Dependency).Complete();
+                PosAliveList = posAliveList.AsParallelWriter(),
+                HealthAliveList = healthAliveList.AsParallelWriter(),
+            }.ScheduleParallel(_damageReceiverQuery, state.Dependency).Complete();
+
+            for(int i = 0; i < posAliveList.Length; i++)
+            {
+                if (posAliveList[i].Equals(float3.zero)) return;
+                var healthBar = GameObject.Instantiate(StaticGameObjectReference.HealthBar);
+                healthBar.transform.position = posAliveList[i] + math.up() * 3;
+                healthBar.transform.eulerAngles += new Vector3(0, angleOffset, 0);
+                var health = healthBar.GetComponentInChildren<Slider>();
+                health.value = healthAliveList[i].Current / healthAliveList[i].Max;
+                GameObject.Destroy(healthBar, 0.2f);
+            }
+
             ecb.Playback(state.EntityManager);
             ecb.Dispose();
         }
@@ -36,23 +61,32 @@ namespace AxieRescuer
     [BurstCompile]
     public partial struct ApplyDamageJob : IJobEntity
     {
+        public NativeList<float3>.ParallelWriter PosAliveList;
+        public NativeList<Health>.ParallelWriter HealthAliveList;
         public EntityCommandBuffer.ParallelWriter ECB;
 
         public void Execute
         (
             ref Health health,
             ref DynamicBuffer<DamageReceived> damageReceiveds,
+            in LocalTransform transform,
             in Entity entity,
             [EntityIndexInQuery] int sortKey
         )
         {
+            if(damageReceiveds.Length == 0) return;
             foreach (var damageReceived in damageReceiveds)
             {
                 health.Current -= damageReceived.Value;
-                if (health.Current <= 0)
-                {
-                    ECB.SetComponentEnabled<IsDie>(sortKey, entity, true);
-                }
+            }
+            if (health.Current <= 0)
+            {
+                ECB.SetComponentEnabled<IsDie>(sortKey, entity, true);
+            }
+            else
+            {
+                PosAliveList.AddNoResize(transform.Position);
+                HealthAliveList.AddNoResize(health);
             }
             damageReceiveds.Clear();
         }

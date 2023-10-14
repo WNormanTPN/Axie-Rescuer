@@ -3780,7 +3780,7 @@ GameObject:
   - component: {fileID: -1418191360862958784}
   m_Layer: 0
   m_Name: SA_Character_FarmerSurvivor
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
