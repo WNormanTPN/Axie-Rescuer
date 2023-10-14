@@ -67,8 +67,17 @@ namespace AxieRescuer
                 });
                 AddComponent<DroppedItem>(entity);
                 SetComponentEnabled<DroppedItem>(entity, false);
-                AddComponent<NeedDestroy>(entity);
+                AddComponent(entity, new NeedDestroy
+                {
+                    CountdownTime = 1.5f
+                });
                 SetComponentEnabled<NeedDestroy>(entity, false);
+                AddComponent<WeaponNeedInitTag>(entity);
+                SetComponentEnabled<WeaponNeedInitTag>(entity,false);
+                AddComponentObject(entity, new WeaponObjectReference
+                {
+                    Value = null
+                });
             }
         }
     }

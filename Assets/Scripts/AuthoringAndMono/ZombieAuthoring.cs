@@ -29,7 +29,7 @@ public class ZombieAuthoring : MonoBehaviour
             });
             AddComponent(entity, new DropRate
             {
-                Value = 0.05f
+                Value = 0.01f,
             });
             AddComponent(entity, new NeedDestroy
             {

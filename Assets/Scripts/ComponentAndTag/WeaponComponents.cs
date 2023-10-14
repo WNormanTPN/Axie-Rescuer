@@ -51,4 +51,8 @@ namespace AxieRescuer
     {
         public WeaponTypeEnum Value;
     }
+    public class WeaponObjectReference : IComponentData
+    {
+        public GameObject Value;
+    }
 }
