@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ZombieAuthoring : MonoBehaviour
 {
+    public int Health;
+
     public class ZombieBaker : Baker<ZombieAuthoring>
     {
         public override void Bake(ZombieAuthoring authoring)
@@ -16,8 +18,8 @@ public class ZombieAuthoring : MonoBehaviour
             SetComponentEnabled<ZombieNeedInitTag>(entity, true);
             AddComponent(entity, new Health
             {
-                Max = 10,
-                Current = 10,
+                Max = authoring.Health,
+                Current = authoring.Health,
             });
             AddBuffer<DamageReceived>(entity);
             AddComponent<IsDie>(entity);

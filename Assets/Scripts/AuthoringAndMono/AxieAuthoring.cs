@@ -12,8 +12,11 @@ namespace AxieRescuer
             public override void Bake(AxieAuthoring authoring)
             {
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
+                AddComponent<AxieTag>(entity);
                 AddComponent<AxieNeedInitTag>(entity);
                 SetComponentEnabled<AxieNeedInitTag>(entity, true);
+                AddComponent<WildAxieTag>(entity);
+                SetComponentEnabled<WildAxieTag>(entity, true);
             }
         }
     }

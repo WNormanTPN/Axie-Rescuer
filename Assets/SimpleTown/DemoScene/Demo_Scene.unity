@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 24087650}
   - component: {fileID: 24087649}
   - component: {fileID: 24087652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3615,7 +3615,7 @@ GameObject:
   - component: {fileID: 59181269}
   - component: {fileID: 59181268}
   - component: {fileID: 59181271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6670,7 +6670,7 @@ GameObject:
   - component: {fileID: 106292232}
   - component: {fileID: 106292231}
   - component: {fileID: 106292234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8821,111 +8821,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136741296}
   m_Mesh: {fileID: 4300000, guid: f4f3301d159ef694486580351d7ec94a, type: 3}
---- !u!1 &139384126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 139384130}
-  - component: {fileID: 139384129}
-  - component: {fileID: 139384128}
-  - component: {fileID: 139384127}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &139384127
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139384126}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &139384128
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139384126}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1881dcc2b2e53244f86e1589ace55fd2, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &139384129
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139384126}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &139384130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139384126}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.5, y: 6.09, z: 17.6}
-  m_LocalScale: {x: 10, y: 10, z: 10}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146108288
 GameObject:
   m_ObjectHideFlags: 0
@@ -11169,7 +11064,7 @@ GameObject:
   - component: {fileID: 172440970}
   - component: {fileID: 172440969}
   - component: {fileID: 172440972}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13374,7 +13269,7 @@ GameObject:
   - component: {fileID: 207662572}
   - component: {fileID: 207662571}
   - component: {fileID: 207662574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentLarge_Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14798,7 +14693,7 @@ GameObject:
   - component: {fileID: 244461969}
   - component: {fileID: 244461968}
   - component: {fileID: 244461971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15537,7 +15432,7 @@ GameObject:
   - component: {fileID: 261999131}
   - component: {fileID: 261999130}
   - component: {fileID: 261999133}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_corner_video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15659,7 +15554,7 @@ GameObject:
   - component: {fileID: 265516180}
   - component: {fileID: 265516179}
   - component: {fileID: 265516182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16113,7 +16008,7 @@ GameObject:
   - component: {fileID: 278091431}
   - component: {fileID: 278091430}
   - component: {fileID: 278091433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16502,7 +16397,6 @@ GameObject:
   - component: {fileID: 281711937}
   - component: {fileID: 281711936}
   - component: {fileID: 281711935}
-  - component: {fileID: 281711934}
   m_Layer: 0
   m_Name: fence_long_mesh
   m_TagString: Untagged
@@ -16525,18 +16419,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411064732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281711934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281711932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!208 &281711935
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -17306,7 +17188,7 @@ GameObject:
   - component: {fileID: 293378218}
   - component: {fileID: 293378217}
   - component: {fileID: 293378220}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Garage_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18227,7 +18109,6 @@ GameObject:
   - component: {fileID: 308623089}
   - component: {fileID: 308623088}
   - component: {fileID: 308623087}
-  - component: {fileID: 308623086}
   m_Layer: 0
   m_Name: fence_long_mesh
   m_TagString: Untagged
@@ -18250,18 +18131,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411064732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &308623086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308623084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!208 &308623087
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -23183,7 +23052,7 @@ GameObject:
   - component: {fileID: 382895308}
   - component: {fileID: 382895307}
   - component: {fileID: 382895310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25127,7 +24996,7 @@ GameObject:
   - component: {fileID: 407337465}
   - component: {fileID: 407337464}
   - component: {fileID: 407337467}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27710,7 +27579,7 @@ GameObject:
   - component: {fileID: 425626878}
   - component: {fileID: 425626877}
   - component: {fileID: 425626880}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27915,7 +27784,7 @@ GameObject:
   - component: {fileID: 430619470}
   - component: {fileID: 430619469}
   - component: {fileID: 430619472}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeSmall_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28969,7 +28838,7 @@ GameObject:
   - component: {fileID: 444973620}
   - component: {fileID: 444973619}
   - component: {fileID: 444973622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31728,7 +31597,7 @@ GameObject:
   - component: {fileID: 492270981}
   - component: {fileID: 492270979}
   - component: {fileID: 492270983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Mall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35075,7 +34944,7 @@ GameObject:
   - component: {fileID: 548639706}
   - component: {fileID: 548639705}
   - component: {fileID: 548639708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentLarge_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35682,6 +35551,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554867480}
   m_Mesh: {fileID: 4300000, guid: 9054c70a5c9ed454f8ef48a11963db28, type: 3}
+--- !u!224 &555567914 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591489306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &555907299
 GameObject:
   m_ObjectHideFlags: 0
@@ -35695,7 +35570,7 @@ GameObject:
   - component: {fileID: 555907303}
   - component: {fileID: 555907302}
   - component: {fileID: 555907305}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35900,7 +35775,7 @@ GameObject:
   - component: {fileID: 556104870}
   - component: {fileID: 556104869}
   - component: {fileID: 556104872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37006,7 +36881,7 @@ GameObject:
   - component: {fileID: 574935350}
   - component: {fileID: 574935349}
   - component: {fileID: 574935352}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41008,7 +40883,7 @@ GameObject:
   - component: {fileID: 634618351}
   - component: {fileID: 634618350}
   - component: {fileID: 634618353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42443,7 +42318,7 @@ GameObject:
   - component: {fileID: 657643915}
   - component: {fileID: 657643914}
   - component: {fileID: 657643917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43772,7 +43647,7 @@ GameObject:
   - component: {fileID: 686625453}
   - component: {fileID: 686625452}
   - component: {fileID: 686625455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44898,7 +44773,7 @@ GameObject:
   - component: {fileID: 700533909}
   - component: {fileID: 700533908}
   - component: {fileID: 700533911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45369,7 +45244,7 @@ GameObject:
   - component: {fileID: 704411235}
   - component: {fileID: 704411234}
   - component: {fileID: 704411237}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeSmall_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46896,7 +46771,7 @@ GameObject:
   - component: {fileID: 739814334}
   - component: {fileID: 739814333}
   - component: {fileID: 739814336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47167,7 +47042,7 @@ GameObject:
   - component: {fileID: 746710751}
   - component: {fileID: 746710750}
   - component: {fileID: 746710753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49330,7 +49205,7 @@ GameObject:
   - component: {fileID: 779262714}
   - component: {fileID: 779262713}
   - component: {fileID: 779262716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50589,7 +50464,7 @@ GameObject:
   - component: {fileID: 791579784}
   - component: {fileID: 791579783}
   - component: {fileID: 791579786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52103,7 +51978,7 @@ GameObject:
   - component: {fileID: 815263938}
   - component: {fileID: 815263937}
   - component: {fileID: 815263940}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53040,7 +52915,7 @@ GameObject:
   - component: {fileID: 832297793}
   - component: {fileID: 832297792}
   - component: {fileID: 832297795}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53262,7 +53137,7 @@ GameObject:
   - component: {fileID: 838064928}
   - component: {fileID: 838064927}
   - component: {fileID: 838064930}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57249,7 +57124,7 @@ GameObject:
   - component: {fileID: 924537655}
   - component: {fileID: 924537654}
   - component: {fileID: 924537657}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61478,7 +61353,7 @@ GameObject:
   - component: {fileID: 993041717}
   - component: {fileID: 993041716}
   - component: {fileID: 993041719}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62441,7 +62316,7 @@ GameObject:
   - component: {fileID: 1005827493}
   - component: {fileID: 1005827492}
   - component: {fileID: 1005827495}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_AutoRepair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62929,7 +62804,7 @@ GameObject:
   - component: {fileID: 1008947018}
   - component: {fileID: 1008947017}
   - component: {fileID: 1008947020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63134,7 +63009,7 @@ GameObject:
   - component: {fileID: 1013282758}
   - component: {fileID: 1013282757}
   - component: {fileID: 1013282760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64286,7 +64161,7 @@ GameObject:
   - component: {fileID: 1042093180}
   - component: {fileID: 1042093179}
   - component: {fileID: 1042093182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65272,7 +65147,7 @@ GameObject:
   - component: {fileID: 1072913398}
   - component: {fileID: 1072913397}
   - component: {fileID: 1072913400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65660,7 +65535,7 @@ GameObject:
   - component: {fileID: 1087439335}
   - component: {fileID: 1087439334}
   - component: {fileID: 1087439337}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65978,7 +65853,7 @@ GameObject:
   - component: {fileID: 1090395173}
   - component: {fileID: 1090395172}
   - component: {fileID: 1090395175}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67318,7 +67193,7 @@ GameObject:
   - component: {fileID: 1115278823}
   - component: {fileID: 1115278822}
   - component: {fileID: 1115278825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_StoreCorner_Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68603,7 +68478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a0b7d373471404faeba4f2815b503e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 139384130}
+  targetObject: {fileID: 0}
   wallMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -68621,7 +68496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
 --- !u!114 &1126568313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68667,6 +68542,8 @@ MonoBehaviour:
   - {fileID: 2151306290412448620, guid: 62d1e9bd808e64a22ac2787019c99d4e, type: 3}
   - {fileID: 5769832603725908567, guid: 5a34259c212e4469aa3fdd93fdd94551, type: 3}
   - {fileID: 1518872783453144081, guid: 6baa5540b73c04a42b65e8095bc057a0, type: 3}
+  HealthBarPrefab: {fileID: 3252311676320666449, guid: 8556a2886ebd5e24f83b5f0924e3ff3a,
+    type: 3}
 --- !u!1001 &1128290481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69012,7 +68889,7 @@ GameObject:
   - component: {fileID: 1135012514}
   - component: {fileID: 1135012513}
   - component: {fileID: 1135012516}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_StoreCorner_Drug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70613,7 +70490,7 @@ GameObject:
   - component: {fileID: 1158979001}
   - component: {fileID: 1158979000}
   - component: {fileID: 1158979003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73132,7 +73009,6 @@ GameObject:
   - component: {fileID: 1200986476}
   - component: {fileID: 1200986475}
   - component: {fileID: 1200986474}
-  - component: {fileID: 1200986473}
   m_Layer: 0
   m_Name: fence_long_mesh
   m_TagString: Untagged
@@ -73155,18 +73031,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411064732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1200986473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200986471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ddd50a3be72c244e94d9206b806470b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!208 &1200986474
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -74902,7 +74766,7 @@ GameObject:
   - component: {fileID: 1226115294}
   - component: {fileID: 1226115293}
   - component: {fileID: 1226115296}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75190,7 +75054,7 @@ GameObject:
   - component: {fileID: 1232660235}
   - component: {fileID: 1232660234}
   - component: {fileID: 1232660237}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75661,7 +75525,7 @@ GameObject:
   - component: {fileID: 1239556553}
   - component: {fileID: 1239556552}
   - component: {fileID: 1239556555}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Gym
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75966,7 +75830,7 @@ GameObject:
   - component: {fileID: 1243325755}
   - component: {fileID: 1243325754}
   - component: {fileID: 1243325757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentLarge_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76563,7 +76427,7 @@ GameObject:
   - component: {fileID: 1249950132}
   - component: {fileID: 1249950131}
   - component: {fileID: 1249950134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77940,7 +77804,7 @@ GameObject:
   - component: {fileID: 1264787960}
   - component: {fileID: 1264787959}
   - component: {fileID: 1264787962}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78843,7 +78707,7 @@ GameObject:
   - component: {fileID: 1291870909}
   - component: {fileID: 1291870908}
   - component: {fileID: 1291870911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeStepped_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81438,7 +81302,7 @@ GameObject:
   - component: {fileID: 1325176292}
   - component: {fileID: 1325176291}
   - component: {fileID: 1325176294}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83991,7 +83855,7 @@ GameObject:
   - component: {fileID: 1356030983}
   - component: {fileID: 1356030982}
   - component: {fileID: 1356030985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_CoffeeShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95123,7 +94987,7 @@ GameObject:
   - component: {fileID: 1554994790}
   - component: {fileID: 1554994789}
   - component: {fileID: 1554994792}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97906,7 +97770,7 @@ GameObject:
   - component: {fileID: 1578947734}
   - component: {fileID: 1578947733}
   - component: {fileID: 1578947736}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_BaberShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98277,7 +98141,7 @@ GameObject:
   - component: {fileID: 1589762860}
   - component: {fileID: 1589762859}
   - component: {fileID: 1589762862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentSmall_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98399,7 +98263,7 @@ GameObject:
   - component: {fileID: 1589863628}
   - component: {fileID: 1589863627}
   - component: {fileID: 1589863630}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98508,6 +98372,129 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.508232, y: 11.418497, z: 10.161064}
   m_Center: {x: -0.0000038146973, y: 5.7092485, z: 0.91194916}
+--- !u!1001 &1591489306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1835500547}
+    m_Modifications:
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936872440500976724, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772321188792458729, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772321188792458729, guid: d977ce7d3da8478449b4b3e07cbbffee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d977ce7d3da8478449b4b3e07cbbffee, type: 3}
 --- !u!1 &1593592291
 GameObject:
   m_ObjectHideFlags: 0
@@ -99769,7 +99756,7 @@ GameObject:
   - component: {fileID: 1621563578}
   - component: {fileID: 1621563577}
   - component: {fileID: 1621563576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Carpark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103401,7 +103388,7 @@ GameObject:
   - component: {fileID: 1683068294}
   - component: {fileID: 1683068293}
   - component: {fileID: 1683068296}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103521,7 +103508,7 @@ GameObject:
   - component: {fileID: 1684965449}
   - component: {fileID: 1684965451}
   - component: {fileID: 1684965450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Prop_MallSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103689,7 +103676,7 @@ GameObject:
   - component: {fileID: 1686624854}
   - component: {fileID: 1686624853}
   - component: {fileID: 1686624856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_BaberShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110100,7 +110087,7 @@ GameObject:
   - component: {fileID: 1818404545}
   - component: {fileID: 1818404544}
   - component: {fileID: 1818404547}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_StripClub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111268,6 +111255,7 @@ GameObject:
   - component: {fileID: 1835500546}
   - component: {fileID: 1835500545}
   - component: {fileID: 1835500544}
+  - component: {fileID: 1835500548}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -111351,6 +111339,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 181498499}
+  - {fileID: 555567914}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -111358,6 +111347,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1835500548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835500543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f782a020422be3f49ab9f98d1f1a3458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1835734726
 GameObject:
   m_ObjectHideFlags: 0
@@ -111571,7 +111572,7 @@ GameObject:
   - component: {fileID: 1842196861}
   - component: {fileID: 1842196860}
   - component: {fileID: 1842196863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Garage_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111693,7 +111694,7 @@ GameObject:
   - component: {fileID: 1845350527}
   - component: {fileID: 1845350526}
   - component: {fileID: 1845350529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_ApartmentSmall_Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112278,7 +112279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858268542}
   - component: {fileID: 1858268543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AddingNavMeshObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113585,7 +113586,7 @@ GameObject:
   - component: {fileID: 1869436465}
   - component: {fileID: 1869436464}
   - component: {fileID: 1869436467}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Gym
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114731,7 +114732,7 @@ GameObject:
   - component: {fileID: 1878645267}
   - component: {fileID: 1878645266}
   - component: {fileID: 1878645269}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115782,7 +115783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1892678170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116212,7 +116213,7 @@ GameObject:
   - component: {fileID: 1899252362}
   - component: {fileID: 1899252361}
   - component: {fileID: 1899252364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117117,7 +117118,7 @@ GameObject:
   - component: {fileID: 1909192666}
   - component: {fileID: 1909192665}
   - component: {fileID: 1909192668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeLarge_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118320,7 +118321,7 @@ GameObject:
   - component: {fileID: 1928168780}
   - component: {fileID: 1928168779}
   - component: {fileID: 1928168782}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119555,7 +119556,7 @@ GameObject:
   - component: {fileID: 1950036550}
   - component: {fileID: 1950036549}
   - component: {fileID: 1950036552}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123444,7 +123445,7 @@ GameObject:
   - component: {fileID: 2021730393}
   - component: {fileID: 2021730392}
   - component: {fileID: 2021730395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_House_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123832,7 +123833,7 @@ GameObject:
   - component: {fileID: 2028362355}
   - component: {fileID: 2028362354}
   - component: {fileID: 2028362357}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124037,7 +124038,7 @@ GameObject:
   - component: {fileID: 2029751830}
   - component: {fileID: 2029751829}
   - component: {fileID: 2029751832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: store_small_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125506,7 +125507,7 @@ GameObject:
   - component: {fileID: 2062702903}
   - component: {fileID: 2062702902}
   - component: {fileID: 2062702905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_Shop_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125728,7 +125729,7 @@ GameObject:
   - component: {fileID: 2067645019}
   - component: {fileID: 2067645018}
   - component: {fileID: 2067645021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_StoreCorner_Drug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127293,7 +127294,7 @@ GameObject:
   - component: {fileID: 2090599082}
   - component: {fileID: 2090599081}
   - component: {fileID: 2090599084}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_OfficeMedium_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128077,7 +128078,7 @@ GameObject:
   - component: {fileID: 2102915723}
   - component: {fileID: 2102915722}
   - component: {fileID: 2102915725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building_CoffeeShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131212,11 +131213,10 @@ SceneRoots:
   - {fileID: 155872347}
   - {fileID: 746287004}
   - {fileID: 1434538521}
+  - {fileID: 1548275697}
   - {fileID: 1892678173}
+  - {fileID: 1835500547}
   - {fileID: 1379985479}
-  - {fileID: 139384130}
   - {fileID: 421938803}
   - {fileID: 680953252}
-  - {fileID: 1835500547}
   - {fileID: 2014630671}
-  - {fileID: 1548275697}

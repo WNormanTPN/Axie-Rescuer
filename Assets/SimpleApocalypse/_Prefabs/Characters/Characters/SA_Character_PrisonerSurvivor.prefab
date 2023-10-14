@@ -2515,7 +2515,7 @@ GameObject:
   - component: {fileID: -4329408664100852199}
   m_Layer: 0
   m_Name: SA_Character_PrisonerSurvivor
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
