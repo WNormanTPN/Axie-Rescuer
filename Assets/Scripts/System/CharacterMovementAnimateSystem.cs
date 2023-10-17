@@ -1,3 +1,4 @@
+using ProjectDawn.Navigation;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -74,10 +75,17 @@ namespace AxieRescuer
             #endregion
 
             #region Axie Movement
-            foreach (var (transform, animatorReference, entity) in
-                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference>().WithAll<AxieTag>().WithEntityAccess())
+            foreach (var (transform, animatorReference, agentBody) in
+                     SystemAPI.Query<LocalTransform, CharacterAnimatorReference, AgentBody>().WithAll<AxieTag>())
             {
-                animatorReference.Value.SetInteger("Anim_Value_i", 0);
+                if (agentBody.RemainingDistance > 1f)
+                {
+                    animatorReference.Value.SetInteger("Anim_Value_i", 1);
+                }
+                else
+                {
+                    animatorReference.Value.SetInteger("Anim_Value_i", 0);
+                }
                 animatorReference.Value.transform.position = (Vector3)transform.Position;
                 animatorReference.Value.transform.rotation = (Quaternion)transform.Rotation;
             }
