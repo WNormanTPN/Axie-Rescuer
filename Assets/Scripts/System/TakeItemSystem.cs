@@ -1,4 +1,5 @@
 using AxieRescuer;
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Logging;
 using Unity.Mathematics;
@@ -11,16 +12,17 @@ namespace AxieRescuer
     public partial struct TakeItemSystem : ISystem
     {
         private EntityQuery _query;
+        [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
             _query = SystemAPI.QueryBuilder()
                 .WithAll<DroppedItem>()
                 .WithAll<LocalTransform>()
                 .WithAll<WeaponObjectReference>()
-                .WithDisabled<NeedDestroy>()
                 .Build();
             state.RequireForUpdate(_query);
         }
+        [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();
@@ -32,27 +34,12 @@ namespace AxieRescuer
                 PlayerTransform = playerTransform,
                 Player = player,
             };
-            //foreach (var (droppedItem, localTransform, needDestroy, weaponPrefab, entity) in SystemAPI.Query<EnabledRefRW<DroppedItem>, LocalTransform, EnabledRefRW<NeedDestroy>, WeaponPrefab>().WithEntityAccess())
-            //{
-            //    Log.Debug("t");
-            //    if (math.distance(playerTransform.Position, localTransform.Position) < 10)
-            //    {
-            //        Log.Debug("vinh");
-            //        droppedItem.ValueRW = false;
-            //        GameObject.Destroy(weaponPrefab.Value);
-            //        needDestroy.ValueRW = true;
-            //        ecb.SetComponent(player, new InitialWeapon
-            //        {
-            //            WeaponEntity = entity,
-            //        });
-            //        ecb.SetComponentEnabled<InitialWeapon>(player, true);
-            //    }
-            //}
             job.RunByRef(_query);
             ecb.Playback(state.EntityManager);
         }
 
     }
+    [BurstCompile]
     public partial struct TakeWeaponJob : IJobEntity
     {
         public EntityCommandBuffer ECB;
@@ -60,7 +47,6 @@ namespace AxieRescuer
         public Entity Player;
         public void Execute(EnabledRefRW<DroppedItem> droppedItem,
             in LocalTransform localTransform,
-            EnabledRefRW<NeedDestroy> needDestroy,
             WeaponObjectReference weaponPrefab,
             in Entity entity)
         {
@@ -69,7 +55,6 @@ namespace AxieRescuer
 
                 droppedItem.ValueRW = false;
                 GameObject.Destroy(weaponPrefab.Value);
-                //needDestroy.ValueRW = true;
                 ECB.SetComponent(Player, new InitialWeapon
                 {
                     WeaponEntity = entity,

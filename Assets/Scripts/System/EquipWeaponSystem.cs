@@ -100,6 +100,11 @@ namespace AxieRescuer
                     animatorRef.Value.SetFloat("Body_Horizontal_f", 0.5f);
                     animatorRef.Value.SetFloat("Head_Horizontal_f", -0.5f);
                 }
+                else
+                {
+                    animatorRef.Value.SetFloat("Body_Horizontal_f", 0);
+                    animatorRef.Value.SetFloat("Head_Horizontal_f", 0);
+                }
             }
 
             #endregion

@@ -28,9 +28,9 @@ namespace AxieRescuer
             {
                 needInit.ValueRW = false;
                 var newWeaponGameObject = Object.Instantiate(weaponPrefab.Value);
-                newWeaponGameObject.transform.transform.position = localTransform.Position;
+                newWeaponGameObject.transform.position = localTransform.Position;
                 objectRef.Value = newWeaponGameObject;
-                newWeaponGameObject.transform.transform.localScale = 2 * newWeaponGameObject.transform.transform.localScale;
+                newWeaponGameObject.transform.localScale = 2 * newWeaponGameObject.transform.localScale;
             }
         }
     }

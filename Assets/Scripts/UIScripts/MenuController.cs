@@ -19,7 +19,7 @@ namespace AxieRescuer
         }
         public void AudioChange()
         {
-            AudioListener.volume = _audioSlider.value;
+            AudioListener.volume = _audioSlider.value / 100;
             _audioTextValue.text = ((int)(_audioSlider.value)).ToString();
         }
         public void AudioApply()
