@@ -66,7 +66,8 @@ namespace AxieRescuer
                 #endregion
 
                 #region Other Components
-                AddBuffer<FollowingAxie>(entity);
+                AddComponent<FollowingAxie>(entity);
+                SetComponentEnabled<FollowingAxie>(entity, false);
 
                 #endregion
             }

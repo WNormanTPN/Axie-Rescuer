@@ -15,15 +15,11 @@ namespace AxieRescuer
     [UpdateAfter(typeof(ReadInputSystem))]
     public partial struct FireSystem : ISystem
     {
-        private EntityQuery _isFiringQuery;
         private bool _isReloading;
         [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
             _isReloading = false;
-            _isFiringQuery = SystemAPI.QueryBuilder()
-                .WithAll<FireInput>()
-                .Build();
             state.RequireForUpdate<FireInput>();
             state.RequireForUpdate<EquippingWeapon>();
             state.RequireForUpdate<RandomSingleton>();
@@ -45,13 +41,14 @@ namespace AxieRescuer
                 fireRate.ValueRW.Timer += SystemAPI.Time.DeltaTime;
                 
                 #region Fire
-                if (_isFiringQuery.CalculateEntityCount() > 0)
+                if (magazineData.ValueRO.TotalValue > 0)
                 {
-                    if (magazineData.ValueRO.TotalValue > 0)
+                    if (magazineData.ValueRO.CurrentValue > 0) // If projectile count > 0
                     {
-                        if (fireRate.ValueRO.Timer >= 1.0 / fireRate.ValueRO.Value) // if can fire
+                        var readInputEntity = SystemAPI.GetSingletonEntity<MoveInput>();
+                        if (state.EntityManager.IsComponentEnabled<FireInput>(readInputEntity))
                         {
-                            if (magazineData.ValueRO.CurrentValue > 0) // If projectile count > 0
+                            if (fireRate.ValueRO.Timer >= 1.0 / fireRate.ValueRO.Value) // if can fire
                             {
                                 magazineData.ValueRW.CurrentValue--;
                                 magazineData.ValueRW.TotalValue--;
@@ -74,7 +71,7 @@ namespace AxieRescuer
                                     animatorReference.Value.SetBool("Shoot_b", true);
                                     state.Dependency = new FireJob
                                     {
-                                        StartPos = playerTransform.Position + math.up()*2 + playerTransform.Forward()*1,
+                                        StartPos = playerTransform.Position + math.up() * 2 + playerTransform.Forward() * 1,
                                         Direction = playerTransform.Forward(),
                                         GunFlash = gunFlash,
                                         WeaponType = weaponType,
@@ -102,8 +99,13 @@ namespace AxieRescuer
                             animatorReference.Value.SetBool("Shoot_b", false);
                         }
                     }
+                    else // Reload
+                    {
+                        _isReloading = true;
+                        animatorReference.Value.SetBool("Shoot_b", false);
+                        animatorReference.Value.SetBool("Reload_b", true);
+                    }
                 }
-
                 #endregion
 
                 #region Reload

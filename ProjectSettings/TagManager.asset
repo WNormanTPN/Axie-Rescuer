@@ -4,10 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Health
-  - Ammo
-  - Reload
-  - EntityCount
+  - RescuingNotify
   layers:
   - Default
   - TransparentFX
