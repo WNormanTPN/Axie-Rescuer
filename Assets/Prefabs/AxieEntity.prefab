@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fe6fc1ebf8ff240ad5b12ad70ce1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AgentTypeId: -334000983
+  AgentTypeId: 0
   AreaMask: 7
   AutoRepath: 1
   MappingExtent:
@@ -212,7 +212,7 @@ MonoBehaviour:
     z: 2
   m_PrimitiveOrientation:
     Value:
-      x: 0
+      x: 90
       y: 0
       z: 0
     RotationOrder: 4

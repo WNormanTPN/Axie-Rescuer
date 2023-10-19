@@ -2,11 +2,13 @@ using AxieRescuer;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class ZombieAuthoring : MonoBehaviour
 {
     public int Health;
+    public int2 DamageRange;
 
     public class ZombieBaker : Baker<ZombieAuthoring>
     {
@@ -22,6 +24,12 @@ public class ZombieAuthoring : MonoBehaviour
                 Current = authoring.Health,
             });
             AddBuffer<DamageReceived>(entity);
+            AddComponent(entity, new Damage
+            {
+                MinValue = authoring.DamageRange.x,
+                MaxValue = authoring.DamageRange.y,
+            });
+            AddComponent<ZombieAttackSystem>(entity);
             AddComponent<IsDie>(entity);
             SetComponentEnabled<IsDie>(entity, false);
 
