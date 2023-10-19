@@ -1,7 +1,9 @@
 using AxieRescuer;
+using System.Diagnostics;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Logging;
 using Unity.Mathematics;
 using Unity.Transforms;
 namespace AxieRescuer
@@ -35,10 +37,11 @@ namespace AxieRescuer
             }
             new DropItemJob
             {
-                ECB = ecb.AsParallelWriter(),
+                ECB = ecb,
                 RandomSingleton = randomSingleton,
                 WeaponList = weaponList,
-            }.ScheduleParallel(Query);
+            }.Schedule(Query,state.Dependency).Complete();
+            ecb.Playback(state.EntityManager);
         }
 
     }
@@ -47,7 +50,7 @@ namespace AxieRescuer
     {
         [ReadOnly] public NativeList<Entity> WeaponList;
         public RandomSingleton RandomSingleton;
-        public EntityCommandBuffer.ParallelWriter ECB;
+        public EntityCommandBuffer ECB;
         public void Execute
         (
             in LocalTransform transform,
@@ -58,9 +61,10 @@ namespace AxieRescuer
             var percent = RandomSingleton.Random.NextFloat(0, 1);
             if (percent > rate.Value) return;
             var weaponEntity = WeaponList[RandomSingleton.Random.NextInt(0, WeaponList.Length - 1)];
-            weaponEntity = ECB.Instantiate(sortKey, weaponEntity);
-            ECB.SetComponent(sortKey, weaponEntity, transform);
-            ECB.SetComponentEnabled<DroppedItem>(sortKey, weaponEntity, true);
+            weaponEntity = ECB.Instantiate(weaponEntity);
+            ECB.SetComponent(weaponEntity, transform);
+            ECB.SetComponentEnabled<WeaponNeedInitTag>(weaponEntity, true);
+            ECB.SetComponentEnabled<DroppedItem>( weaponEntity, true);
         }
     }
 }

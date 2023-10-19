@@ -54,11 +54,11 @@ MonoBehaviour:
   GunFlashScale: 1.7
   WeaponType: 5
   DamageRange:
-    x: 100
-    y: 200
+    x: 50
+    y: 100
   Range: 40
   Accuracy: 100
   FireRate: 0.5
-  ReloadTime: 0.1
+  ReloadTime: 0
   TotalMagazineValue: 200
   MaxValuePerReload: 1

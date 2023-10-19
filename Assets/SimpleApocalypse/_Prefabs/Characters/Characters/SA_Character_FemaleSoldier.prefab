@@ -5731,9 +5731,11 @@ MonoBehaviour:
   HandgunReloadAudioClip: {fileID: 8300000, guid: d76faec0f977127459d2adc912435646,
     type: 3}
   HandgunReloadVolume: 0.1
-  AutogunShootAudioClip: {fileID: 0}
+  AutogunShootAudioClip: {fileID: 8300000, guid: 52e5f3078081a7647a2e9cfd23f60052,
+    type: 3}
   AutogunShootVolume: 0.1
-  AutogunReloadAudioClip: {fileID: 0}
+  AutogunReloadAudioClip: {fileID: 8300000, guid: d76faec0f977127459d2adc912435646,
+    type: 3}
   AutogunReloadVolume: 0.1
   ShotgunShootAudioClip: {fileID: 8300000, guid: a2579e780a6cfd1409296de8e739e7b1,
     type: 3}
@@ -5748,9 +5750,11 @@ MonoBehaviour:
   SubmachineGunShootVolume: 0.1
   SubmachineGunReloadAudioClip: {fileID: 0}
   SubmachinegunReloadVolume: 0.1
-  MinigunShootAudioClip: {fileID: 0}
+  MinigunShootAudioClip: {fileID: 8300000, guid: 52e5f3078081a7647a2e9cfd23f60052,
+    type: 3}
   MinigunShootVolume: 0.1
-  MinigunReloadAudioClip: {fileID: 0}
+  MinigunReloadAudioClip: {fileID: 8300000, guid: a765f0dcf4c4d19418ae858d294414d2,
+    type: 3}
   MinigunReloadVolume: 0.1
 --- !u!114 &-1539135342412321136
 MonoBehaviour:

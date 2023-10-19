@@ -29,7 +29,7 @@ public class ZombieAuthoring : MonoBehaviour
                 MinValue = authoring.DamageRange.x,
                 MaxValue = authoring.DamageRange.y,
             });
-            AddComponent<ZombieAttackSystem>(entity);
+            AddComponent<ZombieAttackTimer>(entity);
             AddComponent<IsDie>(entity);
             SetComponentEnabled<IsDie>(entity, false);
 
@@ -39,7 +39,7 @@ public class ZombieAuthoring : MonoBehaviour
             });
             AddComponent(entity, new DropRate
             {
-                Value = 0.05f
+                Value = 0.05f,
             });
             AddComponent(entity, new NeedDestroy
             {

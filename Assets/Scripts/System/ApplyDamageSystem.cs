@@ -23,9 +23,11 @@ namespace AxieRescuer
                 .WithAll<Health>()
                 .WithAll<DamageReceived>()
                 .WithAll<LocalTransform>()
+                .WithNone<PlayerTag>()
                 .Build();
             state.RequireForUpdate(_damageReceiverQuery);
             state.RequireForUpdate<FollowOffset>();
+            state.RequireForUpdate<PlayerTag>();
         }
 
         public void OnUpdate(ref SystemState state)
@@ -52,6 +54,15 @@ namespace AxieRescuer
                 health.value = healthAliveList[i].Current / healthAliveList[i].Max;
                 GameObject.Destroy(healthBar, 0.2f);
             }
+
+            var player = SystemAPI.GetSingletonEntity<PlayerTag>();
+            var playerHealth = SystemAPI.GetComponentRW<Health>(player);
+            var damageRecaivedBuffer = SystemAPI.GetBuffer<DamageReceived>(player);
+            foreach (var damage in damageRecaivedBuffer.ToNativeArray(state.WorldUpdateAllocator))
+            {
+                playerHealth.ValueRW.Current -= damage.Value;
+            }
+            damageRecaivedBuffer.Clear();
 
             ecb.Playback(state.EntityManager);
             ecb.Dispose();

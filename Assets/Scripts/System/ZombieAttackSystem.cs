@@ -42,9 +42,9 @@ namespace AxieRescuer
             job.ScheduleParallelByRef(state.Dependency).Complete();
 
             var ecb = new EntityCommandBuffer(state.WorldUpdateAllocator);
-            foreach(var damage in damageList)
+            foreach (var damage in damageList)
             {
-                ecb.AppendToBuffer<DamageReceived>(player, new DamageReceived { Value = damage });
+                ecb.AppendToBuffer(player, new DamageReceived { Value = damage });
             }
             ecb.Playback(state.EntityManager);
         }
@@ -59,10 +59,10 @@ namespace AxieRescuer
 
         public void Execute(ref LocalTransform transform, ref ZombieAttackTimer timer, in Damage damage)
         {
-            if(math.distance(PlayerPos, transform.Position) < 3)
+            if (math.distance(PlayerPos, transform.Position) < 3)
             {
                 timer.Value += DeltaTime;
-                if(timer.Value > 2)
+                if (timer.Value > 2)
                 {
                     DamageList.AddNoResize(Random.NextInt((int)damage.MinValue, (int)damage.MaxValue));
                     timer.Value = 0;

@@ -53,6 +53,7 @@ namespace AxieRescuer
                     Max = authoring.MaxHealth,
                     Current = authoring.MaxHealth,
                 });
+                AddBuffer<DamageReceived>(entity);
 
                 #endregion
 

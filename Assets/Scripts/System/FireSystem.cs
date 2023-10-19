@@ -87,12 +87,6 @@ namespace AxieRescuer
                                     state.Dependency.Complete();
                                 }
                             }
-                            else // Reload
-                            {
-                                _isReloading = true;
-                                animatorReference.Value.SetBool("Shoot_b", false);
-                                animatorReference.Value.SetBool("Reload_b", true);
-                            }
                         }
                         else
                         {
@@ -163,10 +157,10 @@ namespace AxieRescuer
             switch (WeaponType.Value)
             {
                 case WeaponTypeEnum.Handgun:
-                    ShootThrough(1.2f);
+                    ShootThrough(1.5f);
                     break;
                 case WeaponTypeEnum.Rifle:
-                    ShootThrough(1.5f);
+                    ShootThrough(1.7f);
                     break;
                 case WeaponTypeEnum.Shotgun:
                     var projectileCount = Random.NextInt(5, 10);
@@ -219,12 +213,8 @@ namespace AxieRescuer
                 Width = projectileRadius / 4,
                 ShowTime = 0.1f,
             });
-            for (int i = tempHits.Length - 2; i > 0; i--)
+            for (int i = tempHits.Length - 1; i >= 0; i--)
             {
-                if (EntityManager.HasComponent<BuildingTag>(tempHits[i].Entity))
-                {
-                    break;
-                }
                 if (EntityManager.HasComponent<ZombieTag>(tempHits[i].Entity))
                 {
                     hits.Add(tempHits[i]);

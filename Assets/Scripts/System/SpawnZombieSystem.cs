@@ -42,7 +42,7 @@ namespace AxieRescuer
                     z = random.Random.NextFloat(prefab.StartMap.y, prefab.EndMap.y)
                 };
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 40f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPoint, out hit, 40000f, NavMesh.AllAreas))
                 {
                     count++;
                     ecb.AppendToBuffer(spawnerEntity, new SpawnBuffer

@@ -54,8 +54,8 @@ MonoBehaviour:
   GunFlashScale: 1.7
   WeaponType: 5
   DamageRange:
-    x: 150
-    y: 200
+    x: 50
+    y: 100
   Range: 40
   Accuracy: 100
   FireRate: 0.5
