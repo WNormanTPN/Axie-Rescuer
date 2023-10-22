@@ -39,7 +39,7 @@ namespace AxieRescuer
             {
                 _axieCurrent++;
             }
-                _text.text = (_axieCount - _axieCurrent).ToString() + "/" + "3";
+                _text.text = "Axie rescued: " + (_axieCount - _axieCurrent).ToString() + "/" + "3";
                 if (_axieCount - _axieCurrent == 3)
                 {
                     _gameCanvas.SetActive(true);

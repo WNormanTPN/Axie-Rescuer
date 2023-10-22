@@ -18,8 +18,7 @@ public class ShowPerformance : MonoBehaviour
         void GetFPS()
         {
             float _fps = (int)(1f / Time.unscaledDeltaTime);
-            _FPSValue.text = "FPS:" + _fps.ToString();
-
+            _FPSValue.text = "FPS: " + _fps.ToString();
         }
     }
 }
