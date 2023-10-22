@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
+
 namespace AxieRescuer
 {
     public class MenuController : MonoBehaviour
@@ -15,7 +17,11 @@ namespace AxieRescuer
         [SerializeField] private Toggle _toggleFPS = null;
         public void NewGameDialogYes()
         {
-            SceneManager.LoadScene(SceneName);
+            SceneManager.LoadScene(SceneName,LoadSceneMode.Single);
+        }
+        public void NewGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         public void AudioChange()
         {
@@ -46,6 +52,7 @@ namespace AxieRescuer
             _audioTextValue.text = "50";
             _toggleFPS.isOn = true;
             AudioApply();
+            ShowPerformanceApply();
         }
         public void ExitGame()
         {
@@ -55,8 +62,8 @@ namespace AxieRescuer
         {
             _confirmbox.SetActive(true);
             yield return new WaitForSeconds(2);
+            Debug.Log("v");
             _confirmbox.SetActive(false);
         }
-
     }
 }

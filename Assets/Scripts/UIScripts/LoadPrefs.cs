@@ -18,8 +18,8 @@ namespace AxieRescuer
             if (PlayerPrefs.HasKey("mastervolume"))
             {
                 float _localVolume = PlayerPrefs.GetFloat("mastervolume");
-                _volumeSlider.value = _localVolume;
-                _volumeValue.text = ((int)_localVolume).ToString();
+                _volumeSlider.value = _localVolume * 100;
+                _volumeValue.text = ((int)((float)_localVolume * 100)).ToString();
             }
             if (PlayerPrefs.HasKey("istoggle"))
             {

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - RescuingNotify
+  - Health
+  - Ammo
+  - Reload
+  - GameOver
   layers:
   - Default
   - TransparentFX

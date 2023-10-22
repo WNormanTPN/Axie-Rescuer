@@ -341,8 +341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamageRange:
-    x: 10
-    y: 20
+    x: 5
+    y: 12
 --- !u!114 &-5379545939336726551
 MonoBehaviour:
   m_ObjectHideFlags: 0

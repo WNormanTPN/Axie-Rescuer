@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5914096677169587960}
-  - component: {fileID: 546512173213741103}
   - component: {fileID: 5166175973613894277}
   - component: {fileID: 78906265872861520}
   - component: {fileID: 7175141408826411581}
@@ -35,19 +34,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &546512173213741103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196757022364377730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36656b833b51e34d97ec3121b8988b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPSValue: {fileID: 0}
 --- !u!114 &5166175973613894277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51885d513fabe34c8330f5bd19ebca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 
+  SceneName: null
   _audioSlider: {fileID: 0}
   _audioTextValue: {fileID: 0}
   _confirmbox: {fileID: 0}
