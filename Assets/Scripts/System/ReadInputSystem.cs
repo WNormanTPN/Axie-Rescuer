@@ -27,6 +27,15 @@ namespace AxieRescuer
             {
                 EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, true);
             };
+            _input.Player.MobileFire.performed += (InputAction.CallbackContext context) =>
+            {
+                if (context.ReadValue<Vector2>() == Vector2.zero)
+                {
+                    EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, false);
+                    return;
+                }
+                EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, true);
+            };
             _input.Player.Fire.canceled += (InputAction.CallbackContext context) =>
             {
                 EntityManager.SetComponentEnabled<FireInput>(_readInputEntity, false);

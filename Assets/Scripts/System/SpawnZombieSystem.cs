@@ -24,8 +24,6 @@ namespace AxieRescuer
         }
         public void OnUpdate(ref SystemState state)
         {
-            Log.Debug("spawn");
-
             var count = 0;
             var ecb = new EntityCommandBuffer(Allocator.Temp);
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();

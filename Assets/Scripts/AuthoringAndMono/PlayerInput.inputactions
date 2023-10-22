@@ -28,9 +28,18 @@
                     "type": "Button",
                     "id": "49fb4ce8-cad3-4334-ad60-be09392cd29b",
                     "expectedControlType": "Button",
-                    "processors": "",
+                    "processors": "StickDirectionToFireTrigger",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MobileFire",
+                    "type": "Value",
+                    "id": "23038275-e4a3-4e07-9090-59f8c7f4573c",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDirectionToFireTrigger",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -217,7 +226,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "MobileFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

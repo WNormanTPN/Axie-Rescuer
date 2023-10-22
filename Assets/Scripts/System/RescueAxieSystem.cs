@@ -6,6 +6,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
+using UnityEngine.Device;
 using UnityEngine.UI;
 
 namespace AxieRescuer
@@ -54,69 +55,139 @@ namespace AxieRescuer
             foreach(var (transform, entity) in SystemAPI.Query<LocalTransform>().WithAll<WildAxieTag>().WithEntityAccess())
             {
                 if (!EntityManager.IsComponentEnabled<WildAxieTag>(entity)) continue;
-                if(math.distance(playerTransform.Position, transform.Position) < 15)
+                if(math.distance(playerTransform.Position, transform.Position) < 25)
                 {
-                    var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    var hits = Physics.RaycastAll(ray, 1000f);
-                    bool isNotHoveringAxie = true;
-                    var followingAxie = SystemAPI.GetComponent<FollowingAxie>(player);
-                    for (int i = 0; i < hits.Length; i++)
+                    #region Desktop
+                    if (UnityEngine.SystemInfo.deviceType == DeviceType.Desktop)
                     {
-                        if (hits[i].transform.gameObject.layer != LayerMask.NameToLayer("Axie")) continue;
-                        isNotHoveringAxie = false;
-                        axieTransform = hits[i].transform;
-                        var isHoveringInFollowingAxie = false;
-                        if(EntityManager.IsComponentEnabled<FollowingAxie>(player))
+                        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                        var hits = Physics.RaycastAll(ray, 300f);
+                        bool isNotHoveringAxie = true;
+                        var followingAxie = SystemAPI.GetComponent<FollowingAxie>(player);
+                        for (int i = 0; i < hits.Length; i++)
                         {
-                            var followingAxieTransform = EntityManager.GetComponentObject<CharacterAnimatorReference>(followingAxie.Entity).Value.gameObject.transform;
-                            if(followingAxieTransform == axieTransform)
-                            {
-                                isHoveringInFollowingAxie = true;
-                            }
-                        }
-                        if (!isHoveringInFollowingAxie)
-                        {
-                            axieTransform.localScale = new Vector3(6, 6, 6);
-                        }
-                        // Selection
-                        if (Input.GetMouseButtonDown(0))
-                        {
+                            if (hits[i].transform.gameObject.layer != LayerMask.NameToLayer("Axie")) continue;
+                            isNotHoveringAxie = false;
+                            axieTransform = hits[i].transform;
+                            var axieObject = axieTransform.gameObject;
+                            var isHoveringInFollowingAxie = false;
                             if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
                             {
-                                rescuingNotify = GameObject.FindGameObjectWithTag("RescuingNotify");
-                                var img = rescuingNotify.GetComponent<Image>();
-                                img.enabled = true;
-                                var tmp = rescuingNotify.GetComponentInChildren<TextMeshProUGUI>();
-                                tmp.enabled = true;
-                                isNotifyShowing = true;
-                                timer = 0;
-                                continue;
+                                var followingAxieTransform = EntityManager.GetComponentObject<CharacterAnimatorReference>(followingAxie.Entity).Value.gameObject.transform;
+                                if (followingAxieTransform == axieTransform)
+                                {
+                                    isHoveringInFollowingAxie = true;
+                                }
                             }
-                            axieTransform.localScale = new Vector3(4, 4, 4);
-                            EntityManager.SetComponentEnabled<WildAxieTag>(entity, false);
-                            EntityManager.SetComponentData(player, new FollowingAxie
+                            if (!isHoveringInFollowingAxie)
                             {
-                                Entity = entity,
-                            });
-                            EntityManager.SetComponentEnabled<FollowingAxie>(player, true);
+                                axieTransform.localScale = new Vector3(6, 6, 6);
+                            }
+                            // Selection
+                            if (Input.GetMouseButtonDown(0))
+                            {
+                                axieTransform.localScale = new Vector3(8, 8, 8);
+                            }
+                            if (Input.GetMouseButtonUp(0))
+                            {
+                                if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
+                                {
+                                    rescuingNotify = GameObject.FindGameObjectWithTag("RescuingNotify");
+                                    var img = rescuingNotify.GetComponent<Image>();
+                                    img.enabled = true;
+                                    var tmp = rescuingNotify.GetComponentInChildren<TextMeshProUGUI>();
+                                    tmp.enabled = true;
+                                    isNotifyShowing = true;
+                                    timer = 0;
+                                    continue;
+                                }
+                                axieTransform.localScale = new Vector3(4, 4, 4);
+                                var outline = axieObject.GetComponent<Outline>();
+                                outline.OutlineColor = Color.green;
+                                EntityManager.SetComponentEnabled<WildAxieTag>(entity, false);
+                                EntityManager.SetComponentData(player, new FollowingAxie
+                                {
+                                    Entity = entity,
+                                });
+                                EntityManager.SetComponentEnabled<FollowingAxie>(player, true);
+                            }
+                        }
+                        if (isNotHoveringAxie && axieTransform != null)
+                        {
+                            axieTransform.localScale = new Vector3(4, 4, 4);
                         }
                     }
-                    if(isNotHoveringAxie && axieTransform != null)
+                    #endregion
+
+                    #region Mobile
+                    if (UnityEngine.SystemInfo.deviceType == DeviceType.Handheld)
                     {
-                        axieTransform.localScale = new Vector3(4, 4, 4);
+                        if (Input.touchCount > 0)
+                        {
+                            for (int j = 0; j < Input.touchCount; j++)
+                            {
+                                var touch = Input.GetTouch(j);
+                                var ray = Camera.main.ScreenPointToRay(touch.position);
+                                var hits = Physics.RaycastAll(ray, 300f);
+                                bool isNotHoveringAxie = true;
+                                var followingAxie = SystemAPI.GetComponent<FollowingAxie>(player);
+                                for (int i = 0; i < hits.Length; i++)
+                                {
+                                    if (hits[i].transform.gameObject.layer != LayerMask.NameToLayer("Axie")) continue;
+                                    isNotHoveringAxie = false;
+                                    axieTransform = hits[i].transform;
+                                    var axieObject = axieTransform.gameObject;
+                                    var isHoveringInFollowingAxie = false;
+                                    if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
+                                    {
+                                        var followingAxieTransform = EntityManager.GetComponentObject<CharacterAnimatorReference>(followingAxie.Entity).Value.gameObject.transform;
+                                        if (followingAxieTransform == axieTransform)
+                                        {
+                                            isHoveringInFollowingAxie = true;
+                                        }
+                                    }
+                                    if (!isHoveringInFollowingAxie)
+                                    {
+                                        axieTransform.localScale = new Vector3(6, 6, 6);
+                                    }
+
+                                    // Selection
+
+                                    if (touch.phase == TouchPhase.Ended)
+                                    {
+                                        if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
+                                        {
+                                            rescuingNotify = GameObject.FindGameObjectWithTag("RescuingNotify");
+                                            var img = rescuingNotify.GetComponent<Image>();
+                                            img.enabled = true;
+                                            var tmp = rescuingNotify.GetComponentInChildren<TextMeshProUGUI>();
+                                            tmp.enabled = true;
+                                            isNotifyShowing = true;
+                                            timer = 0;
+                                            continue;
+                                        }
+                                        axieTransform.localScale = new Vector3(4, 4, 4);
+                                        var outline = axieObject.GetComponent<Outline>();
+                                        outline.OutlineColor = Color.green;
+                                        EntityManager.SetComponentEnabled<WildAxieTag>(entity, false);
+                                        EntityManager.SetComponentData(player, new FollowingAxie
+                                        {
+                                            Entity = entity,
+                                        });
+                                        EntityManager.SetComponentEnabled<FollowingAxie>(player, true);
+                                    }
+                                }
+                                if (isNotHoveringAxie && axieTransform != null)
+                                {
+                                    axieTransform.localScale = new Vector3(4, 4, 4);
+                                }
+                            }
+                        }
                     }
+                    #endregion
                 }
             }
             ecb.Playback(EntityManager);
-        }
-
-        private IEnumerable closeNotify(float duration, GameObject notify)
-        {
-            yield return new WaitForSeconds(duration);
-            var img = notify.GetComponent<Image>();
-            img.enabled = false;
-            var tmp = notify.GetComponentInChildren<TextMeshPro>();
-            tmp.enabled = false;
         }
     }
 }

@@ -11,7 +11,9 @@ TagManager:
   - GameOver
   - WinGame
   - AxieCount
-  - AxieRescuer
+  - EntityCount
+  - SystemCount
+  - FPSCount
   layers:
   - Default
   - TransparentFX

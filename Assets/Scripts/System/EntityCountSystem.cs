@@ -15,14 +15,14 @@ namespace AxieRescuer
         [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
-            frequency = 5;
+            frequency = 4;
             timer = 0;
         }
 
         public void OnUpdate(ref SystemState state)
         {
             timer += SystemAPI.Time.DeltaTime;
-            if (timer < 1 / frequency) return;
+            if (timer < (1.0 / frequency)) return;
 
             timer = 0;
             counter = 0;
@@ -30,7 +30,11 @@ namespace AxieRescuer
             {
                 counter++;
             }
-            //Debug.Log((counter + GameObject.FindObjectsOfType<Object>().Length));
+            counter += GameObject.FindObjectsOfType<Object>().Length;
+            var entityCountUI = GameObject.FindGameObjectWithTag("EntityCount");
+            if (entityCountUI == null) return;
+            var tmp = entityCountUI.GetComponent<TextMeshProUGUI>();
+            tmp.text = "Entities: " + counter;
         }
     }
 }

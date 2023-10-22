@@ -27,3 +27,32 @@ using UnityEditor;
             return (value - offset).normalized;
         }
     }
+
+#if UNITY_EDITOR
+[InitializeOnLoad]
+#endif
+public class StickDirectionToFireTrigger : InputProcessor<Vector2>
+{
+#if UNITY_EDITOR
+    static StickDirectionToFireTrigger()
+    {
+        Initialize();
+    }
+#endif
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void Initialize()
+    {
+        InputSystem.RegisterProcessor<StickDirectionToFireTrigger>();
+    }
+
+    public override Vector2 Process(Vector2 value, InputControl control)
+    {
+        var mag = value.magnitude;
+        if(mag < 1)
+        {
+            return Vector2.zero;
+        }
+        return value;
+    }
+}
