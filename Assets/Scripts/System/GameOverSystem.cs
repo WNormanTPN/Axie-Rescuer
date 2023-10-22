@@ -11,6 +11,7 @@ namespace AxieRescuer
     {
         private GameObject _canvasGameOver;
         private GameObject _gameOver;
+        private bool _flag = true;
         protected override void OnCreate()
         {
             RequireForUpdate<PlayerTag>();
@@ -22,14 +23,19 @@ namespace AxieRescuer
             _gameOver = _canvasGameOver.transform.GetChild(0).gameObject;
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();
             var health = SystemAPI.GetComponentRO<Health>(player);
-            if (health.ValueRO.Current <= 0)
+            if (_flag )
             {
-                _gameOver.SetActive(true);
+                if (health.ValueRO.Current <= 0)
+                {
+                    _flag = false;
+                    _gameOver.SetActive(true);
+                    UnityEngine.Time.timeScale = 0;
+                }
             }
-            else if (health.ValueRO.Current > 0)
-            {
-                _gameOver.SetActive(false);
-            }
+            //if (health.ValueRO.Current > 0)
+            //{
+            //    UnityEngine.Time.timeScale = 1;
+            //}
         }
     }
 }

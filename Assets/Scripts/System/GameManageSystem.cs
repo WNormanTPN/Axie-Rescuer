@@ -1,5 +1,7 @@
 using Unity.Burst;
 using Unity.Entities;
+using Unity.Logging;
+using UnityEngine;
 
 namespace AxieRescuer
 {
@@ -11,12 +13,16 @@ namespace AxieRescuer
         {
             state.RequireForUpdate<PlayerTag>();
         }
-
-        [BurstCompile]
         public void OnStartRunning(ref SystemState state)
         {
             var playerEntity = SystemAPI.GetSingletonEntity<PlayerTag>();
             state.EntityManager.SetComponentEnabled<InitialWeapon>(playerEntity, true);
+            var world = World.DefaultGameObjectInjectionWorld;
+            SystemHandle mySystem = world.GetExistingSystem<SpawnZombieSystem>();
+            ref SystemState spawnZombieSystem = ref world.Unmanaged.ResolveSystemStateRef(mySystem);
+            spawnZombieSystem.Enabled = true;
+            //var spawnZombieSystemState = world.ResolveSystemStateRef(spawnZombieSystem);
+            //spawnZombieSystemState.Enabled = true; 
         }
 
 

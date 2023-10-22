@@ -24,8 +24,8 @@ namespace AxieRescuer
         }
         public void OnUpdate(ref SystemState state)
         {
-          
-            state.Enabled = false;
+            Log.Debug("spawn");
+
             var count = 0;
             var ecb = new EntityCommandBuffer(Allocator.Temp);
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();
@@ -33,7 +33,7 @@ namespace AxieRescuer
             var spawnerEntity = SystemAPI.GetSingletonEntity<SpawnBuffer>();
             var prefab = SystemAPI.GetSingleton<SpawnZombieComponent>();
             var random = SystemAPI.GetSingleton<RandomSingleton>();
-            for (int i = 0; i < prefab.Value; i++)
+            for (int i = 0; i < prefab.Value; i++) 
             {
                 float3 randomPoint = new float3
                 {
@@ -57,7 +57,9 @@ namespace AxieRescuer
                     });
                 }
             }
+
             ecb.Playback(state.EntityManager);
+            state.Enabled = false;
         }
     }
 }

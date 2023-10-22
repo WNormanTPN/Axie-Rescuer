@@ -17,11 +17,7 @@ namespace AxieRescuer
         [SerializeField] private Toggle _toggleFPS = null;
         public void NewGameDialogYes()
         {
-            SceneManager.LoadScene(SceneName,LoadSceneMode.Single);
-        }
-        public void NewGame()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneName);
         }
         public void AudioChange()
         {

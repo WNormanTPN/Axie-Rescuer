@@ -97,7 +97,11 @@ namespace AxieRescuer
                      SystemAPI.Query<CharacterAnimatorReference>().WithNone<CharacterGameObjectPrefab, LocalTransform>()
                          .WithEntityAccess())
             {
+                if(animatorReference.Value != null)
+                {
+
                 Object.Destroy(animatorReference.Value.gameObject);
+                }
                 ecb.RemoveComponent<CharacterAnimatorReference>(entity);
             }
 

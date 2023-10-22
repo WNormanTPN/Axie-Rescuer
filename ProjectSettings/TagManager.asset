@@ -9,6 +9,8 @@ TagManager:
   - Ammo
   - Reload
   - GameOver
+  - WinGame
+  - AxieCount
   layers:
   - Default
   - TransparentFX

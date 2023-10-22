@@ -222,7 +222,6 @@ GameObject:
   - component: {fileID: 8436205211598934277}
   - component: {fileID: 4979893990227093197}
   - component: {fileID: 8985819857530933863}
-  - component: {fileID: 8462084505108134250}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: GameOver
@@ -313,23 +312,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8462084505108134250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3228220284910361690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51885d513fabe34c8330f5bd19ebca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: DemoScene
-  _audioSlider: {fileID: 0}
-  _audioTextValue: {fileID: 0}
-  _confirmbox: {fileID: 0}
-  _toggleFPS: {fileID: 0}
 --- !u!1 &4505888668689624248
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +494,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8462084505108134250}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AxieRescuer.MenuController, Assembly-CSharp
         m_MethodName: NewGame
         m_Mode: 1

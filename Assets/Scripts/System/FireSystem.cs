@@ -28,6 +28,7 @@ namespace AxieRescuer
         public void OnUpdate(ref SystemState state)
         {
             var player = SystemAPI.GetSingletonEntity<PlayerTag>();
+            if (!state.EntityManager.HasComponent<EquippingWeapon>(player)) return;
             var equippingWeapon = state.EntityManager.GetComponentObject<EquippingWeapon>(player);
 
             if (equippingWeapon.Entity != Entity.Null)
