@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00fe6fc1ebf8ff240ad5b12ad70ce1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AgentTypeId: 0
+  AgentTypeId: -334000983
   AreaMask: 7
   AutoRepath: 1
   MappingExtent:

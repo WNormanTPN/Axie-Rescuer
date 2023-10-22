@@ -32,10 +32,10 @@ namespace AxieRescuer
                 if (timer > 2)
                 {
                     timer = 0;
-                    var playerHealth = state.EntityManager.GetComponentData<Health>(player);
-                    if (playerHealth.Current < playerHealth.Max)
+                    var playerHealth = SystemAPI.GetComponentRW<Health>(player);
+                    if (playerHealth.ValueRO.Current < playerHealth.ValueRO.Max)
                     {
-                        playerHealth.Current = playerHealth.Max;
+                        playerHealth.ValueRW.Current = playerHealth.ValueRO.Max;
                     }
                     if(state.EntityManager.IsComponentEnabled<FollowingAxie>(player))
                     {
