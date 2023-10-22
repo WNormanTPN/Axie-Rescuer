@@ -21,6 +21,7 @@ namespace AxieRescuer
             _textMeshPro = _text.GetComponent<TMP_Text>();
             if (_textMeshPro == null) return;
             var _player = SystemAPI.GetSingletonEntity<PlayerTag>();
+            if (!EntityManager.HasComponent<EquippingWeapon>(_player)) return;
             var _weapon = EntityManager.GetComponentObject<EquippingWeapon>(_player);
             if (_weapon.Entity != Entity.Null)
             {
