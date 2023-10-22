@@ -30,6 +30,7 @@ namespace AxieRescuer
         }
         protected override void OnUpdate()
         {
+            if (Application.loadedLevelName == "TutorialScene") return;
             _winGameCanvas = GameObject.FindGameObjectWithTag("WinGame");
             _gameCanvas = _winGameCanvas.transform.GetChild(0).gameObject;
             _axieCountText = GameObject.FindGameObjectWithTag("AxieCount");
