@@ -145,7 +145,6 @@ namespace AxieRescuer
 
         public void Minigun_Shoot()
         {
-            Debug.Log("Here");
             gunAudioSource.clip = MinigunShootAudioClip;
             gunAudioSource.volume = MinigunShootVolume;
             gunAudioSource.Play();
