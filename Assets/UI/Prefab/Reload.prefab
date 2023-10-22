@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2676469462277713281}
   m_Layer: 5
   m_Name: Reload
-  m_TagString: Untagged
+  m_TagString: Reload
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 4714606298312347567, guid: 63b045512b987054fa4d03797b1905b0,
         type: 3}
       propertyPath: m_TagString
-      value: Reload
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6712282737072634602, guid: 63b045512b987054fa4d03797b1905b0,
         type: 3}

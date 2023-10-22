@@ -12,13 +12,14 @@ namespace AxieRescuer
         private TMP_Text _textMeshPro;
         protected override void OnCreate()
         {
-            _text = GameObject.FindGameObjectWithTag("Ammo");
-            _textMeshPro = _text.GetComponent<TMP_Text>();
             RequireForUpdate<PlayerTag>();
             RequireForUpdate<EquippingWeapon>();
         }
         protected override void OnUpdate()
         {
+            _text = GameObject.FindGameObjectWithTag("Ammo");
+            _textMeshPro = _text.GetComponent<TMP_Text>();
+            if (_textMeshPro == null) return;
             var _player = SystemAPI.GetSingletonEntity<PlayerTag>();
             var _weapon = EntityManager.GetComponentObject<EquippingWeapon>(_player);
             if (_weapon.Entity != Entity.Null)
