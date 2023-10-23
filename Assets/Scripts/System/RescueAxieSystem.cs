@@ -75,6 +75,7 @@ namespace AxieRescuer
                             var isHoveringInFollowingAxie = false;
                             if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
                             {
+                                if (!EntityManager.IsComponentEnabled<FollowingAxie>(player)) return;
                                 var followingAxieTransform = EntityManager.GetComponentObject<CharacterAnimatorReference>(followingAxie.Entity).Value.gameObject.transform;
                                 if (followingAxieTransform == axieTransform)
                                 {

@@ -43,7 +43,7 @@ namespace AxieRescuer
         }
         public void ResetToDefault()
         {
-            AudioListener.volume = 50;
+            AudioListener.volume = 0.5f;
             _audioSlider.value = 50f;
             _audioTextValue.text = "50";
             _toggleFPS.isOn = true;
@@ -58,7 +58,6 @@ namespace AxieRescuer
         {
             _confirmbox.SetActive(true);
             yield return new WaitForSeconds(2);
-            Debug.Log("v");
             _confirmbox.SetActive(false);
         }
     }
