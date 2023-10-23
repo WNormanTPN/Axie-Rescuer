@@ -10,18 +10,13 @@ namespace AxieRescuer
     {
         public void PlayAgain()
         {
-            StartCoroutine(WaitForLoading());
+            SceneManager.LoadScene("Demo_Scene");
             Time.timeScale = 1;
         }
         public void BackToTheMenu()
         {
             SceneManager.LoadScene("MainMenu");
             Time.timeScale = 1;
-        }
-        IEnumerator WaitForLoading()
-        {
-            SceneManager.LoadScene("Demo_Scene");
-            yield return new WaitForSeconds(5);
         }
     }
     
