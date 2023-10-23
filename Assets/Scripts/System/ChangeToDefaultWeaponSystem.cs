@@ -1,6 +1,5 @@
 using Unity.Burst;
 using Unity.Entities;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 namespace AxieRescuer
 {

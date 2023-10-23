@@ -70,6 +70,8 @@ namespace AxieRescuer
                             isNotHoveringAxie = false;
                             axieTransform = hits[i].transform;
                             var axieObject = axieTransform.gameObject;
+                            var axieAnimator = EntityManager.GetComponentObject<CharacterAnimatorReference>(entity);
+                            if (axieObject != axieAnimator.Value.gameObject) continue;
                             var isHoveringInFollowingAxie = false;
                             if (EntityManager.IsComponentEnabled<FollowingAxie>(player))
                             {
