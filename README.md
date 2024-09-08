@@ -7,10 +7,8 @@
     <img src="README_Assets/AxieRescuer.png" alt="icon" width="100">
     <br/>
     <br/>
-    <video width="500" controls>
-        <source src="https://drive.google.com/uc?export=download&id=1pdjtDGlptNa0qzcKV7GhLLWHNtSJYSMw" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+
+## [**Video Demo**](https://drive.google.com/uc?export=download&id=1pdjtDGlptNa0qzcKV7GhLLWHNtSJYSMw)
 </div>
 
 <br/>
