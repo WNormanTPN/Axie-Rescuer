@@ -8,7 +8,7 @@
     <br/>
     <br/>
 
-## [**Video Demo**](https://drive.google.com/uc?export=download&id=1pdjtDGlptNa0qzcKV7GhLLWHNtSJYSMw)
+## [**Video Demo**](https://drive.google.com/file/d/1pdjtDGlptNa0qzcKV7GhLLWHNtSJYSMw/view?usp=sharing)
 </div>
 
 <br/>
